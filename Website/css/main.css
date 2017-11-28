@@ -37,6 +37,32 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			padding-left: 1em;
 		}
 
+		.button {
+		    border: none;
+		    color: white;
+		    padding: 40px 110px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    -webkit-transition-duration: 0.4s; /* Safari */
+		    transition-duration: 0.4s;
+		    cursor: pointer
+		}
+
+
+		.buttonB {
+			background-color: white; 
+    		color: black; 
+    		border: 2px solid #008CBA;
+		}
+
+		.buttonB:hover {
+		    background-color: #008CBA;
+		    color: white;
+		}
+
 		/* Header */
 
 		#header {
@@ -47,6 +73,7 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			#topHeader {
 				background-color: #000066;
 			}
+				
 
 			#topHeader li {
 				display: inline-block;
@@ -121,6 +148,9 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 				margin-top: 1%;
 				margin-left: 1%;
 				line-height:50px;
+
+				background: url(../images/iStock-531401122_bearbeitet_2.jpeg) no-repeat center center;
+			
 			}
 
 

@@ -1,13 +1,14 @@
-body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
+body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li 
+{
 	margin:0;
 	padding:0;
-			border:0;
-			font-size:100%;
-			font:inherit;
-			vertical-align:baseline;
-		}
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
 
-		body {
+body {
 			color: black;
 			font-family:  Helvetica,Arial,sans-serif;
 			font-size: 1.4vw;
@@ -146,7 +147,6 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 
 			.dropDown ul li:hover
 			{
-				color: green; 
 				transition: .3s ease all;
 			}
 
@@ -173,7 +173,7 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 				margin-left: 1%;
 				line-height:50px;
 
-				background: url(../images/iStock-531401122_bearbeitet_2.jpeg) no-repeat center center;
+				
 			
 			}
 
@@ -196,6 +196,72 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			    cursor: pointer;
 			}
 
+		/*Banner*/
+
+		#Banner {
+			padding-bottom: 8%;
+			padding-top: 8%;
+			background-attachment: fixed;
+			background-image: url("../images/banner1.jpg");
+			background-position: center top;
+			background-size: cover;
+			text-align: center;
+
+			}
+
+			#Banner img {
+				width: 24%;
+				height: auto;
+				filter: brightness(10%);
+			}
+
+		#BannerText {
+   			background: rgba(255, 250, 255, 0.7);
+			width: 70%;
+			margin-left: 15%;
+			color: #000066;
+			text-align: left;
+		}
+		#BannerText form > input{
+			width: 50%;
+			line-height: 2em;
+			font-size: 100%;
+			margin-top:2%; 
+			margin-bottom: 7%;
+			margin-left: 18%;
+
+		}
+
+		#BannerText form > button{
+			background-color: #000066;
+			    border: none;
+			    color: white;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 18px;
+			    margin-left: -5px;
+			   padding-bottom: 10px;
+			   padding-top: 10px;
+			   padding-right: 17px;
+			   padding-left: 17px;
+			    cursor: pointer;
+
+		}
+
+		#BannerText p {
+			margin-left: 18%;
+		}
+
+		#BannerText h1 {
+			font-size: 300%;
+			margin-bottom: 5%;
+			padding-top: 7%;
+			font-weight: bold;
+			margin-left: 18%;
+
+		}
+		
 		/* Footer */
 
 		#footer {

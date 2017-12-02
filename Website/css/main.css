@@ -86,6 +86,38 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		    background-color: #008CBA;
 		    color: white;
 		}
+		
+		/*Card Section */
+		/*padding needs to be smaller*/
+		.courses{
+			border: none;
+		    padding: 20px 100px;
+		    text-align: left;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    -webkit-transition-duration: 0.4s; /* Safari */
+		    transition-duration: 0.4s;
+		    
+		}
+		
+		.courseCard{
+			margin: 4px 2px;
+			padding:0;
+			width: 25%;
+			height:100%;
+			background-color: white; 
+    		color: black; 
+    		border: 2px solid gray;
+			cursor: pointer
+		}
+		
+		.courseImg{
+			display: block;
+			height: 100%; 
+			width: 100%;
+		}
 
 		/* Header */
 

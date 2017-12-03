@@ -192,7 +192,35 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 
 			.dropDown ul li:hover > ul
 			{
-				display:block
+				display:block;
+				opacity: 1;
+				visibility: visible;
+			}
+
+			.dropDown ul li ul li:hover
+			{
+				background: #000066;
+			}
+
+			.dropDown ul ul ul li
+			{
+				display:none;
+			}
+
+			.dropDown ul ul li:hover li
+			{
+				display: block;
+			}
+
+			.dropDown ul ul ul
+			{
+				left:100%;
+				top:0;
+			}
+
+
+			#headerMain li{
+				display: inline-block;
 			}
 
 

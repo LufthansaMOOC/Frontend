@@ -40,7 +40,7 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		.buttonlog {
 		    border: none;
 		    color: white;
-		    padding: 10px 14px;
+		    padding: 2px 12px;
 		    text-align: center;
 		    text-decoration: none;
 		    display: inline-block;
@@ -64,7 +64,7 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		.button {
 		    border: none;
 		    color: white;
-		    padding: 40px 110px;
+		    padding: 30px 110px;
 		    text-align: center;
 		    text-decoration: none;
 		    display: inline-block;
@@ -74,7 +74,6 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		    transition-duration: 0.4s;
 		    cursor: pointer
 		}
-
 
 		.buttonB {
 			background-color: white; 
@@ -86,12 +85,31 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		    background-color: #008CBA;
 		    color: white;
 		}
-		
+
+		#firstButton{
+			margin-left: 20px;
+		}
+
+		#trendingButtons h1{
+			margin-top: 5%;
+			margin-left: 3%;
+			font-size: 25px;
+			font-weight: bold;
+			color: #000066;
+
+		}
+
+		#trendingButtons {
+			margin-bottom: 3%;
+		}
+
 		/*Banner*/
 
 		#Banner {
 			padding-bottom: 8%;
 			padding-top: 8%;
+			position: relative;
+			margin-top: -2.8%;
 			background-attachment: fixed;
 			background-image: url("../images/iStock-531401122_bearbeitet_2.jpg");
 			background-position: center top;
@@ -156,8 +174,6 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		/*Card Section */
 		/*padding needs to be smaller*/
 		.courses{
-			border: none;
-		    padding: 20px 100px;
 		    text-align: left;
 		    text-decoration: none;
 		    display: inline-block;
@@ -167,11 +183,28 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		    transition-duration: 0.4s;
 		    
 		}
+
+		#content h1 {
+			margin-bottom: 3%;
+			margin-left: 3%;
+			font-size: 25px;
+			font-weight: bold;
+			color: #000066;
+		}
+
+		#firstCard{
+			margin-left: 8%;
+		}
+
+		#firstCard2{
+			margin-left: 8%;
+		}
 		
 		.courseCard{
-			margin: 4px 2px;
+			margin-left: 15px;
+			margin-bottom: 7%;
 			padding:0;
-			width: 25%;
+			width: 20%;
 			height:100%;
 			background-color: white; 
     		color: black; 
@@ -195,33 +228,31 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			#topHeader {
 				background-color: #000066;
 			}
-				
+
+			#right{
+				right: 110px;
+				top: 0.001px;
+				position: absolute;
+			}
+
+			#right2 {
+				right: 15px;
+				top: 0.001px;
+				position: absolute;
+			}
+			
+
 
 			#topHeader li {
 				display: inline-block;
-				line-height:10px;
-			}
-
-
-			.right a{
-				text-decoration: none;
-				color: white;
-			}
-
-			.right a:hover{
-				color:  #0A64AD;
-				transition: .3s ease all;
-			
-			}
-
-			#firstRight{
-				margin-left: 78%;
 			}
 
 			.dropDown
 			{
 				margin-top:15px
 				background-color: #000066;
+				z-index:1;
+				position: relative;
 
 			}
 
@@ -244,7 +275,6 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 
 			.dropDown ul li:hover
 			{
-				color: green; 
 				transition: .3s ease all;
 			}
 
@@ -254,7 +284,6 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 				position:absolute;
 				background: #000066;
 			}
-
 
 			.dropDown ul li:hover > ul
 			{
@@ -295,14 +324,11 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			}
 
 			#headerMain {
-				margin-top: 1%;
 				margin-left: 1%;
-				line-height:50px;
-
-				background: url(../images/iStock-531401122_bearbeitet_2.jpeg) no-repeat center center;
-			
+				line-height:60px;
+				position: relative;
+				margin-top: -20px;
 			}
-
 
 			#logocon{
 				margin-right: 20%;
@@ -391,4 +417,3 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		{
 		content: "\2605";
 		position: absolute;
-		}

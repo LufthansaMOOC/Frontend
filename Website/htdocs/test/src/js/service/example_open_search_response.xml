@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:unapi="http://unapi.info/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+	<title type="text">refbase Beta Database</title>
+	<subtitle>Displays records where ( (keywords contains '(^|[[:space:][:punct:]])test([[:space:][:punct:]]|$)'))</subtitle>
+	<updated>2014-04-28T09:39:32+02:00</updated>
+	<author>
+		<name>refbase Beta Database</name>
+		<email>admin@refbase.net</email>
+		<uri>http://beta.refbase.net/</uri>
+	</author>
+	<generator uri="http://www.refbase.net/" version="0.9.1">Web Reference Database (http://refbase.sourceforge.net)</generator>
+	<icon>http://beta.refbase.net/img/favicon.ico</icon>
+	<logo>http://beta.refbase.net/img/logo.png</logo>
+	<link rel="search" type="application/opensearchdescription+xml" title="refbase Beta Database" href="http://beta.refbase.net/opensearch.php?operation=explain" />
+	<link rel="unapi:unapi-server" type="application/xml" title="unAPI" href="http://beta.refbase.net/unapi.php" />
+	<link rel="alternate" type="application/rss+xml" title="Current query results as RSS feed" href="http://beta.refbase.net/rss.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;showRows=10" />
+	<link rel="alternate" type="text/html" title="Current results page as HTML" href="http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;showRows=10" />
+	<link rel="alternate" type="application/xml" title="Current results page as SRW_MODS XML data" href="http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;showRows=10&amp;exportType=xml&amp;submit=Export&amp;exportFormat=SRW_MODS%20XML" />
+	<link rel="self" type="application/atom+xml" title="Current results page" href="http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;showRows=10&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+	<link rel="first" type="application/atom+xml" title="First results page" href="http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;showRows=10&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+	<link rel="next" type="application/atom+xml" title="Next results page" href="http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;startRecord=11&amp;showRows=10&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+	<link rel="last" type="application/atom+xml" title="Last results page" href="http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;startRecord=81&amp;showRows=10&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+	<link rel="alternate" type="application/rtf" title="Current results page as citations in RTF format" href="http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;client=cli-refbase_atom-1.0&amp;showRows=10&amp;submit=Cite&amp;citeType=RTF" />
+	<link rel="alternate" type="application/pdf" title="Current results page as citations in PDF format" href="http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;client=cli-refbase_atom-1.0&amp;showRows=10&amp;submit=Cite&amp;citeType=PDF" />
+	<link rel="alternate" type="application/x-latex" title="Current results page as citations in LaTeX format" href="http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;client=cli-refbase_atom-1.0&amp;showRows=10&amp;submit=Cite&amp;citeType=LaTeX" />
+	<link rel="alternate" type="text/plain" title="Current results page as citations in Markdown format" href="http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;client=cli-refbase_atom-1.0&amp;showRows=10&amp;submit=Cite&amp;citeType=Markdown" />
+	<id>http://beta.refbase.net/show.php?where=%28%20%28keywords%20RLIKE%20%22%28%5E%7C%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%29test%28%5B%5B%3Aspace%3A%5D%5B%3Apunct%3A%5D%5D%7C%24%29%22%29%29&amp;showRows=10&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML</id>
+	<opensearch:totalResults>84</opensearch:totalResults>
+	<opensearch:startIndex>1</opensearch:startIndex>
+	<opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+	<entry>
+		<id>http://beta.refbase.net/show.php?record=11462</id>
+		<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Snow cover effects on Antarctic sea ice thickness</div></title>
+		<updated>2011-06-01T15:15:31+02:00</updated>
+		<published>2011-06-01T15:15:31+02:00</published>
+		<link rel="alternate" type="text/html" title="View record in HTML format" href="http://beta.refbase.net/show.php?record=11462" />
+		<link rel="alternate" type="application/x-bibtex" title="Export record in BibTeX format" href="http://beta.refbase.net/show.php?record=11462&amp;exportType=file&amp;submit=Export&amp;exportFormat=BibTeX" />
+		<link rel="alternate" type="application/x-endnote-refer" title="Export record in Endnote format" href="http://beta.refbase.net/show.php?record=11462&amp;exportType=file&amp;submit=Export&amp;exportFormat=Endnote" />
+		<link rel="alternate" type="application/x-Research-Info-Systems" title="Export record in RIS format" href="http://beta.refbase.net/show.php?record=11462&amp;exportType=file&amp;submit=Export&amp;exportFormat=RIS" />
+		<link rel="alternate" type="application/atom+xml" title="Export record as Atom XML" href="http://beta.refbase.net/show.php?record=11462&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+		<link rel="alternate" type="application/xml" title="Export record as MODS XML" href="http://beta.refbase.net/show.php?record=11462&amp;exportType=xml&amp;submit=Export&amp;exportFormat=MODS%20XML" />
+		<link rel="alternate" type="application/vnd.oasis.opendocument.spreadsheet" title="Export record as ODF XML" href="http://beta.refbase.net/show.php?record=11462&amp;exportType=file&amp;submit=Export&amp;exportFormat=ODF%20XML" />
+		<link rel="alternate" type="application/rtf" title="Output record as citation in RTF format" href="http://beta.refbase.net/show.php?record=11462&amp;submit=Cite&amp;citeType=RTF" />
+		<link rel="alternate" type="application/pdf" title="Output record as citation in PDF format" href="http://beta.refbase.net/show.php?record=11462&amp;submit=Cite&amp;citeType=PDF" />
+		<link rel="alternate" type="application/x-latex" title="Output record as citation in LaTeX format" href="http://beta.refbase.net/show.php?record=11462&amp;submit=Cite&amp;citeType=LaTeX" />
+		<link rel="alternate" type="text/plain" title="Output record as citation in Markdown format" href="http://beta.refbase.net/show.php?record=11462&amp;submit=Cite&amp;citeType=Markdown" />
+		<author>
+			<name>refbase User</name>
+		</author>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="unapi"><abbr class="unapi-id" title="http://beta.refbase.net/show.php?record=11462"></abbr></div>Ackley, S. F., Lange, M. A., &amp; Wadhams, P. (1990). Snow cover effects on Antarctic sea ice thickness. In  December 1988 S. F. W.F. Weeks Sea Ice Symposium, S. F. Ackley, &amp; W. F. Weeks (Eds.), <i>Sea ice properties and processes – Proceedings of the W.F. Weeks Sea Ice Symposium</i> (pp. 16&#8211;21). CRREL Monogr, 90(1). Hanover: U.S. Army Corps of Engineers, Cold Regions Research &amp; Engineering Laboratory.</div></content>
+		<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">In model simulations of seasonal pack-ice growth, snow cover is treated as insulating layer that inhibits ice growth, but, during field work in 1986, it was found that several factors negate this predicted behaviour. Estimates that snow cover increases sea-ice thickness by 20 to 30% over model predictions by flooding and infiltration mechanisms.</div></summary>
+		<dc:title>Snow cover effects on Antarctic sea ice thickness</dc:title>
+		<dc:creator>Ackley, S.F.</dc:creator>
+		<dc:creator>Lange, M.A.</dc:creator>
+		<dc:creator>Wadhams, P.</dc:creator>
+		<dc:contributor>W.F. Weeks Sea Ice Symposium, S.F., December 1988,</dc:contributor>
+		<dc:contributor>Ackley, S.F.</dc:contributor>
+		<dc:contributor>Weeks, W.F.</dc:contributor>
+		<dc:identifier>openurl:?ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fbeta.refbase.net%2F&amp;genre=proceeding&amp;title=Snow%20cover%20effects%20on%20Antarctic%20sea%20ice%20thickness&amp;series=CRREL%20Monograph&amp;date=1990&amp;spage=16&amp;epage=21&amp;aulast=Ackley&amp;aufirst=S.F.&amp;au=Lange%2C%20M.A.&amp;au=Wadhams%2C%20P.&amp;pub=U.S.%20Army%20Corps%20of%20Engineers%2C%20Cold%20Regions%20Research%20%26%20Engineering%20Laboratory&amp;place=Hanover&amp;sid=refbase%3Arefbase</dc:identifier>
+		<dc:identifier>citekey:Ackley_etal1990</dc:identifier>
+		<dcterms:bibliographicCitation>Ackley, S. F., Lange, M. A., &amp; Wadhams, P. (1990). Snow cover effects on Antarctic sea ice thickness. In  December 1988 S. F. W.F. Weeks Sea Ice Symposium, S. F. Ackley, &amp; W. F. Weeks (Eds.), Sea ice properties and processes – Proceedings of the W.F. Weeks Sea Ice Symposium (pp. 16-21). CRREL Monogr, 90(1). Hanover: U.S. Army Corps of Engineers, Cold Regions Research &amp;amp; Engineering Laboratory.</dcterms:bibliographicCitation>
+		<dc:source>CRREL Monograph, Vol. 90, No. 1</dc:source>
+		<dc:date>1990</dc:date>
+		<dc:type>ConferencePaper</dc:type>
+		<dc:format>text</dc:format>
+		<dc:subject>Export Test</dc:subject>
+		<dc:subject>Cite Test</dc:subject>
+		<dc:subject>Ecology</dc:subject>
+		<dc:publisher>U.S. Army Corps of Engineers, Cold Regions Research &amp; Engineering Laboratory</dc:publisher>
+		<prism:publicationName>Sea ice properties and processes – Proceedings of the W.F. Weeks Sea Ice Symposium</prism:publicationName>
+		<prism:publicationDate>1990</prism:publicationDate>
+		<prism:startingPage>16</prism:startingPage>
+		<prism:endingPage>21</prism:endingPage>
+	</entry>
+	<entry>
+		<id>http://beta.refbase.net/show.php?record=698</id>
+		<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Snow cover effects on Antarctic sea ice thickness</div></title>
+		<updated>2011-12-05T11:09:53+01:00</updated>
+		<published>2007-04-26T19:52:46+02:00</published>
+		<link rel="alternate" type="text/html" title="View record in HTML format" href="http://beta.refbase.net/show.php?record=698" />
+		<link rel="alternate" type="application/x-bibtex" title="Export record in BibTeX format" href="http://beta.refbase.net/show.php?record=698&amp;exportType=file&amp;submit=Export&amp;exportFormat=BibTeX" />
+		<link rel="alternate" type="application/x-endnote-refer" title="Export record in Endnote format" href="http://beta.refbase.net/show.php?record=698&amp;exportType=file&amp;submit=Export&amp;exportFormat=Endnote" />
+		<link rel="alternate" type="application/x-Research-Info-Systems" title="Export record in RIS format" href="http://beta.refbase.net/show.php?record=698&amp;exportType=file&amp;submit=Export&amp;exportFormat=RIS" />
+		<link rel="alternate" type="application/atom+xml" title="Export record as Atom XML" href="http://beta.refbase.net/show.php?record=698&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+		<link rel="alternate" type="application/xml" title="Export record as MODS XML" href="http://beta.refbase.net/show.php?record=698&amp;exportType=xml&amp;submit=Export&amp;exportFormat=MODS%20XML" />
+		<link rel="alternate" type="application/vnd.oasis.opendocument.spreadsheet" title="Export record as ODF XML" href="http://beta.refbase.net/show.php?record=698&amp;exportType=file&amp;submit=Export&amp;exportFormat=ODF%20XML" />
+		<link rel="alternate" type="application/rtf" title="Output record as citation in RTF format" href="http://beta.refbase.net/show.php?record=698&amp;submit=Cite&amp;citeType=RTF" />
+		<link rel="alternate" type="application/pdf" title="Output record as citation in PDF format" href="http://beta.refbase.net/show.php?record=698&amp;submit=Cite&amp;citeType=PDF" />
+		<link rel="alternate" type="application/x-latex" title="Output record as citation in LaTeX format" href="http://beta.refbase.net/show.php?record=698&amp;submit=Cite&amp;citeType=LaTeX" />
+		<link rel="alternate" type="text/plain" title="Output record as citation in Markdown format" href="http://beta.refbase.net/show.php?record=698&amp;submit=Cite&amp;citeType=Markdown" />
+		<author>
+			<name>refbase Admin user</name>
+		</author>
+		<contributor>
+			<name>refbase User</name>
+		</contributor>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="unapi"><abbr class="unapi-id" title="http://beta.refbase.net/show.php?record=698"></abbr></div>Ackley, S. F., Lange, M. A., &amp; Wadhams, P. (1990). Snow cover effects on Antarctic sea ice thickness. In S. F. Ackley, &amp; W. F. Weeks (Eds.), <i>Sea ice properties and processes – Proceedings of the W.F. Weeks Sea Ice Symposium</i> (pp. 16&#8211;21). CRREL Monogr, 90(1). Hanover: U.S. Army Corps of Engineers, Cold Regions Research &amp; Engineering Laboratory.</div></content>
+		<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">In model simulations of seasonal pack-ice growth, snow cover is treated as insulating layer that inhibits ice growth, but, during field work in 1986, it was found that several factors negate this predicted behaviour. Estimates that snow cover increases sea-ice thickness by 20 to 30% over model predictions by flooding and infiltration mechanisms.</div></summary>
+		<dc:title>Snow cover effects on Antarctic sea ice thickness</dc:title>
+		<dc:creator>Ackley, S.F.</dc:creator>
+		<dc:creator>Lange, M.A.</dc:creator>
+		<dc:creator>Wadhams, P.</dc:creator>
+		<dc:contributor>Ackley, S.F.</dc:contributor>
+		<dc:contributor>Weeks, W.F.</dc:contributor>
+		<dc:identifier>openurl:?ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fbeta.refbase.net%2F&amp;genre=proceeding&amp;title=Snow%20cover%20effects%20on%20Antarctic%20sea%20ice%20thickness&amp;series=CRREL%20Monograph&amp;date=1990&amp;spage=16&amp;epage=21&amp;aulast=Ackley&amp;aufirst=S.F.&amp;au=Lange%2C%20M.A.&amp;au=Wadhams%2C%20P.&amp;pub=U.S.%20Army%20Corps%20of%20Engineers%2C%20Cold%20Regions%20Research%20%26%20Engineering%20Laboratory&amp;place=Hanover&amp;sid=refbase%3Arefbase</dc:identifier>
+		<dc:identifier>citekey:Ackley_etal1990_2</dc:identifier>
+		<dcterms:bibliographicCitation>Ackley, S. F., Lange, M. A., &amp; Wadhams, P. (1990). Snow cover effects on Antarctic sea ice thickness. In S. F. Ackley, &amp; W. F. Weeks (Eds.), Sea ice properties and processes – Proceedings of the W.F. Weeks Sea Ice Symposium (pp. 16-21). CRREL Monogr, 90(1). Hanover: U.S. Army Corps of Engineers, Cold Regions Research &amp;amp; Engineering Laboratory.</dcterms:bibliographicCitation>
+		<dc:source>CRREL Monograph, Vol. 90, No. 1</dc:source>
+		<dc:date>1990</dc:date>
+		<dc:type>ConferencePaper</dc:type>
+		<dc:format>text</dc:format>
+		<dc:subject>Export Test</dc:subject>
+		<dc:subject>Cite Test</dc:subject>
+		<dc:publisher>U.S. Army Corps of Engineers, Cold Regions Research &amp; Engineering Laboratory</dc:publisher>
+		<dc:language>English</dc:language>
+		<prism:publicationName>Sea ice properties and processes – Proceedings of the W.F. Weeks Sea Ice Symposium</prism:publicationName>
+		<prism:publicationDate>1990</prism:publicationDate>
+		<prism:startingPage>16</prism:startingPage>
+		<prism:endingPage>21</prism:endingPage>
+	</entry>
+	<entry>
+		<id>http://beta.refbase.net/show.php?record=10118</id>
+		<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Contact tracing/pre-employment screening for pulmonary tuberculosis: should positive Mantoux test necessitates routine chest X-ray?</div></title>
+		<updated>2011-05-11T17:47:43+02:00</updated>
+		<published>2011-05-11T17:47:43+02:00</published>
+		<link rel="alternate" type="text/html" title="View record in HTML format" href="http://beta.refbase.net/show.php?record=10118" />
+		<link rel="alternate" type="application/x-bibtex" title="Export record in BibTeX format" href="http://beta.refbase.net/show.php?record=10118&amp;exportType=file&amp;submit=Export&amp;exportFormat=BibTeX" />
+		<link rel="alternate" type="application/x-endnote-refer" title="Export record in Endnote format" href="http://beta.refbase.net/show.php?record=10118&amp;exportType=file&amp;submit=Export&amp;exportFormat=Endnote" />
+		<link rel="alternate" type="application/x-Research-Info-Systems" title="Export record in RIS format" href="http://beta.refbase.net/show.php?record=10118&amp;exportType=file&amp;submit=Export&amp;exportFormat=RIS" />
+		<link rel="alternate" type="application/atom+xml" title="Export record as Atom XML" href="http://beta.refbase.net/show.php?record=10118&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+		<link rel="alternate" type="application/xml" title="Export record as MODS XML" href="http://beta.refbase.net/show.php?record=10118&amp;exportType=xml&amp;submit=Export&amp;exportFormat=MODS%20XML" />
+		<link rel="alternate" type="application/vnd.oasis.opendocument.spreadsheet" title="Export record as ODF XML" href="http://beta.refbase.net/show.php?record=10118&amp;exportType=file&amp;submit=Export&amp;exportFormat=ODF%20XML" />
+		<link rel="alternate" type="application/rtf" title="Output record as citation in RTF format" href="http://beta.refbase.net/show.php?record=10118&amp;submit=Cite&amp;citeType=RTF" />
+		<link rel="alternate" type="application/pdf" title="Output record as citation in PDF format" href="http://beta.refbase.net/show.php?record=10118&amp;submit=Cite&amp;citeType=PDF" />
+		<link rel="alternate" type="application/x-latex" title="Output record as citation in LaTeX format" href="http://beta.refbase.net/show.php?record=10118&amp;submit=Cite&amp;citeType=LaTeX" />
+		<link rel="alternate" type="text/plain" title="Output record as citation in Markdown format" href="http://beta.refbase.net/show.php?record=10118&amp;submit=Cite&amp;citeType=Markdown" />
+		<link rel="related" type="text/html" title="Web page" href="http://www.ncbi.nlm.nih.gov/pubmed/20710107" />
+		<author>
+			<name>refbase User</name>
+		</author>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="unapi"><abbr class="unapi-id" title="http://beta.refbase.net/show.php?record=10118"></abbr></div>Adeyekun, A. A., Egbagbe, E. E., &amp; Oni, O. A. (2010). Contact tracing/pre-employment screening for pulmonary tuberculosis: should positive Mantoux test necessitates routine chest X-ray? <i>Ann Afr Med</i>, <i>9</i>(3), 159&#8211;163.</div></content>
+		<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">BACKGROUND: Pulmonary tuberculosis (PTB) remains a scourge in most developing countries. Mantoux skin test and more commonly chest radiography are some of the methods of diagnosing the disease, especially with regard to contact tracing and pre-employment screening. Regular use of radiography has both safety and cost implications. This study aimed at establishing if any justification exists in requesting for chest radiographs in asymptomatic subjects with a positive Mantoux skin test reaction. METHODS: 174 adults comprising PTB contacts and newly employed/admitted university staff/students were recruited into the study. They were 89 males (51.1%) and 85 females (48.9%). All subjects had Mantoux test (using purified protein derivative, PPD). Patients who had positive Mantoux reaction subsequently were subjected to posteroanterior chest radiographic examination. Mantoux test and chest radiographic findings were then correlated with each other. RESULTS: 102 subjects (59.2%) had positive Mantoux reactions, while 27 subjects (31.1%) had abnormal chest radiographs. There was no significant correlation between Mantoux readings and chest radiographic findings (P=0.106). CONCLUSION: It is concluded that other ancillary tests like sputum examination and/or, where available, Interferon and ESAT tests should be carried out before chest radiograph is requested in subjects with positive Mantoux reaction.</div></summary>
+		<dc:title>Contact tracing/pre-employment screening for pulmonary tuberculosis: should positive Mantoux test necessitates routine chest X-ray?</dc:title>
+		<dc:creator>Adeyekun, A.A.</dc:creator>
+		<dc:creator>Egbagbe, E.E.</dc:creator>
+		<dc:creator>Oni, O.A.</dc:creator>
+		<dc:identifier>info:doi/10.4103/1596-3519.68364</dc:identifier>
+		<dc:identifier>info:pmid/20710107</dc:identifier>
+		<dc:identifier>openurl:?ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fbeta.refbase.net%2F&amp;genre=article&amp;atitle=Contact%20tracing%2Fpre-employment%20screening%20for%20pulmonary%20tuberculosis%3A%20should%20positive%20Mantoux%20test%20necessitates%20routine%20chest%20X-ray%3F&amp;title=Annals%20of%20African%20Medicine&amp;stitle=Ann%20Afr%20Med&amp;issn=0975-5764&amp;date=2010&amp;volume=9&amp;issue=3&amp;spage=159&amp;epage=163&amp;aulast=Adeyekun&amp;aufirst=A.A.&amp;au=Egbagbe%2C%20E.E.&amp;au=Oni%2C%20O.A.&amp;id=info%3Adoi%2F10.4103%2F1596-3519.68364&amp;sid=refbase%3Arefbase</dc:identifier>
+		<dc:identifier>citekey:Adeyekun_etal2010</dc:identifier>
+		<dcterms:bibliographicCitation>Adeyekun, A. A., Egbagbe, E. E., &amp; Oni, O. A. (2010). Contact tracing/pre-employment screening for pulmonary tuberculosis: should positive Mantoux test necessitates routine chest X-ray? Ann Afr Med, 9(3), 159-163.</dcterms:bibliographicCitation>
+		<dc:date>2010</dc:date>
+		<dc:type>JournalArticle</dc:type>
+		<dc:format>text</dc:format>
+		<dc:subject>Adolescent</dc:subject>
+		<dc:subject>Adult</dc:subject>
+		<dc:subject>Age Distribution</dc:subject>
+		<dc:subject>Aged</dc:subject>
+		<dc:subject>Aged, 80 and over</dc:subject>
+		<dc:subject>Child</dc:subject>
+		<dc:subject>Contact Tracing/*methods</dc:subject>
+		<dc:subject>*Employment</dc:subject>
+		<dc:subject>Female</dc:subject>
+		<dc:subject>Humans</dc:subject>
+		<dc:subject>Male</dc:subject>
+		<dc:subject>*Mass Chest X-Ray</dc:subject>
+		<dc:subject>Middle Aged</dc:subject>
+		<dc:subject>Nigeria</dc:subject>
+		<dc:subject>Personnel Selection</dc:subject>
+		<dc:subject>*Tuberculin Test</dc:subject>
+		<dc:subject>Tuberculosis, Pulmonary/*diagnosis</dc:subject>
+		<dc:subject>Young Adult</dc:subject>
+		<dc:relation>url:http://www.ncbi.nlm.nih.gov/pubmed/20710107</dc:relation>
+		<dc:language>English</dc:language>
+		<prism:issn>0975-5764</prism:issn>
+		<prism:publicationName>Annals of African Medicine</prism:publicationName>
+		<prism:publicationDate>2010</prism:publicationDate>
+		<prism:volume>9</prism:volume>
+		<prism:number>3</prism:number>
+		<prism:startingPage>159</prism:startingPage>
+		<prism:endingPage>163</prism:endingPage>
+	</entry>
+	<entry>
+		<id>http://beta.refbase.net/show.php?record=10792</id>
+		<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Contact tracing/pre-employment screening for pulmonary tuberculosis: should positive Mantoux test necessitates routine chest X-ray?</div></title>
+		<updated>2011-05-11T17:48:31+02:00</updated>
+		<published>2011-05-11T17:48:31+02:00</published>
+		<link rel="alternate" type="text/html" title="View record in HTML format" href="http://beta.refbase.net/show.php?record=10792" />
+		<link rel="alternate" type="application/x-bibtex" title="Export record in BibTeX format" href="http://beta.refbase.net/show.php?record=10792&amp;exportType=file&amp;submit=Export&amp;exportFormat=BibTeX" />
+		<link rel="alternate" type="application/x-endnote-refer" title="Export record in Endnote format" href="http://beta.refbase.net/show.php?record=10792&amp;exportType=file&amp;submit=Export&amp;exportFormat=Endnote" />
+		<link rel="alternate" type="application/x-Research-Info-Systems" title="Export record in RIS format" href="http://beta.refbase.net/show.php?record=10792&amp;exportType=file&amp;submit=Export&amp;exportFormat=RIS" />
+		<link rel="alternate" type="application/atom+xml" title="Export record as Atom XML" href="http://beta.refbase.net/show.php?record=10792&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+		<link rel="alternate" type="application/xml" title="Export record as MODS XML" href="http://beta.refbase.net/show.php?record=10792&amp;exportType=xml&amp;submit=Export&amp;exportFormat=MODS%20XML" />
+		<link rel="alternate" type="application/vnd.oasis.opendocument.spreadsheet" title="Export record as ODF XML" href="http://beta.refbase.net/show.php?record=10792&amp;exportType=file&amp;submit=Export&amp;exportFormat=ODF%20XML" />
+		<link rel="alternate" type="application/rtf" title="Output record as citation in RTF format" href="http://beta.refbase.net/show.php?record=10792&amp;submit=Cite&amp;citeType=RTF" />
+		<link rel="alternate" type="application/pdf" title="Output record as citation in PDF format" href="http://beta.refbase.net/show.php?record=10792&amp;submit=Cite&amp;citeType=PDF" />
+		<link rel="alternate" type="application/x-latex" title="Output record as citation in LaTeX format" href="http://beta.refbase.net/show.php?record=10792&amp;submit=Cite&amp;citeType=LaTeX" />
+		<link rel="alternate" type="text/plain" title="Output record as citation in Markdown format" href="http://beta.refbase.net/show.php?record=10792&amp;submit=Cite&amp;citeType=Markdown" />
+		<link rel="related" type="text/html" title="Web page" href="http://www.ncbi.nlm.nih.gov/pubmed/20710107" />
+		<author>
+			<name>refbase User</name>
+		</author>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="unapi"><abbr class="unapi-id" title="http://beta.refbase.net/show.php?record=10792"></abbr></div>Adeyekun, A. A., Egbagbe, E. E., &amp; Oni, O. A. (2010). Contact tracing/pre-employment screening for pulmonary tuberculosis: should positive Mantoux test necessitates routine chest X-ray? <i>Ann Afr Med</i>, <i>9</i>(3), 159&#8211;163.</div></content>
+		<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">BACKGROUND: Pulmonary tuberculosis (PTB) remains a scourge in most developing countries. Mantoux skin test and more commonly chest radiography are some of the methods of diagnosing the disease, especially with regard to contact tracing and pre-employment screening. Regular use of radiography has both safety and cost implications. This study aimed at establishing if any justification exists in requesting for chest radiographs in asymptomatic subjects with a positive Mantoux skin test reaction. METHODS: 174 adults comprising PTB contacts and newly employed/admitted university staff/students were recruited into the study. They were 89 males (51.1%) and 85 females (48.9%). All subjects had Mantoux test (using purified protein derivative, PPD). Patients who had positive Mantoux reaction subsequently were subjected to posteroanterior chest radiographic examination. Mantoux test and chest radiographic findings were then correlated with each other. RESULTS: 102 subjects (59.2%) had positive Mantoux reactions, while 27 subjects (31.1%) had abnormal chest radiographs. There was no significant correlation between Mantoux readings and chest radiographic findings (P=0.106). CONCLUSION: It is concluded that other ancillary tests like sputum examination and/or, where available, Interferon and ESAT tests should be carried out before chest radiograph is requested in subjects with positive Mantoux reaction.</div></summary>
+		<dc:title>Contact tracing/pre-employment screening for pulmonary tuberculosis: should positive Mantoux test necessitates routine chest X-ray?</dc:title>
+		<dc:creator>Adeyekun, A.A.</dc:creator>
+		<dc:creator>Egbagbe, E.E.</dc:creator>
+		<dc:creator>Oni, O.A.</dc:creator>
+		<dc:identifier>info:doi/10.4103/1596-3519.68364</dc:identifier>
+		<dc:identifier>info:pmid/20710107</dc:identifier>
+		<dc:identifier>openurl:?ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fbeta.refbase.net%2F&amp;genre=article&amp;atitle=Contact%20tracing%2Fpre-employment%20screening%20for%20pulmonary%20tuberculosis%3A%20should%20positive%20Mantoux%20test%20necessitates%20routine%20chest%20X-ray%3F&amp;title=Annals%20of%20African%20Medicine&amp;stitle=Ann%20Afr%20Med&amp;issn=0975-5764&amp;date=2010&amp;volume=9&amp;issue=3&amp;spage=159&amp;epage=163&amp;aulast=Adeyekun&amp;aufirst=A.A.&amp;au=Egbagbe%2C%20E.E.&amp;au=Oni%2C%20O.A.&amp;id=info%3Adoi%2F10.4103%2F1596-3519.68364&amp;sid=refbase%3Arefbase</dc:identifier>
+		<dc:identifier>citekey:Adeyekun_etal2010_2</dc:identifier>
+		<dcterms:bibliographicCitation>Adeyekun, A. A., Egbagbe, E. E., &amp; Oni, O. A. (2010). Contact tracing/pre-employment screening for pulmonary tuberculosis: should positive Mantoux test necessitates routine chest X-ray? Ann Afr Med, 9(3), 159-163.</dcterms:bibliographicCitation>
+		<dc:date>2010</dc:date>
+		<dc:type>JournalArticle</dc:type>
+		<dc:format>text</dc:format>
+		<dc:subject>Adolescent</dc:subject>
+		<dc:subject>Adult</dc:subject>
+		<dc:subject>Age Distribution</dc:subject>
+		<dc:subject>Aged</dc:subject>
+		<dc:subject>Aged, 80 and over</dc:subject>
+		<dc:subject>Child</dc:subject>
+		<dc:subject>Contact Tracing/*methods</dc:subject>
+		<dc:subject>*Employment</dc:subject>
+		<dc:subject>Female</dc:subject>
+		<dc:subject>Humans</dc:subject>
+		<dc:subject>Male</dc:subject>
+		<dc:subject>*Mass Chest X-Ray</dc:subject>
+		<dc:subject>Middle Aged</dc:subject>
+		<dc:subject>Nigeria</dc:subject>
+		<dc:subject>Personnel Selection</dc:subject>
+		<dc:subject>*Tuberculin Test</dc:subject>
+		<dc:subject>Tuberculosis, Pulmonary/*diagnosis</dc:subject>
+		<dc:subject>Young Adult</dc:subject>
+		<dc:relation>url:http://www.ncbi.nlm.nih.gov/pubmed/20710107</dc:relation>
+		<dc:language>English</dc:language>
+		<prism:issn>0975-5764</prism:issn>
+		<prism:publicationName>Annals of African Medicine</prism:publicationName>
+		<prism:publicationDate>2010</prism:publicationDate>
+		<prism:volume>9</prism:volume>
+		<prism:number>3</prism:number>
+		<prism:startingPage>159</prism:startingPage>
+		<prism:endingPage>163</prism:endingPage>
+	</entry>
+	<entry>
+		<id>http://beta.refbase.net/show.php?record=10432</id>
+		<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">[Analysis of the diagnostic criteria used in childhood tuberculosis in a Cote d'Ivoire hospital]</div></title>
+		<updated>2011-05-11T17:47:43+02:00</updated>
+		<published>2011-05-11T17:47:43+02:00</published>
+		<link rel="alternate" type="text/html" title="View record in HTML format" href="http://beta.refbase.net/show.php?record=10432" />
+		<link rel="alternate" type="application/x-bibtex" title="Export record in BibTeX format" href="http://beta.refbase.net/show.php?record=10432&amp;exportType=file&amp;submit=Export&amp;exportFormat=BibTeX" />
+		<link rel="alternate" type="application/x-endnote-refer" title="Export record in Endnote format" href="http://beta.refbase.net/show.php?record=10432&amp;exportType=file&amp;submit=Export&amp;exportFormat=Endnote" />
+		<link rel="alternate" type="application/x-Research-Info-Systems" title="Export record in RIS format" href="http://beta.refbase.net/show.php?record=10432&amp;exportType=file&amp;submit=Export&amp;exportFormat=RIS" />
+		<link rel="alternate" type="application/atom+xml" title="Export record as Atom XML" href="http://beta.refbase.net/show.php?record=10432&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+		<link rel="alternate" type="application/xml" title="Export record as MODS XML" href="http://beta.refbase.net/show.php?record=10432&amp;exportType=xml&amp;submit=Export&amp;exportFormat=MODS%20XML" />
+		<link rel="alternate" type="application/vnd.oasis.opendocument.spreadsheet" title="Export record as ODF XML" href="http://beta.refbase.net/show.php?record=10432&amp;exportType=file&amp;submit=Export&amp;exportFormat=ODF%20XML" />
+		<link rel="alternate" type="application/rtf" title="Output record as citation in RTF format" href="http://beta.refbase.net/show.php?record=10432&amp;submit=Cite&amp;citeType=RTF" />
+		<link rel="alternate" type="application/pdf" title="Output record as citation in PDF format" href="http://beta.refbase.net/show.php?record=10432&amp;submit=Cite&amp;citeType=PDF" />
+		<link rel="alternate" type="application/x-latex" title="Output record as citation in LaTeX format" href="http://beta.refbase.net/show.php?record=10432&amp;submit=Cite&amp;citeType=LaTeX" />
+		<link rel="alternate" type="text/plain" title="Output record as citation in Markdown format" href="http://beta.refbase.net/show.php?record=10432&amp;submit=Cite&amp;citeType=Markdown" />
+		<link rel="related" type="text/html" title="Web page" href="http://www.ncbi.nlm.nih.gov/pubmed/15255358" />
+		<author>
+			<name>refbase User</name>
+		</author>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="unapi"><abbr class="unapi-id" title="http://beta.refbase.net/show.php?record=10432"></abbr></div>Adonis-Koffy, L., Kouassi, F., &amp; Timite-Konan, A. M. (2004). [Analysis of the diagnostic criteria used in childhood tuberculosis in a Cote d'Ivoire hospital]. <i>Bull Soc Pathol Exot</i>, <i>97</i>(2), 127&#8211;128.</div></content>
+		<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Based on a retrospective study the authors analyzed the diagnostic criteria used in pediatric department in Yopougon CHU (teaching hospital), from January 1996 to December 2002. Fifty children, aged of 1 month to 15 years, have been studied. The tuberculosis contact was found in 18%. The diagnosis of tuberculosis was accurate in 32% and it was based on presumptive arguments in 68%. The pulmonary examination and pulmonary radiographs seem to be good criteria for the tuberculosis diagnosis. The pulmonary examination found an abnormality in 96%, and the radiographs found a pathological picture in 85% of cases. The skin test was positive in 42%. The Ziehl-Neelsen coloration was used to look for the acid-fast bacilli and it was positive in 41%. But the two last examinations were not reliable in the case of HIV infection. The skin test which is very important for the diagnosis of tuberculosis is often negative among HIV infected children because of their anergy. On the other hand, the Ziehl-Neelsen coloration is based on the recognition of the acid-fast bacillus, which is not specific of the Mycobacterium tuberculosis. In our area the prevalence of HIV/AIDS is high, the atypical pneumonia with Mycobacterium were also frequent and may reveal a wrong positive diagnosis for the tuberculosis diagnosis, as they are also acid-fast bacillus.</div></summary>
+		<dc:title>[Analysis of the diagnostic criteria used in childhood tuberculosis in a Cote d'Ivoire hospital]</dc:title>
+		<dc:creator>Adonis-Koffy, L.</dc:creator>
+		<dc:creator>Kouassi, F.</dc:creator>
+		<dc:creator>Timite-Konan, A.M.</dc:creator>
+		<dc:identifier>info:pmid/15255358</dc:identifier>
+		<dc:identifier>openurl:?ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fbeta.refbase.net%2F&amp;genre=article&amp;atitle=%5BAnalysis%20of%20the%20diagnostic%20criteria%20used%20in%20childhood%20tuberculosis%20in%20a%20Cote%20d%27Ivoire%20hospital%5D&amp;title=Bulletin%20de%20la%20Societe%20de%20Pathologie%20Exotique%20%281990%29&amp;stitle=Bull%20Soc%20Pathol%20Exot&amp;issn=0037-9085&amp;date=2004&amp;volume=97&amp;issue=2&amp;spage=127&amp;epage=128&amp;aulast=Adonis-Koffy&amp;aufirst=L.&amp;au=Kouassi%2C%20F.&amp;au=Timite-Konan%2C%20A.M.&amp;id=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpubmed%2F15255358&amp;sid=refbase%3Arefbase</dc:identifier>
+		<dc:identifier>citekey:Adonis-Koffy_etal2004</dc:identifier>
+		<dcterms:bibliographicCitation>Adonis-Koffy, L., Kouassi, F., &amp; Timite-Konan, A. M. (2004). [Analysis of the diagnostic criteria used in childhood tuberculosis in a Cote d'Ivoire hospital]. Bull Soc Pathol Exot, 97(2), 127-128.</dcterms:bibliographicCitation>
+		<dc:date>2004</dc:date>
+		<dc:type>JournalArticle</dc:type>
+		<dc:format>text</dc:format>
+		<dc:subject>Bacteriological Techniques/standards/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Biopsy/standards/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Child</dc:subject>
+		<dc:subject>Child, Preschool</dc:subject>
+		<dc:subject>Contact Tracing/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Cote d'Ivoire/epidemiology</dc:subject>
+		<dc:subject>Developing Countries</dc:subject>
+		<dc:subject>False Negative Reactions</dc:subject>
+		<dc:subject>False Positive Reactions</dc:subject>
+		<dc:subject>Gastric Juice/microbiology</dc:subject>
+		<dc:subject>HIV Seroprevalence</dc:subject>
+		<dc:subject>Hospitals, University</dc:subject>
+		<dc:subject>Humans</dc:subject>
+		<dc:subject>Infant</dc:subject>
+		<dc:subject>Laparoscopy/standards/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Radiography, Thoracic/standards</dc:subject>
+		<dc:subject>Retrospective Studies</dc:subject>
+		<dc:subject>Sensitivity and Specificity</dc:subject>
+		<dc:subject>Sputum/microbiology</dc:subject>
+		<dc:subject>Tuberculin Test/standards/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Tuberculosis/*diagnosis/epidemiology/microbiology/transmission</dc:subject>
+		<dc:subject>Ultrasonography/standards/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Urban Health/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:relation>url:http://www.ncbi.nlm.nih.gov/pubmed/15255358</dc:relation>
+		<dc:language>French</dc:language>
+		<prism:issn>0037-9085</prism:issn>
+		<prism:publicationName>Bulletin de la Societe de Pathologie Exotique (1990)</prism:publicationName>
+		<prism:publicationDate>2004</prism:publicationDate>
+		<prism:volume>97</prism:volume>
+		<prism:number>2</prism:number>
+		<prism:startingPage>127</prism:startingPage>
+		<prism:endingPage>128</prism:endingPage>
+	</entry>
+	<entry>
+		<id>http://beta.refbase.net/show.php?record=11106</id>
+		<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">[Analysis of the diagnostic criteria used in childhood tuberculosis in a Cote d'Ivoire hospital]</div></title>
+		<updated>2011-05-11T17:48:31+02:00</updated>
+		<published>2011-05-11T17:48:31+02:00</published>
+		<link rel="alternate" type="text/html" title="View record in HTML format" href="http://beta.refbase.net/show.php?record=11106" />
+		<link rel="alternate" type="application/x-bibtex" title="Export record in BibTeX format" href="http://beta.refbase.net/show.php?record=11106&amp;exportType=file&amp;submit=Export&amp;exportFormat=BibTeX" />
+		<link rel="alternate" type="application/x-endnote-refer" title="Export record in Endnote format" href="http://beta.refbase.net/show.php?record=11106&amp;exportType=file&amp;submit=Export&amp;exportFormat=Endnote" />
+		<link rel="alternate" type="application/x-Research-Info-Systems" title="Export record in RIS format" href="http://beta.refbase.net/show.php?record=11106&amp;exportType=file&amp;submit=Export&amp;exportFormat=RIS" />
+		<link rel="alternate" type="application/atom+xml" title="Export record as Atom XML" href="http://beta.refbase.net/show.php?record=11106&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+		<link rel="alternate" type="application/xml" title="Export record as MODS XML" href="http://beta.refbase.net/show.php?record=11106&amp;exportType=xml&amp;submit=Export&amp;exportFormat=MODS%20XML" />
+		<link rel="alternate" type="application/vnd.oasis.opendocument.spreadsheet" title="Export record as ODF XML" href="http://beta.refbase.net/show.php?record=11106&amp;exportType=file&amp;submit=Export&amp;exportFormat=ODF%20XML" />
+		<link rel="alternate" type="application/rtf" title="Output record as citation in RTF format" href="http://beta.refbase.net/show.php?record=11106&amp;submit=Cite&amp;citeType=RTF" />
+		<link rel="alternate" type="application/pdf" title="Output record as citation in PDF format" href="http://beta.refbase.net/show.php?record=11106&amp;submit=Cite&amp;citeType=PDF" />
+		<link rel="alternate" type="application/x-latex" title="Output record as citation in LaTeX format" href="http://beta.refbase.net/show.php?record=11106&amp;submit=Cite&amp;citeType=LaTeX" />
+		<link rel="alternate" type="text/plain" title="Output record as citation in Markdown format" href="http://beta.refbase.net/show.php?record=11106&amp;submit=Cite&amp;citeType=Markdown" />
+		<link rel="related" type="text/html" title="Web page" href="http://www.ncbi.nlm.nih.gov/pubmed/15255358" />
+		<author>
+			<name>refbase User</name>
+		</author>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="unapi"><abbr class="unapi-id" title="http://beta.refbase.net/show.php?record=11106"></abbr></div>Adonis-Koffy, L., Kouassi, F., &amp; Timite-Konan, A. M. (2004). [Analysis of the diagnostic criteria used in childhood tuberculosis in a Cote d'Ivoire hospital]. <i>Bull Soc Pathol Exot</i>, <i>97</i>(2), 127&#8211;128.</div></content>
+		<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Based on a retrospective study the authors analyzed the diagnostic criteria used in pediatric department in Yopougon CHU (teaching hospital), from January 1996 to December 2002. Fifty children, aged of 1 month to 15 years, have been studied. The tuberculosis contact was found in 18%. The diagnosis of tuberculosis was accurate in 32% and it was based on presumptive arguments in 68%. The pulmonary examination and pulmonary radiographs seem to be good criteria for the tuberculosis diagnosis. The pulmonary examination found an abnormality in 96%, and the radiographs found a pathological picture in 85% of cases. The skin test was positive in 42%. The Ziehl-Neelsen coloration was used to look for the acid-fast bacilli and it was positive in 41%. But the two last examinations were not reliable in the case of HIV infection. The skin test which is very important for the diagnosis of tuberculosis is often negative among HIV infected children because of their anergy. On the other hand, the Ziehl-Neelsen coloration is based on the recognition of the acid-fast bacillus, which is not specific of the Mycobacterium tuberculosis. In our area the prevalence of HIV/AIDS is high, the atypical pneumonia with Mycobacterium were also frequent and may reveal a wrong positive diagnosis for the tuberculosis diagnosis, as they are also acid-fast bacillus.</div></summary>
+		<dc:title>[Analysis of the diagnostic criteria used in childhood tuberculosis in a Cote d'Ivoire hospital]</dc:title>
+		<dc:creator>Adonis-Koffy, L.</dc:creator>
+		<dc:creator>Kouassi, F.</dc:creator>
+		<dc:creator>Timite-Konan, A.M.</dc:creator>
+		<dc:identifier>info:pmid/15255358</dc:identifier>
+		<dc:identifier>openurl:?ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fbeta.refbase.net%2F&amp;genre=article&amp;atitle=%5BAnalysis%20of%20the%20diagnostic%20criteria%20used%20in%20childhood%20tuberculosis%20in%20a%20Cote%20d%27Ivoire%20hospital%5D&amp;title=Bulletin%20de%20la%20Societe%20de%20Pathologie%20Exotique%20%281990%29&amp;stitle=Bull%20Soc%20Pathol%20Exot&amp;issn=0037-9085&amp;date=2004&amp;volume=97&amp;issue=2&amp;spage=127&amp;epage=128&amp;aulast=Adonis-Koffy&amp;aufirst=L.&amp;au=Kouassi%2C%20F.&amp;au=Timite-Konan%2C%20A.M.&amp;id=http%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpubmed%2F15255358&amp;sid=refbase%3Arefbase</dc:identifier>
+		<dc:identifier>citekey:Adonis-Koffy_etal2004_2</dc:identifier>
+		<dcterms:bibliographicCitation>Adonis-Koffy, L., Kouassi, F., &amp; Timite-Konan, A. M. (2004). [Analysis of the diagnostic criteria used in childhood tuberculosis in a Cote d'Ivoire hospital]. Bull Soc Pathol Exot, 97(2), 127-128.</dcterms:bibliographicCitation>
+		<dc:date>2004</dc:date>
+		<dc:type>JournalArticle</dc:type>
+		<dc:format>text</dc:format>
+		<dc:subject>Bacteriological Techniques/standards/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Biopsy/standards/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Child</dc:subject>
+		<dc:subject>Child, Preschool</dc:subject>
+		<dc:subject>Contact Tracing/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Cote d'Ivoire/epidemiology</dc:subject>
+		<dc:subject>Developing Countries</dc:subject>
+		<dc:subject>False Negative Reactions</dc:subject>
+		<dc:subject>False Positive Reactions</dc:subject>
+		<dc:subject>Gastric Juice/microbiology</dc:subject>
+		<dc:subject>HIV Seroprevalence</dc:subject>
+		<dc:subject>Hospitals, University</dc:subject>
+		<dc:subject>Humans</dc:subject>
+		<dc:subject>Infant</dc:subject>
+		<dc:subject>Laparoscopy/standards/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Radiography, Thoracic/standards</dc:subject>
+		<dc:subject>Retrospective Studies</dc:subject>
+		<dc:subject>Sensitivity and Specificity</dc:subject>
+		<dc:subject>Sputum/microbiology</dc:subject>
+		<dc:subject>Tuberculin Test/standards/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Tuberculosis/*diagnosis/epidemiology/microbiology/transmission</dc:subject>
+		<dc:subject>Ultrasonography/standards/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:subject>Urban Health/statistics &amp</dc:subject>
+		<dc:subject>numerical data</dc:subject>
+		<dc:relation>url:http://www.ncbi.nlm.nih.gov/pubmed/15255358</dc:relation>
+		<dc:language>French</dc:language>
+		<prism:issn>0037-9085</prism:issn>
+		<prism:publicationName>Bulletin de la Societe de Pathologie Exotique (1990)</prism:publicationName>
+		<prism:publicationDate>2004</prism:publicationDate>
+		<prism:volume>97</prism:volume>
+		<prism:number>2</prism:number>
+		<prism:startingPage>127</prism:startingPage>
+		<prism:endingPage>128</prism:endingPage>
+	</entry>
+	<entry>
+		<id>http://beta.refbase.net/show.php?record=6572</id>
+		<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Psychophysical Test for the Independence of Perception and Action</div></title>
+		<updated>2009-03-24T16:02:19+01:00</updated>
+		<published>2009-03-24T16:02:19+01:00</published>
+		<link rel="alternate" type="text/html" title="View record in HTML format" href="http://beta.refbase.net/show.php?record=6572" />
+		<link rel="alternate" type="application/x-bibtex" title="Export record in BibTeX format" href="http://beta.refbase.net/show.php?record=6572&amp;exportType=file&amp;submit=Export&amp;exportFormat=BibTeX" />
+		<link rel="alternate" type="application/x-endnote-refer" title="Export record in Endnote format" href="http://beta.refbase.net/show.php?record=6572&amp;exportType=file&amp;submit=Export&amp;exportFormat=Endnote" />
+		<link rel="alternate" type="application/x-Research-Info-Systems" title="Export record in RIS format" href="http://beta.refbase.net/show.php?record=6572&amp;exportType=file&amp;submit=Export&amp;exportFormat=RIS" />
+		<link rel="alternate" type="application/atom+xml" title="Export record as Atom XML" href="http://beta.refbase.net/show.php?record=6572&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+		<link rel="alternate" type="application/xml" title="Export record as MODS XML" href="http://beta.refbase.net/show.php?record=6572&amp;exportType=xml&amp;submit=Export&amp;exportFormat=MODS%20XML" />
+		<link rel="alternate" type="application/vnd.oasis.opendocument.spreadsheet" title="Export record as ODF XML" href="http://beta.refbase.net/show.php?record=6572&amp;exportType=file&amp;submit=Export&amp;exportFormat=ODF%20XML" />
+		<link rel="alternate" type="application/rtf" title="Output record as citation in RTF format" href="http://beta.refbase.net/show.php?record=6572&amp;submit=Cite&amp;citeType=RTF" />
+		<link rel="alternate" type="application/pdf" title="Output record as citation in PDF format" href="http://beta.refbase.net/show.php?record=6572&amp;submit=Cite&amp;citeType=PDF" />
+		<link rel="alternate" type="application/x-latex" title="Output record as citation in LaTeX format" href="http://beta.refbase.net/show.php?record=6572&amp;submit=Cite&amp;citeType=LaTeX" />
+		<link rel="alternate" type="text/plain" title="Output record as citation in Markdown format" href="http://beta.refbase.net/show.php?record=6572&amp;submit=Cite&amp;citeType=Markdown" />
+		<link rel="related" type="text/html" title="Web page" href="http://www.apa.org" />
+		<author>
+			<name>refbase User</name>
+		</author>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="unapi"><abbr class="unapi-id" title="http://beta.refbase.net/show.php?record=6572"></abbr></div>Amazeen, E. L., &amp; DaSilva, F. (2005). Psychophysical Test for the Independence of Perception and Action. <i>Journal of Experimental Psychology: Human Perception &amp; Performance</i>, <i>31</i>(1), 170.</div></content>
+		<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Research has suggested that perception and action are independent (see M. A. Goodale &amp; A. Haffenden, 1998). The authors used the Ebbinghaus illusion to test this hypothesis in 2 experiments. Verbal reports of perceived size were compared with maximum grip aperture during grasping (Experiment 1) and manual reports of perceived size (Experiment 2). A multidimensional signal detection analysis was used to distinguish among the possible interactions between the two processes in each experiment (H. Kadlec &amp; J. T. Townsend, 1992a, 1992b). In Experiment 1, the percepts were independent, and there were no interactions between processes for verbal and visuomotor responses. In Experiment 2, the percepts associated with verbal and manual reports were independent, but the processes interacted at the levels of the stimulus information and the decision rules used to transform each percept into a response. (PsycINFO Database Record (c) 2005 APA, all rights reserved) (journal abstract)</div></summary>
+		<dc:title>Psychophysical Test for the Independence of Perception and Action</dc:title>
+		<dc:creator>Amazeen, E.L.</dc:creator>
+		<dc:creator>DaSilva, F.</dc:creator>
+		<dc:identifier>openurl:?ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fbeta.refbase.net%2F&amp;genre=article&amp;atitle=Psychophysical%20Test%20for%20the%20Independence%20of%20Perception%20and%20Action&amp;title=Journal%20of%20Experimental%20Psychology%3A%20Human%20Perception%20%26%20Performance&amp;date=2005&amp;volume=31&amp;issue=1&amp;spage=170&amp;aulast=Amazeen&amp;aufirst=E.L.&amp;au=DaSilva%2C%20F.&amp;pub=American%20Psychological%20Assn&amp;place=Amazeen%2C%20Eric%20L.%2C%20Department%20of%20Psychology%2C%20Arizona%20State%20University%2C%20P.O.%20Box%20871104%2C%20Tempe%2C%20AZ%2C%20US&amp;id=http%3A%2F%2Fwww.apa.org&amp;sid=refbase%3Arefbase</dc:identifier>
+		<dc:identifier>citekey:Amazeen+DaSilva2005</dc:identifier>
+		<dcterms:bibliographicCitation>Amazeen, E. L., &amp; DaSilva, F. (2005). Psychophysical Test for the Independence of Perception and Action. Journal of Experimental Psychology: Human Perception &amp;amp; Performance, 31(1), 170.</dcterms:bibliographicCitation>
+		<dc:date>2005</dc:date>
+		<dc:type>JournalArticle</dc:type>
+		<dc:format>text</dc:format>
+		<dc:subject>psychophysical test</dc:subject>
+		<dc:subject>perception</dc:subject>
+		<dc:subject>action</dc:subject>
+		<dc:subject>perceived size</dc:subject>
+		<dc:subject>grip aperture</dc:subject>
+		<dc:subject>grasping</dc:subject>
+		<dc:subject>Ebbinghaus illusion</dc:subject>
+		<dc:subject>Illusions (Perception)</dc:subject>
+		<dc:subject>Motor Processes</dc:subject>
+		<dc:subject>Psychophysical Measurement</dc:subject>
+		<dc:subject>Visual Perception</dc:subject>
+		<dc:relation>url:http://www.apa.org</dc:relation>
+		<dc:publisher>American Psychological Assn</dc:publisher>
+		<prism:publicationName>Journal of Experimental Psychology: Human Perception &amp; Performance</prism:publicationName>
+		<prism:publicationDate>2005</prism:publicationDate>
+		<prism:volume>31</prism:volume>
+		<prism:number>1</prism:number>
+		<prism:endingPage>170</prism:endingPage>
+	</entry>
+	<entry>
+		<id>http://beta.refbase.net/show.php?record=6503</id>
+		<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Die Skala Motivation zu vorurteilsfreiem Verhalten: Psychometrische Eigenschaften und Validität</div></title>
+		<updated>2009-03-24T16:02:19+01:00</updated>
+		<published>2009-03-24T16:02:19+01:00</published>
+		<link rel="alternate" type="text/html" title="View record in HTML format" href="http://beta.refbase.net/show.php?record=6503" />
+		<link rel="alternate" type="application/x-bibtex" title="Export record in BibTeX format" href="http://beta.refbase.net/show.php?record=6503&amp;exportType=file&amp;submit=Export&amp;exportFormat=BibTeX" />
+		<link rel="alternate" type="application/x-endnote-refer" title="Export record in Endnote format" href="http://beta.refbase.net/show.php?record=6503&amp;exportType=file&amp;submit=Export&amp;exportFormat=Endnote" />
+		<link rel="alternate" type="application/x-Research-Info-Systems" title="Export record in RIS format" href="http://beta.refbase.net/show.php?record=6503&amp;exportType=file&amp;submit=Export&amp;exportFormat=RIS" />
+		<link rel="alternate" type="application/atom+xml" title="Export record as Atom XML" href="http://beta.refbase.net/show.php?record=6503&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+		<link rel="alternate" type="application/xml" title="Export record as MODS XML" href="http://beta.refbase.net/show.php?record=6503&amp;exportType=xml&amp;submit=Export&amp;exportFormat=MODS%20XML" />
+		<link rel="alternate" type="application/vnd.oasis.opendocument.spreadsheet" title="Export record as ODF XML" href="http://beta.refbase.net/show.php?record=6503&amp;exportType=file&amp;submit=Export&amp;exportFormat=ODF%20XML" />
+		<link rel="alternate" type="application/rtf" title="Output record as citation in RTF format" href="http://beta.refbase.net/show.php?record=6503&amp;submit=Cite&amp;citeType=RTF" />
+		<link rel="alternate" type="application/pdf" title="Output record as citation in PDF format" href="http://beta.refbase.net/show.php?record=6503&amp;submit=Cite&amp;citeType=PDF" />
+		<link rel="alternate" type="application/x-latex" title="Output record as citation in LaTeX format" href="http://beta.refbase.net/show.php?record=6503&amp;submit=Cite&amp;citeType=LaTeX" />
+		<link rel="alternate" type="text/plain" title="Output record as citation in Markdown format" href="http://beta.refbase.net/show.php?record=6503&amp;submit=Cite&amp;citeType=Markdown" />
+		<link rel="related" type="text/html" title="Web page" href="http://www.hhpub.com" />
+		<author>
+			<name>refbase User</name>
+		</author>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="unapi"><abbr class="unapi-id" title="http://beta.refbase.net/show.php?record=6503"></abbr></div>Banse, R., &amp; Gawronski, B. (2003). Die Skala Motivation zu vorurteilsfreiem Verhalten: Psychometrische Eigenschaften und Validität. <i>Diagnostica</i>, <i>49</i>(1), 4.</div></content>
+		<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">A German scale to measure the motivation to act without prejudice toward discriminated minorities is presented that is conceptually similar to Dunton and Fazio's (1997) Motivation to Control Prejudiced Reactions Scale. The one-factorial scale shows sufficient internal consistency (Î± = .81) and retest-reliability ( r = .74). Negative correlations with two racism scales corroborate its construct validity, and low correlations with two social desirability scales and a moderate correlation with an agreeableness scale corroborate its discriminant validity. Results from an additional study indicate that the scale is not only negatively correlated with discriminating attitudes toward minorities, but also with sexist attitudes. The construct validity of the scale is further supported by the finding that the motivation to act without prejudice moderated the relation between explicitly and implicitly assessed attitudes and stereotypes. (PsycINFO Database Record (c) 2004 APA, all rights reserved) (journal abstract)</div></summary>
+		<dc:title>Die Skala Motivation zu vorurteilsfreiem Verhalten: Psychometrische Eigenschaften und Validität</dc:title>
+		<dc:creator>Banse, R.</dc:creator>
+		<dc:creator>Gawronski, B.</dc:creator>
+		<dc:identifier>openurl:?ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fbeta.refbase.net%2F&amp;genre=article&amp;atitle=Die%20Skala%20Motivation%20zu%20vorurteilsfreiem%20Verhalten%3A%20Psychometrische%20Eigenschaften%20und%20Validit%E4t&amp;title=Diagnostica&amp;stitle=Diagnostica&amp;date=2003&amp;volume=49&amp;issue=1&amp;spage=4&amp;aulast=Banse&amp;aufirst=R.&amp;au=Gawronski%2C%20B.&amp;pub=Hogrefe%20%26%20Huber&amp;place=Banse%2C%20Rainer%2C%20Humboldt-Universitat%20zu%20Berlin%2C%20Institut%20fur%20Psychologie%2C%20Oranienburger%20Str.%2018%2C%201017&amp;id=http%3A%2F%2Fwww.hhpub.com&amp;sid=refbase%3Arefbase</dc:identifier>
+		<dc:identifier>citekey:Banse+Gawronski2003</dc:identifier>
+		<dcterms:bibliographicCitation>Banse, R., &amp; Gawronski, B. (2003). Die Skala Motivation zu vorurteilsfreiem Verhalten: Psychometrische Eigenschaften und Validität. Diagnostica, 49(1), 4.</dcterms:bibliographicCitation>
+		<dc:date>2003</dc:date>
+		<dc:type>JournalArticle</dc:type>
+		<dc:format>text</dc:format>
+		<dc:subject>motivation to act without prejudice scale</dc:subject>
+		<dc:subject>attitudes toward minorities</dc:subject>
+		<dc:subject>psychometric properties</dc:subject>
+		<dc:subject>construct validity</dc:subject>
+		<dc:subject>social desirability</dc:subject>
+		<dc:subject>discriminated minorities</dc:subject>
+		<dc:subject>Discrimination</dc:subject>
+		<dc:subject>Motivation</dc:subject>
+		<dc:subject>Prejudice</dc:subject>
+		<dc:subject>Psychometrics</dc:subject>
+		<dc:subject>Test Validity</dc:subject>
+		<dc:relation>url:http://www.hhpub.com</dc:relation>
+		<dc:publisher>Hogrefe &amp; Huber</dc:publisher>
+		<prism:publicationName>Diagnostica</prism:publicationName>
+		<prism:publicationDate>2003</prism:publicationDate>
+		<prism:volume>49</prism:volume>
+		<prism:number>1</prism:number>
+		<prism:endingPage>4</prism:endingPage>
+	</entry>
+	<entry>
+		<id>http://beta.refbase.net/show.php?record=10441</id>
+		<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Tuberculous sacroiliitis. Four cases</div></title>
+		<updated>2011-05-11T17:47:43+02:00</updated>
+		<published>2011-05-11T17:47:43+02:00</published>
+		<link rel="alternate" type="text/html" title="View record in HTML format" href="http://beta.refbase.net/show.php?record=10441" />
+		<link rel="alternate" type="application/x-bibtex" title="Export record in BibTeX format" href="http://beta.refbase.net/show.php?record=10441&amp;exportType=file&amp;submit=Export&amp;exportFormat=BibTeX" />
+		<link rel="alternate" type="application/x-endnote-refer" title="Export record in Endnote format" href="http://beta.refbase.net/show.php?record=10441&amp;exportType=file&amp;submit=Export&amp;exportFormat=Endnote" />
+		<link rel="alternate" type="application/x-Research-Info-Systems" title="Export record in RIS format" href="http://beta.refbase.net/show.php?record=10441&amp;exportType=file&amp;submit=Export&amp;exportFormat=RIS" />
+		<link rel="alternate" type="application/atom+xml" title="Export record as Atom XML" href="http://beta.refbase.net/show.php?record=10441&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+		<link rel="alternate" type="application/xml" title="Export record as MODS XML" href="http://beta.refbase.net/show.php?record=10441&amp;exportType=xml&amp;submit=Export&amp;exportFormat=MODS%20XML" />
+		<link rel="alternate" type="application/vnd.oasis.opendocument.spreadsheet" title="Export record as ODF XML" href="http://beta.refbase.net/show.php?record=10441&amp;exportType=file&amp;submit=Export&amp;exportFormat=ODF%20XML" />
+		<link rel="alternate" type="application/rtf" title="Output record as citation in RTF format" href="http://beta.refbase.net/show.php?record=10441&amp;submit=Cite&amp;citeType=RTF" />
+		<link rel="alternate" type="application/pdf" title="Output record as citation in PDF format" href="http://beta.refbase.net/show.php?record=10441&amp;submit=Cite&amp;citeType=PDF" />
+		<link rel="alternate" type="application/x-latex" title="Output record as citation in LaTeX format" href="http://beta.refbase.net/show.php?record=10441&amp;submit=Cite&amp;citeType=LaTeX" />
+		<link rel="alternate" type="text/plain" title="Output record as citation in Markdown format" href="http://beta.refbase.net/show.php?record=10441&amp;submit=Cite&amp;citeType=Markdown" />
+		<link rel="related" type="text/html" title="Web page" href="http://www.ncbi.nlm.nih.gov/pubmed/15050202" />
+		<author>
+			<name>refbase User</name>
+		</author>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="unapi"><abbr class="unapi-id" title="http://beta.refbase.net/show.php?record=10441"></abbr></div>Benchakroun, M., El Bardouni, A., Zaddoug, O., Kharmaz, M., Lamrani, M. O., El Yaacoubi, M., et al. (2004). Tuberculous sacroiliitis. Four cases. <i>Joint Bone Spine</i>, <i>71</i>(2), 150&#8211;153.</div></content>
+		<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Tuberculous sacroiliitis with no local abscesses or tuberculosis at other sites occurred in four patients, three men and one woman with a mean age of 42 years. Slow progression characterized this uncommon variant of joint tuberculosis. Two patients reported contact with family members known to have tuberculosis. Mean time from symptom onset to presentation was 14 months. Surgical biopsy showed epithelioid and giant-cell granulomas with caseous necrosis; culturing on Lowenstein-Jensen medium recovered the tubercle bacillus. Treatment was with antitubercular drugs, and protection from weight bearing for 4 weeks. These four cases illustrate the slowly progressive course of the clinical and radiological manifestations and underline the diagnostic difficulties met in the early stages of tuberculous sacroiliitis without tuberculosis at other sites. Antitubercular treatment can restore joint function provided the diagnosis is made before radiological destruction occurs.</div></summary>
+		<dc:title>Tuberculous sacroiliitis. Four cases</dc:title>
+		<dc:creator>Benchakroun, M.</dc:creator>
+		<dc:creator>El Bardouni, A.</dc:creator>
+		<dc:creator>Zaddoug, O.</dc:creator>
+		<dc:creator>Kharmaz, M.</dc:creator>
+		<dc:creator>Lamrani, M.O.</dc:creator>
+		<dc:creator>El Yaacoubi, M.</dc:creator>
+		<dc:creator>Hermas, M.</dc:creator>
+		<dc:creator>Wahbi, S.</dc:creator>
+		<dc:creator>Ouazzani, N.</dc:creator>
+		<dc:creator>El Manouar, M.</dc:creator>
+		<dc:identifier>info:doi/10.1016/S1297-319X(03)00153-2</dc:identifier>
+		<dc:identifier>info:pmid/15050202</dc:identifier>
+		<dc:identifier>openurl:?ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fbeta.refbase.net%2F&amp;genre=article&amp;atitle=Tuberculous%20sacroiliitis.%20Four%20cases&amp;title=Joint%2C%20Bone%2C%20Spine%20%3A%20Revue%20du%20Rhumatisme&amp;stitle=Joint%20Bone%20Spine&amp;issn=1297-319X&amp;date=2004&amp;volume=71&amp;issue=2&amp;spage=150&amp;epage=153&amp;aulast=Benchakroun&amp;aufirst=M.&amp;au=El%20Bardouni%2C%20A.&amp;au=Zaddoug%2C%20O.&amp;au=Kharmaz%2C%20M.&amp;au=Lamrani%2C%20M.O.&amp;au=El%20Yaacoubi%2C%20M.&amp;au=Hermas%2C%20M.&amp;au=Wahbi%2C%20S.&amp;au=Ouazzani%2C%20N.&amp;au=El%20Manouar%2C%20M.&amp;id=info%3Adoi%2F10.1016%2FS1297-319X%2803%2900153-2&amp;sid=refbase%3Arefbase</dc:identifier>
+		<dc:identifier>citekey:Benchakroun_etal2004</dc:identifier>
+		<dcterms:bibliographicCitation>Benchakroun, M., El Bardouni, A., Zaddoug, O., Kharmaz, M., Lamrani, M. O., El Yaacoubi, M., et al. (2004). Tuberculous sacroiliitis. Four cases. Joint Bone Spine, 71(2), 150-153.</dcterms:bibliographicCitation>
+		<dc:date>2004</dc:date>
+		<dc:type>JournalArticle</dc:type>
+		<dc:format>text</dc:format>
+		<dc:subject>Adult</dc:subject>
+		<dc:subject>Antitubercular Agents/*administration &amp</dc:subject>
+		<dc:subject>dosage</dc:subject>
+		<dc:subject>Developing Countries</dc:subject>
+		<dc:subject>Female</dc:subject>
+		<dc:subject>Follow-Up Studies</dc:subject>
+		<dc:subject>Humans</dc:subject>
+		<dc:subject>Magnetic Resonance Imaging</dc:subject>
+		<dc:subject>Male</dc:subject>
+		<dc:subject>Middle Aged</dc:subject>
+		<dc:subject>Morocco</dc:subject>
+		<dc:subject>Risk Assessment</dc:subject>
+		<dc:subject>Sacroiliac Joint/*pathology</dc:subject>
+		<dc:subject>Sampling Studies</dc:subject>
+		<dc:subject>Tomography, X-Ray Computed</dc:subject>
+		<dc:subject>Treatment Outcome</dc:subject>
+		<dc:subject>Tuberculin Test</dc:subject>
+		<dc:subject>Tuberculosis, Osteoarticular/*diagnosis/*drug therapy</dc:subject>
+		<dc:relation>url:http://www.ncbi.nlm.nih.gov/pubmed/15050202</dc:relation>
+		<dc:language>English</dc:language>
+		<prism:issn>1297-319X</prism:issn>
+		<prism:publicationName>Joint, Bone, Spine : Revue du Rhumatisme</prism:publicationName>
+		<prism:publicationDate>2004</prism:publicationDate>
+		<prism:volume>71</prism:volume>
+		<prism:number>2</prism:number>
+		<prism:startingPage>150</prism:startingPage>
+		<prism:endingPage>153</prism:endingPage>
+	</entry>
+	<entry>
+		<id>http://beta.refbase.net/show.php?record=11115</id>
+		<title type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Tuberculous sacroiliitis. Four cases</div></title>
+		<updated>2011-05-11T17:48:31+02:00</updated>
+		<published>2011-05-11T17:48:31+02:00</published>
+		<link rel="alternate" type="text/html" title="View record in HTML format" href="http://beta.refbase.net/show.php?record=11115" />
+		<link rel="alternate" type="application/x-bibtex" title="Export record in BibTeX format" href="http://beta.refbase.net/show.php?record=11115&amp;exportType=file&amp;submit=Export&amp;exportFormat=BibTeX" />
+		<link rel="alternate" type="application/x-endnote-refer" title="Export record in Endnote format" href="http://beta.refbase.net/show.php?record=11115&amp;exportType=file&amp;submit=Export&amp;exportFormat=Endnote" />
+		<link rel="alternate" type="application/x-Research-Info-Systems" title="Export record in RIS format" href="http://beta.refbase.net/show.php?record=11115&amp;exportType=file&amp;submit=Export&amp;exportFormat=RIS" />
+		<link rel="alternate" type="application/atom+xml" title="Export record as Atom XML" href="http://beta.refbase.net/show.php?record=11115&amp;exportType=xml&amp;submit=Export&amp;exportFormat=Atom%20XML" />
+		<link rel="alternate" type="application/xml" title="Export record as MODS XML" href="http://beta.refbase.net/show.php?record=11115&amp;exportType=xml&amp;submit=Export&amp;exportFormat=MODS%20XML" />
+		<link rel="alternate" type="application/vnd.oasis.opendocument.spreadsheet" title="Export record as ODF XML" href="http://beta.refbase.net/show.php?record=11115&amp;exportType=file&amp;submit=Export&amp;exportFormat=ODF%20XML" />
+		<link rel="alternate" type="application/rtf" title="Output record as citation in RTF format" href="http://beta.refbase.net/show.php?record=11115&amp;submit=Cite&amp;citeType=RTF" />
+		<link rel="alternate" type="application/pdf" title="Output record as citation in PDF format" href="http://beta.refbase.net/show.php?record=11115&amp;submit=Cite&amp;citeType=PDF" />
+		<link rel="alternate" type="application/x-latex" title="Output record as citation in LaTeX format" href="http://beta.refbase.net/show.php?record=11115&amp;submit=Cite&amp;citeType=LaTeX" />
+		<link rel="alternate" type="text/plain" title="Output record as citation in Markdown format" href="http://beta.refbase.net/show.php?record=11115&amp;submit=Cite&amp;citeType=Markdown" />
+		<link rel="related" type="text/html" title="Web page" href="http://www.ncbi.nlm.nih.gov/pubmed/15050202" />
+		<author>
+			<name>refbase User</name>
+		</author>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="unapi"><abbr class="unapi-id" title="http://beta.refbase.net/show.php?record=11115"></abbr></div>Benchakroun, M., El Bardouni, A., Zaddoug, O., Kharmaz, M., Lamrani, M. O., El Yaacoubi, M., et al. (2004). Tuberculous sacroiliitis. Four cases. <i>Joint Bone Spine</i>, <i>71</i>(2), 150&#8211;153.</div></content>
+		<summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">Tuberculous sacroiliitis with no local abscesses or tuberculosis at other sites occurred in four patients, three men and one woman with a mean age of 42 years. Slow progression characterized this uncommon variant of joint tuberculosis. Two patients reported contact with family members known to have tuberculosis. Mean time from symptom onset to presentation was 14 months. Surgical biopsy showed epithelioid and giant-cell granulomas with caseous necrosis; culturing on Lowenstein-Jensen medium recovered the tubercle bacillus. Treatment was with antitubercular drugs, and protection from weight bearing for 4 weeks. These four cases illustrate the slowly progressive course of the clinical and radiological manifestations and underline the diagnostic difficulties met in the early stages of tuberculous sacroiliitis without tuberculosis at other sites. Antitubercular treatment can restore joint function provided the diagnosis is made before radiological destruction occurs.</div></summary>
+		<dc:title>Tuberculous sacroiliitis. Four cases</dc:title>
+		<dc:creator>Benchakroun, M.</dc:creator>
+		<dc:creator>El Bardouni, A.</dc:creator>
+		<dc:creator>Zaddoug, O.</dc:creator>
+		<dc:creator>Kharmaz, M.</dc:creator>
+		<dc:creator>Lamrani, M.O.</dc:creator>
+		<dc:creator>El Yaacoubi, M.</dc:creator>
+		<dc:creator>Hermas, M.</dc:creator>
+		<dc:creator>Wahbi, S.</dc:creator>
+		<dc:creator>Ouazzani, N.</dc:creator>
+		<dc:creator>El Manouar, M.</dc:creator>
+		<dc:identifier>info:doi/10.1016/S1297-319X(03)00153-2</dc:identifier>
+		<dc:identifier>info:pmid/15050202</dc:identifier>
+		<dc:identifier>openurl:?ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fbeta.refbase.net%2F&amp;genre=article&amp;atitle=Tuberculous%20sacroiliitis.%20Four%20cases&amp;title=Joint%2C%20Bone%2C%20Spine%20%3A%20Revue%20du%20Rhumatisme&amp;stitle=Joint%20Bone%20Spine&amp;issn=1297-319X&amp;date=2004&amp;volume=71&amp;issue=2&amp;spage=150&amp;epage=153&amp;aulast=Benchakroun&amp;aufirst=M.&amp;au=El%20Bardouni%2C%20A.&amp;au=Zaddoug%2C%20O.&amp;au=Kharmaz%2C%20M.&amp;au=Lamrani%2C%20M.O.&amp;au=El%20Yaacoubi%2C%20M.&amp;au=Hermas%2C%20M.&amp;au=Wahbi%2C%20S.&amp;au=Ouazzani%2C%20N.&amp;au=El%20Manouar%2C%20M.&amp;id=info%3Adoi%2F10.1016%2FS1297-319X%2803%2900153-2&amp;sid=refbase%3Arefbase</dc:identifier>
+		<dc:identifier>citekey:Benchakroun_etal2004_2</dc:identifier>
+		<dcterms:bibliographicCitation>Benchakroun, M., El Bardouni, A., Zaddoug, O., Kharmaz, M., Lamrani, M. O., El Yaacoubi, M., et al. (2004). Tuberculous sacroiliitis. Four cases. Joint Bone Spine, 71(2), 150-153.</dcterms:bibliographicCitation>
+		<dc:date>2004</dc:date>
+		<dc:type>JournalArticle</dc:type>
+		<dc:format>text</dc:format>
+		<dc:subject>Adult</dc:subject>
+		<dc:subject>Antitubercular Agents/*administration &amp</dc:subject>
+		<dc:subject>dosage</dc:subject>
+		<dc:subject>Developing Countries</dc:subject>
+		<dc:subject>Female</dc:subject>
+		<dc:subject>Follow-Up Studies</dc:subject>
+		<dc:subject>Humans</dc:subject>
+		<dc:subject>Magnetic Resonance Imaging</dc:subject>
+		<dc:subject>Male</dc:subject>
+		<dc:subject>Middle Aged</dc:subject>
+		<dc:subject>Morocco</dc:subject>
+		<dc:subject>Risk Assessment</dc:subject>
+		<dc:subject>Sacroiliac Joint/*pathology</dc:subject>
+		<dc:subject>Sampling Studies</dc:subject>
+		<dc:subject>Tomography, X-Ray Computed</dc:subject>
+		<dc:subject>Treatment Outcome</dc:subject>
+		<dc:subject>Tuberculin Test</dc:subject>
+		<dc:subject>Tuberculosis, Osteoarticular/*diagnosis/*drug therapy</dc:subject>
+		<dc:relation>url:http://www.ncbi.nlm.nih.gov/pubmed/15050202</dc:relation>
+		<dc:language>English</dc:language>
+		<prism:issn>1297-319X</prism:issn>
+		<prism:publicationName>Joint, Bone, Spine : Revue du Rhumatisme</prism:publicationName>
+		<prism:publicationDate>2004</prism:publicationDate>
+		<prism:volume>71</prism:volume>
+		<prism:number>2</prism:number>
+		<prism:startingPage>150</prism:startingPage>
+		<prism:endingPage>153</prism:endingPage>
+	</entry>
+</feed>

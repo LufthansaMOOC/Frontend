@@ -1,0 +1,366 @@
+<html>
+   <head>
+      <meta charset="utf-8"/>
+
+<link href="../../apps/css/adapted.css?17.2.6.714" rel="stylesheet">
+<style>
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background-color: #FFF;
+    font-family: Verdana, Helvetica, Arial, FreeSans, sans-serif;
+    color: #454545;
+    font-size: 14px;
+    min-width: 700px;
+    height: 100%;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .btn-rounded {
+    border-radius: 1.5em;
+  }
+
+  .handsontable th, 
+  .handsontable td  { 
+    font-size: 12px;
+  }
+  .handsontable td {
+       font-size: 12px;
+       max-width: 200px;
+       min-width: 70px;
+  }
+  .handsontable th, 
+  .handsontable td {
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+  }
+
+  .filler {
+        width: -moz-calc(100% - 300px); /* Firefox */
+        width: -webkit-calc(100% - 300px); /* WebKit */
+        width: -o-calc(100% - 300px); /* Opera */
+        width: calc(100% - 300px); /* Standard */
+    }
+
+  .mb-header {
+     height: 75px !important;
+  }
+  .mb-header h1 {
+    display: block !important;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+  }
+
+  .mb-header h1 img {
+    height: 75px !important; 
+    max-width: none;
+  }
+
+  .fill { 
+    min-height: -moz-calc(100% - 150px); /* Firefox */
+    height: -moz-calc(100% - 150px); /* Firefox */
+    min-height: calc(100% - 150px);
+    height: calc(100% - 150px);
+  }
+</style>
+</head>
+<body >
+ <div class="mb-header navbar navbar-inverse">
+      <h1>
+        <span lang="en" class="mb-acc">Mindbreeze InSpire</span>
+        <img class="mb-pulse" src="../../apps/img/logo-bg.png" alt="">
+        <img src="../../apps/img/logo.png" alt="">
+      </h1>
+  </div>
+
+   
+  <div class="container-full"> 
+     <div class="row fill">          
+        <div class="handsontable" id="spreadsheet" style="width: 100%;  height: 0px; margin: 0 auto; display: block; overflow: scroll">
+        </div>
+     </div>     
+     <div class="row">          
+       <p style="text-align: right; margin-top: 30px; margin-right: 1.5em;">
+       <button name="load" class="btn btn-primary btn-rounded">Reload</button>
+       <button name="save" class="btn btn-primary btn-rounded">Save</button>
+       </p>
+    </div>     
+</div>
+
+
+
+<script>
+
+    /**
+     * $.csv.fromArrays(arrays)
+     * Converts a javascript array to a CSV String.
+     *
+     * @param {Array} arrays An array containing an array of CSV entries.
+     * @param {Object} [options] An object containing user-defined options.
+     * @param {Character} [separator] An override for the separator character. Defaults to a comma(,).
+     * @param {Character} [delimiter] An override for the delimiter character. Defaults to a double-quote(").
+     *
+     * This method generates a CSV file from an array of arrays (representing entries).
+     */
+    function csvFromArrays(arrays, options, callback) {
+      var options = (options !== undefined ? options : {});
+      var config = {};
+      config.callback = ((callback !== undefined && typeof(callback) === 'function') ? callback : false);
+      config.separator = 'separator' in options ? options.separator :";";
+      config.delimiter = 'delimiter' in options ? options.delimiter : '"';
+
+      var output = '',
+          line,
+          lineValues,
+          i, j;
+
+      for (i = 0; i < arrays.length; i++) {
+        line = arrays[i];
+        lineValues = [];
+        for (j = 0; j < line.length; j++) {
+          var strValue = (line[j] === undefined || line[j] === null)
+                       ? ''
+                       : line[j].toString();
+          if (strValue.indexOf(config.delimiter) > -1) {
+            strValue = strValue.replace(config.delimiter, config.delimiter + config.delimiter);
+          }
+
+          var escMatcher = '\n|\r|S|D';
+          escMatcher = escMatcher.replace('S', config.separator);
+          escMatcher = escMatcher.replace('D', config.delimiter);
+
+          if (strValue.search(escMatcher) > -1) {
+            strValue = config.delimiter + strValue + config.delimiter;
+          }
+          lineValues.push(strValue);
+        }
+        output += lineValues.join(config.separator) + '\r\n';
+      }
+
+      // push the value to a callback if one is defined
+      if(!config.callback) {
+        return output;
+      } else {
+        config.callback('', output);
+      }
+    }
+
+
+   // This will parse a delimited string into an array of
+    // arrays. The default delimiter is the comma, but this
+    // can be overriden in the second argument.
+    function CSVToArray( strData, strDelimiter ){
+        // Check to see if the delimiter is defined. If not,
+        // then default to comma.
+        strDelimiter = (strDelimiter || ",");
+
+        // Create a regular expression to parse the CSV values.
+        var objPattern = new RegExp(
+            (
+                // Delimiters.
+                "(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +
+
+                // Quoted fields.
+                "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +
+
+                // Standard fields.
+                "([^\"\\" + strDelimiter + "\\r\\n]*))"
+            ),
+            "gi"
+            );
+
+
+        // Create an array to hold our data. Give the array
+        // a default empty first row.
+        var arrData = [[]];
+
+        // Create an array to hold our individual pattern
+        // matching groups.
+        var arrMatches = null;
+
+
+        // Keep looping over the regular expression matches
+        // until we can no longer find a match.
+        while (arrMatches = objPattern.exec( strData )){
+
+            // Get the delimiter that was found.
+            var strMatchedDelimiter = arrMatches[ 1 ];
+
+            // Check to see if the given delimiter has a length
+            // (is not the start of string) and if it matches
+            // field delimiter. If id does not, then we know
+            // that this delimiter is a row delimiter.
+            if (
+                strMatchedDelimiter.length &&
+                (strMatchedDelimiter != strDelimiter)
+                ){
+
+                // Since we have reached a new row of data,
+                // add an empty row to our data array.
+                arrData.push( [] );
+
+            }
+
+
+            // Now that we have our delimiter out of the way,
+            // let's check to see which kind of value we
+            // captured (quoted or unquoted).
+            if (arrMatches[ 2 ]){
+
+                // We found a quoted value. When we capture
+                // this value, unescape any double quotes.
+                var strMatchedValue = arrMatches[ 2 ].replace(
+                    new RegExp( "\"\"", "g" ),
+                    "\""
+                    );
+
+            } else {
+
+                // We found a non-quoted value.
+                var strMatchedValue = arrMatches[ 3 ];
+
+            }
+
+
+            // Now that we have our value string, let's add
+            // it to the data array.
+            arrData[ arrData.length - 1 ].push( strMatchedValue );
+        }
+
+        // Return the parsed data.
+        return( arrData );
+    }
+</script>
+
+
+  <script src="../../apps/scripts/client.js" data-global-export="false"></script>
+  <script>
+
+  Mindbreeze.require(["libs/apm/softwaretelemetry"], function(softwaretelemetry) {
+
+   softwaretelemetry.env.active = false;
+
+  Mindbreeze.require([ "service/channels", 
+                      "service/ajax_channel", 
+                      "resources.js", 
+                      "client/sourceinfo",
+                      "handsontable",
+                      "jquery"], 
+  function( Channels, 
+           AjaxChannel,
+           Resources, 
+           SourceInfo, 
+           Handsontable, $) {
+
+    var res = new Resources.ServiceFactory();
+    var spreadsheet = document.getElementById('spreadsheet'),
+        settings,
+        hot;
+    var channelOptions = {
+    };
+    var channels = new Channels(new AjaxChannel({
+      url: "/manageclient/",
+      trace: false
+		    }), channelOptions);
+   
+
+    // TODO: Read CSS (regex linebased)
+    // output: Araray of arrays (je Zeile)
+
+    var firstRowRenderer = function(instance, td, row, col, prop, value, cellProperties) {
+      Handsontable.TextCell.renderer.apply(this, arguments);
+      
+      var escaped = Handsontable.helper.stringify(value);
+      // escaped = strip_tags(escaped, '<em><b><a><span><input>');
+      td.innerHTML = escaped;
+      //try to make 'td' read only
+      cellProperties.readOnly = true; // this is not working
+      $(td).css({
+        'background': '#F1F1F1',
+        'font-weight':'bold'
+      });
+    };
+
+    //     colWidths: [55, 80, 80, 80, 80, 80, 80], //can also be a number or a function
+
+    settings = {
+      data: [],
+      rowHeaders: false,
+      colHeaders: false,
+      contextMenu: true,
+      fixedRowsTop: 1,
+      minSpareRows: 0,
+
+      cells: function (row, col, prop) {
+        if (row === 0) {
+            return { type: { renderer: firstRowRenderer }, readOnly: true };
+        }
+      }     
+    };
+    var hot = new Handsontable(spreadsheet, settings);
+    
+    offset = Handsontable.Dom.offset(spreadsheet);
+    // availableWidth = Handsontable.Dom.innerWidth(document.body) - offset.left + window.scrollX;
+    availableHeight = Handsontable.Dom.innerHeight(document.body) - offset.top + window.scrollY - 60;
+
+    // spreadsheet.style.width = availableWidth + 'px';
+    spreadsheet.style.height = availableHeight + 'px';
+    
+    function loadDataAsync(table) {
+      var x = res.get("synonyms.csv", function(data, errors) {
+        if (data) { table.loadData( CSVToArray( data, ';' ) ); }
+        
+      }, channels);
+    }
+
+    function saveData(table) {
+        var data = [];
+		var tableData = table.getData();
+		for (var i = 0; i < tableData.length; ++i) {
+			// array of arrays
+			if (tableData[i].length == 0 || (tableData[i].length == 1 && tableData[i][0].length == 0)) continue;
+			data.push(tableData[i]);
+		}
+       var csvString = csvFromArrays(data);
+       res.put("synonyms.csv", csvString, channels);
+      
+    }
+
+    loadDataAsync(hot);
+
+    function bindSave() {
+        Handsontable.Dom.addEvent(document.body, 'click', function (e) {
+        var element = e.target || e.srcElement;
+        if (element.nodeName == "BUTTON" && element.name == 'save') {
+          saveData(hot);          
+        }
+      });
+    }
+    bindSave();
+
+    function bindLoad() {
+        Handsontable.Dom.addEvent(document.body, 'click', function (e) {
+        var element = e.target || e.srcElement;
+        if (element.nodeName == "BUTTON" && element.name == 'load') {
+          loadDataAsync(hot);
+        }
+      });
+    }
+    bindLoad();
+  });
+  });
+
+  
+
+  </script>
+</body>
+</html>

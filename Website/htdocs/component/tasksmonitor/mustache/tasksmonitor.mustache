@@ -1,0 +1,31 @@
+<script type="text/x-mustache-template">
+{{^isFinished?}}
+  <div class="mb-export-progress mb-line-item mb-progress">
+  	<div class="mb-computing">
+
+  		<span class="mb-export-finished mb-flexbox-export mb-export-is-running">
+  			<span class="mb-flexbox-label"> {{i18n.currentExport}} <b>{{searchQuery}}</b></span>
+  			<span class="pull-right"> {{currentTime}} </span>
+  
+		  	<div class="pull-right">
+		  		<button data-action-object='{ &quot;cancel&quot;:{} }' 
+		  				class="mb-btn-no-decor mb-no-print mb-btn-ie" 
+		  				type="button" 
+		  				title="Reset">
+		  			<i class="icon-remove-sign"></i>
+		  			<span class="mb-acc mb-dont-serialize">Cancel</span>
+		  		</button>
+		  	</div>
+  		</span>
+  		<div class="mb-progress-bar"></div>
+  	</div>
+  </div>
+{{/isFinished?}}
+{{#isFinished?}}
+  	<span class="mb-export-finished mb-flexbox-export"><i class="icon-remove-circle" data-action-object='{ &quot;deleteExportEl&quot;:{} }'></i>
+  		<span class="mb-flexbox-label" title="{{searchQuery}}"><b>{{searchQuery}}</b></span>
+      {{#exportStatus?}}<span class="mb-export-status"> <i class="icon-info-sign" title="{{exportStatus}}"></i> </span>{{/exportStatus?}}
+  		<span class="pull-right"> {{currentTime}} </span>
+  	</span>
+{{/isFinished?}}
+</script>

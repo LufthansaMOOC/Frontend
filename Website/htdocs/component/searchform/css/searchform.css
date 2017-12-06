@@ -1,0 +1,15 @@
+input.mb-query {
+  padding-left: 25px !important;
+  padding-right: 50px !important;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  background-image: url("../../../../img/smallm.png");
+  background-repeat: no-repeat;
+  background-position: 4px 50%;
+  border-radius: 1em;
+}
+
+input.mb-query::-ms-clear {
+  display: none;
+}

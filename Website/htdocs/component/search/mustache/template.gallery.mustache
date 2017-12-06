@@ -1,0 +1,27 @@
+<h3>
+  <span>{{templateoptions.title}}</span>
+  <script type="text/x-mustache-template" data-attr-role="status" data-attr-class="estimated_count_container{{^estimated_count?}}hide{{/estimated_count?}}" data-attr-tabindex="-1">
+  {{^status_messages.no_results?}}
+    <span class="estimated_count">
+      {{#estimated_count?}}
+        ({{estimated_count}} 
+        {{^singular}}{{i18n.editor_result_title}}){{/singular}}
+        {{#singular}}{{i18n.editor_singular_result_title}}){{/singular}}
+      {{/estimated_count?}}
+    </span>
+  {{/status_messages.no_results?}}
+</script>
+<div data-template="searchinfo"></div>
+</h3>
+<div data-template="results" class="gallery-results-container">
+<script type="text/x-mustache-template" data-tag-name="div" data-class-name="galleryTemplateResult sb-result" data-attr-data-src="{{icon.data.value.href}}" data-attr-data-sub-html="&lt;h3&gt;{{{title}}}&lt;/h3&gt;" aria-hidden="true">
+  <a href="#">
+      <img src="{{icon.data.value.href}}"/>
+  </a>
+</script>
+</div>
+
+
+
+
+

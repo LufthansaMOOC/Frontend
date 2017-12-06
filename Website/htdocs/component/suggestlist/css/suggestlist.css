@@ -1,0 +1,26 @@
+/*========================================================================
+* $Id: search.js 80287 2014-07-09 09:37:45Z michael.biebl $
+*
+* Copyright © Mindbreeze Software GmbH, Linz, Austria, 2005-2013
+*
+* Der Nutzer des Computerprogramms anerkennt, dass der oben stehende
+* Copyright-Vermerk im Sinn des Welturheberrechtsabkommens an der vom
+* Urheber festgelegten Stelle in der Funktion des Computerprogramms
+* angebracht bleibt, um den Vorbehalt des Urheberrechtes genuegend zum
+* Ausdruck zu bringen. Dieser Urheberrechtsvermerk darf weder vom Kunden,
+* Nutzer und/oder von Dritten entfernt, veraendert oder disloziert werden.
+* =========================================================================*/
+
+.suggestListElement {
+  margin-bottom: 15px;
+  clear: both;
+}
+
+.suggestListElement .suggestListTitle {
+  font-size: 14px;
+  line-height: 20px
+}
+
+.suggestListElement ul p {
+    margin-bottom: 5px;
+}

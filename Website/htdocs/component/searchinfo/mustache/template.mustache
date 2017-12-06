@@ -1,0 +1,35 @@
+<div>
+  <script type="text/x-mustache-template">
+    {{^computing?}}
+      {{#status_messages.timeout}}
+        <div class="alert">
+          <button type="button" class="close" data-dismiss="alert" title="{{i18n.Close}}">&times;</button>
+          {{error}}
+          {{warning}}
+          {{info}}
+        </div>
+      {{/status_messages.timeout}}
+
+      {{#status_messages.no_results?}}
+        <h2 tabindex="-1">
+          {{status_messages.no_results.error}}
+          {{status_messages.no_results.warning}}
+          {{status_messages.no_results.info}}
+        </h2>
+
+       
+
+      {{/status_messages.no_results?}}
+      {{#show_query_spelling_alternatives?}}
+      {{#alternatives.query_spelling.entries[0]?}}
+        <p>
+          {{{i18n.client_did_you_mean}}}:
+          <a href="#" class="action" data-action-object="{&quot;setDidYouMean&quot;: {&quot;query&quot;: {{alternatives.query_spelling.entries[0].query_expr}} }}">
+            {{{alternatives.query_spelling.entries[0].html}}}
+          </a>
+        </p>
+      {{/alternatives.query_spelling.entries[0]?}}
+      {{/show_query_spelling_alternatives?}}
+    {{/computing?}}
+  </script>
+</div>

@@ -1,0 +1,28 @@
+<script type="text/x-mustache-template" data-attr-role="group" data-attr-aria-labelledby="result_{{id}}" data-class-name="media mb-clickable-phone" data-attr-data-action-object="{ &quot;toggleOpen&quot;: { &quot;enabledSelector&quot;: &quot;.visible-phone&quot; }}">
+  <span class="pull-left media-object" aria-hidden="true">
+    {{#actions.data[0].value.href?}}<a href="{{actions.data[0].value.href}}" data-disabled-selector=".visible-phone" tabindex="-1" target="_blank">{{/actions.data[0].value.href?}}
+      {{{icon}}}
+    {{#actions.data[0].value.href?}}</a>{{/actions.data[0].value.href?}}
+  </span>
+  <div class="media-body">
+    <h3 class="media-heading" id="result_{{id}}">
+      {{#actions.data[0].value.href?}}<a href="{{actions.data[0].value.href}}" data-disabled-selector=".visible-phone" target="_blank">{{/actions.data[0].value.href?}}
+      {{{title}}}
+      {{#actions.data[0].value.href?}}</a>{{/actions.data[0].value.href?}}
+    </h3>
+    <ul class="mb-actions mb-separated hidden-phone mb-visible-open mb-no-print">
+      {{#actions.data}} <li class="nowrap">{{{html}}}</li>{{/actions.data}}
+      <li class="nowrap"><a role="button" class="action collect" tabindex="0" data-action-object="{&quot;collectResult&quot;:{}}">{{{i18n.Collect}}}</a></li>
+    </ul>
+    <dl class="mb-metadata mb-comma-separated-values mb-horizontal mb-separated hidden-phone mb-visible-open mb-small">
+      <dt class="mb-acc">{{i18n.date}}</dt><dd>{{{mes:date}}}</dd>
+      {{#mes:summary}}
+        <dt>{{name}}</dt>{{#data}}<dd>{{#actions?}}<span class="mb-dropdown-toggle"><a data-action-object="{&quot;openMenu&quot;: {&quot;propertyId&quot;: &quot;{{property:id}}&quot;, &quot;position&quot;: {{data:position}} }}" class="nowrap">{{/actions?}}{{{html}}}{{#actions?}} <span class="caret"></span></a></span> {{/actions?}}</span></dd>{{/data}}
+      {{/mes:summary}}
+    </dl>
+    {{#content}}
+      <p class="mb-content">{{{.}}}</p>
+    {{/content}}
+    <span class="clearfix"></span>
+  </div>
+</script>

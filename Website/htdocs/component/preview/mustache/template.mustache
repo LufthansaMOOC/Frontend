@@ -1,0 +1,11 @@
+<script type="text/x-mustache-template" data-class-name="mb-preview">
+  {{^.?}}{{{i18n.document-not-found}}}{{/.?}}
+  {{{icon}}}
+  <dl class="mb-comma-separated-values mb-horizontal">
+    {{#mes:date?}}<dt>{{{i18n.date}}}</dt><dd>{{{mes:date}}}</dd>{{/mes:date?}}
+    {{#mes:summary}}<dt>{{name}}</dt>{{#data}}<dd>{{{html}}}</dd>{{/data}}{{/mes:summary}}
+  </dl>
+  <section>
+    {{{content}}}
+  </section>
+</script>

@@ -1,0 +1,349 @@
+@import url("../../../../lib/handsontable-0.17.0/handsontable.full.min.css");
+
+/* CSS Style handsontable */
+.handsontable{
+	width: auto;
+	table-layout: fixed;
+	overflow: auto;
+	clear: both;
+}
+.handsontable th{
+	min-width: 150px;
+	max-width: 400px;
+	text-align: left;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+}
+.handsontable th .colHeader {
+	margin-right: 50px;
+	display: block;
+	text-align: left;
+}
+.handsontable th .colHeader input[type="text"] {
+	text-align: left;
+	width: 100% !important;
+}
+.handsontable thead .colHeader:hover {
+	cursor: pointer;
+}
+.handsontable td{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    min-width: 150px;
+	max-width: 400px;
+	color: #000000 !important;
+}
+.handsontable td h3{
+	line-height: 20px;
+	padding-top: 5px;
+    padding-bottom: 5px;
+}
+.handsontable .relative{
+	height: 30px !important;
+}
+.wtHolder{
+	width: auto !important;
+	min-height: 300px;
+  	height: calc(100vh - 400px) !important;
+}
+.colHeaderEl,
+.colHeaderElBeforeLoad{
+	float: left;
+}
+.colHeaderElBeforeLoad a:hover{
+	text-decoration: none !important;
+}
+
+.delAll{
+	width: 20px;
+    height: 23px;
+    right: 5px;
+	position: absolute;
+}
+.btn_del{
+	width: 20px;
+    height: 23px;
+    padding: 0px;
+    background-color: Transparent;
+    border: none;
+    top: 1px;
+    display: none;
+}
+.relative:hover .btn_del{
+	display: block;
+}
+
+.handsontable-ui-autocomplete {
+	min-height: 100px;
+    max-height: 60vh;
+    max-height: calc(100vh - 400px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 20px;
+}
+.handsontable .ui-autocomplete-input{
+	width: 90%;
+}
+#addColHeader{
+	background-color: Transparent;
+    border: none;
+}
+.handsontable .icon-trash:before {
+    content: "\f014";
+}
+.manualColumnMover{
+	height: 35px !important;
+}
+.hidden-when-has-child small{
+	color: #333;
+}
+.exportToCSV{
+	margin-bottom: 10px;
+}
+.manualColumnResizer{
+	height: 30px !important;
+}
+.handsontable .icon-ok-sign{
+	margin-left: 17px;
+}
+.InputFieldEdit button{
+	background-color: Transparent;
+	cursor: pointer;
+	border: none;
+	position: absolute;
+	margin-top: 5px;
+}
+.addColumnWidth{
+	width: 85px;
+}
+.ht_clone_top{
+	z-index: 1 !important;
+}
+
+/* Progressbar - Loader */
+.loaderLeft{
+	list-style-type: none;
+	display: none;
+	overflow: auto;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    z-index: 1500;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.loaderLeft .icon-remove-circle{
+	margin-right: 5px;
+	padding-top: 3px;
+}
+.loaderLeft .icon-remove-circle:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.loaderLeft .mb-export-progress{
+	margin-right: 0px;
+	padding-right: 0px;
+}
+.loaderLeft .pull-right{
+	padding-right: 7px !important;
+	margin-right: 0px !important;
+	font-size: 12px;
+}
+.mb-export-status {
+	margin-right: 10px;
+}
+.loaderLeft .mb-export-finished{
+	padding: 3px 10px 3px 10px;
+}
+.loaderLeft .mb-flexbox-label{
+	-webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+    max-width: 100%;
+    display: block;
+}
+.loaderLeft .mb-flexbox-export{
+	-ms-box-orient: horizontal;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+}
+.loaderLeft .mb-export-is-running{
+	padding-right: 0px !important;
+}
+.exportDownloaderBlink {
+   animation-duration: 800ms;
+   animation-name: blink;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes blink {
+   from {
+      opacity: 1;
+   }
+   to {
+      opacity: 0.2;
+   }
+ }
+
+@media( min-width: 768px ) {
+	.loaderLeft{
+		min-width: 250px;
+		max-width: 340px;
+		min-height: 30px;
+		max-height: 400px;
+		top: 40px;
+		right: 10px;
+		position: absolute;
+		color: #000000;
+		box-shadow: 0 0 10px #999;
+		padding-bottom: 10px;
+		overflow-x: auto;
+		overflow-y: auto;
+	}
+	.loaderLeft li{
+		margin-top: 5px;
+		display: block !important;
+		white-space: nowrap;
+  		overflow: hidden;
+  		text-overflow: ellipsis;
+  		margin-right: 10px;
+	}
+	.loaderLeft .mb-progress-label{
+		margin-left: 15px;
+	    padding-bottom: 25px;
+	    height: 0;
+	}
+	.loaderLeft .mb-progress-bar{
+		margin-left: 10px;
+		margin-top: 10px !important;
+	}
+	.loaderLeft .mb-no-export-results{
+		position: absolute;
+	    padding-top: 7px;
+	    width: 90%;
+	    text-align: center;
+	}
+}
+@media( max-width: 767px ) {
+	.loaderLeft{
+		position: fixed;
+    	top: 47px;
+    	left: 20px;
+    	right: 20px;
+    	width: auto;
+    	min-height: 30px;
+    	max-height: 150px;
+    	box-shadow: 0 0 10px #999;
+	}
+	.mb-header .mb-top-menu .loaderLeft li{
+		height: 30px;
+    	padding-left: 5px;
+    	padding-right: 10px;
+    	width: 95%;
+	}
+	.loaderLeft .mb-progress-label{
+		margin-left: 15px;
+	    padding-bottom: 25px;
+	}
+	.loaderLeft .mb-progress-bar{
+		top: 24px !important;
+    	margin-left: 8px;
+	}
+}
+
+.resetProperties {
+	display: none;
+  font-size: 12px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+#allowExportTable {
+	float: left;
+}
+
+.ht_clone_left.handsontable {
+  display: none !important;
+}
+.handsontable tbody img {
+  max-width: 13px;
+  margin-right: 5px;
+}
+
+.relevanceInfoTable thead tr:first-child{
+	height: 50px;
+}
+
+.relevanceInfoTable tr img.mb-thumbnail {
+	max-height: 80px;
+  max-width: 95%;
+}
+
+.relevanceInfoTable .colHeader {
+	width: 100%;
+	overflow: hidden;
+}
+
+.relevanceInfoTable .colHeaderEl {
+	width: 80%;
+	overflow: hidden;
+	white-space: normal;
+}
+
+.relevanceInfoTable .wtHolder {
+  height: calc(100vh - 315px) !important;
+}
+
+.relevanceInfoTable {
+	margin-top: 15px;
+}
+/*
+.relevanceInfoTable .wtHolder {
+	height: auto !important;
+  max-height: calc(100vh - 270px) !important;
+}
+
+.relevanceInfoTable .ht_clone_corner {
+	height: calc(100vh - 415px) !important;
+}
+
+.relevanceInfoTable tr td:nth-child(2){
+	word-wrap: break-word !important;
+	white-space: normal !important;
+}
+
+.relevanceInfoTable .ht_clone_corner {
+	height: auto !important;
+  max-height: calc(100vh - 286px) !important;
+}
+
+.relevanceInfoTable .wtHolder {
+	min-height: auto;
+	height: auto !important;
+}
+
+.relevanceInfoTable .wtHider {
+	height: auto !important;
+  max-height: calc(100vh - 270px) !important;
+}
+
+.relevanceInfoTable .ht_clone_top,
+.relevanceInfoTable .ht_clone_left,
+.relevanceInfoTable .ht_clone_corner {
+	display: none;
+}
+*/

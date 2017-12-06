@@ -1,0 +1,58 @@
+<div data-template="view" data-id="test" class="main">
+  <div class="mb-header navbar navbar-fixed-top">
+    <ul class="nav pull-right top-menu">
+      <li><a href="#">Preferences</a></li>
+      <li><a href="#">Logout</a></li>
+      <li class="after-load"><a href="javascript:require(['client/editor'], function (Editor) { window.Editor = Editor; editor = new Editor(); editor.refresh()})">Edit</a></li>
+    </ul>
+  </div>
+
+  <div data-template="results">
+    <script type="text/x-mustache-template" data-class-name="media">
+      {{{title}}}
+    </script>
+  </div>
+  <div data-template="results">
+    <script type="text/x-mustache-template" data-class-name="media">
+      <span class="pull-left">
+        {{#mesthumbnailurl}}
+          <img class="media-object" src="{{{mesthumbnailurl}}}"/>
+        {{/mesthumbnailurl}}
+        {{^mesthumbnailurl}}
+          <img style="width: 150px; margin-top: 15px;" class="media-object" src="http://apps.mindbreeze.com/inapp/futurezone.at/binaryCache/data.bytes?url=http://p-mwsquery-004.saas.fabasoft.com:23358/inapp/futurezone.at&amp;id=7550b69881ecb47b774aaef379e7af8b"/>
+        {{/mesthumbnailurl}}
+      </span>
+      <div class="media-body">
+        <h4 class="media-heading">
+          {{{title}}}
+        </h4>
+        <small>
+          {{#Author}}
+            {{{Author}}} |
+          {{/Author}}
+          {{#breadcrumbs}}
+            <a href="#">{{{breadcrumbs}}}</a>
+          {{/breadcrumbs}}
+        </small><br/>
+        {{{content}}}
+      </div>
+    </script>
+  </div>
+  <div data-template="results">
+    <script type="text/x-mustache-template" data-class-name="media">
+      <span class="pull-left">
+        {{#actions}}
+          <a href="{{data.value.link_href}}">{{localized_name}}</a>
+        {{/actions}}        
+      </span>
+      <div class="media-body">
+        <h4 class="media-heading">
+          {{store:modificationdate[0]}}
+        </h4>
+        {{{actions[0]}}}
+        
+        {{{content}}}
+      </div>
+    </script>
+  </div>
+</div>

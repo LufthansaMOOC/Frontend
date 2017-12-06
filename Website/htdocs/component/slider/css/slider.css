@@ -1,0 +1,24 @@
+.mb-slider {
+  overflow: hidden;
+}
+
+.mb-strip {
+  transition-property: left;
+  transition-duration: 1s;
+  white-space: nowrap;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  left: 0;
+}
+
+.mb-strip>li {
+  display: inline-block;
+  white-space: normal;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+}

@@ -1,0 +1,11 @@
+<script type="text/x-mustache-template">
+  {{#groupable?}}
+  <h2>{{{i18n.client_toolbar_groupby_label}}}</h2>
+  <select data-action-object="{&quot;changeGroupBy&quot;:{}}" data-event-mask="change">
+    <option class="mb-selectable {{^groupby.property?}}mb-selected{{/groupby.property?}}" value="">{{{i18n.client_groupby_none}}}</option>
+    {{#groupable}}
+    <option {{#isSelected?}}selected{{/isSelected?}} class="action" tabindex="0" value="{{name}}">{{localized_name}}</option>
+    {{/groupable}}
+  </ul>
+  {{/groupable?}}
+</script>

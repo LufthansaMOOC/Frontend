@@ -1,0 +1,12 @@
+<script type="text/x-mustache-template">
+  <div class="alert alert-{{level}} mb-clipped" data-toggle="fulltext">
+    <button type="button" class="mb-hidden-detail close" data-action-object="{&quot;destroyModel&quot;: {}}" title="{{i18n.Close}}">&times;</button>
+    {{{message}}}
+    {{{error}}}
+    {{{warning}}}
+    {{{info}}}
+    {{#service_ids?}}
+      ({{{service_ids}}})
+    {{/service_ids?}}
+  </div>
+</script>

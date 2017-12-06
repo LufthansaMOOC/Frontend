@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>LELA</title>
+
+</head>
+<body>
+
+  <!-- Navigation  -->
+  <div id="header">
+    <div id="topHeader">
+      <ul>
+        <li>
+          <nav class="dropDown" >
+            <ul>
+                  <li id="LanguageSelectionHeader"><img src="images/langIcon.png" height="20" width="20"><a href="#">Language &#9660;</a>
+                    <ul>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">German</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </nav>
+          </li>
+          
+          <button class="buttonlog buttonG">Log In</button>
+          <button class="buttonlog buttonG">Sign Up</button>
+      
+          
+        </ul>
+      </div>
+
+      <div id="headerMain">
+        <div class="container">
+        <ul>  
+          <li  id="logocon"><img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></li>
+          <li>
+
+            <nav class="dropDown" id="category">
+              <ul>
+                <li id="categoryList"><img src="images/cateblue.png" height="25" width="25"><a href="#" id="CategoriesDropdownCategoryList">Categories &#9660;</a>
+                    <ul>
+                    <li><a href="#">Academics</a>
+                      <ul>
+                        <li><a href="#">Test1</a></li>
+                        <li><a href="#">Test2</a></li>
+                        <li><a href="#">Test3</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Business</a>
+                      <ul>
+                        <li><a href="#">Test4</a></li>
+                        <li><a href="#">Test5</a></li>
+                        <li><a href="#">Test6</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Design</a>
+                      <ul>
+                        <li><a href="#">Test7</a></li>
+                        <li><a href="#">Test8</a></li>
+                        <li><a href="#">Test9</a></li>
+                      </ul>
+                    </li>
+                      <li><a href="#">Health &amp; Fitness</a>
+                        <ul>
+                        <li><a href="#">Test10</a></li>
+                        <li><a href="#">Test11</a></li>
+                        <li><a href="#">Test12</a></li>
+                      </ul>
+                      </li>
+                      <li><a href="#">IT &amp; Software</a>
+                        <ul>
+                        <li><a href="#">Test13</a></li>
+                        <li><a href="#">Test14</a></li>
+                        <li><a href="#">Test15</a></li>
+                      </ul>
+                      </li>
+                    </ul>
+                  </li>
+              </ul>
+            </nav>
+          </li>
+
+
+     <link href="https://try.inspire.mindbreeze.com/apps/css/adapted.css"     rel="stylesheet">
+    
+
+  <style>	
+    body {font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;font-size: 13px !important;}
+    h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;font-weight: normal !important;}
+    .mb-stack {padding: 0px !important;margin-bottom: 0px !important;}
+    h2 {font-size: 1.46em !important;}
+    img {max-width: none !important;}
+  </style>
+
+    <div data-template="view" data-count="5" data-queryspelling-upto-results="50">
+      <div class="container mb-role" role="main" id="main" data-shortcut="alt+2" data-aria-describedby="results-description" data-track-activedescendant>
+        <script type="text/x-mustache-template" data-tag-name="span" data-id="results-description" data-class-name="mb-role" data-attr-role="tooltip" data-attr-aria-hidden="true">
+          {{i18n.editor_result_title}} (Alt+2)
+        </script>
+        <div data-template="alert"></div>
+        <div class="mb-stack" data-template="stack" data-model="stack">
+          <div class="mb-stack-title" aria-live="assertive">
+            <script type="text/x-mustache-template" data-attr-role="status" data-attr-class="{{^estimated_count?}}hide{{/estimated_count?}}" data-attr-tabindex="-1">
+              {{^status_messages.no_results?}}
+                <h2>{{#estimated_count?}}{{estimated_count}} {{i18n.editor_result_title}}{{/estimated_count?}}
+                  <button class="btn hidden-when-mb-stack-has-child btn-export" 
+                    name="export" 
+                    data-action-name="exportResults" 
+                  >{{i18n.export}}
+                  </button>
+                </h2>
+              {{/status_messages.no_results?}}
+            </script>
+          </div>
+
+          <div class="mb-stack-content">
+            <div data-template="searchinfo"></div>
+            <div id="snippet-target"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://try.inspire.mindbreeze.com/apps/scripts/client.js" data-global-export="false"></script>
+    <script>
+     Mindbreeze.require(["client/loader", "utils/browser"],
+     function(Loader, browser ) {
+        Loader.loadAppFromResource({sourceURL: "https://try.inspire.mindbreeze.com", appid: "CC8836C91E2C421285B2BCE1E51F30AB", target: "#snippet-target"});
+     });
+    </script>
+   
+
+   
+
+  <!-- Footer -->
+  <div id="footer">
+    <div class="content" id="browseContainer">
+      <h2>Browse</h2>
+      <ul>
+        <li><a href="#">Providers</a></li>
+        <li><a href="#">Universities</a></li>
+        <li><a href="#">Institution</a></li>
+        <li><a href="#">Subject</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Languages</a></li>
+      </ul>
+    </div>
+
+    <div class="content" id="moreContainer">
+      <h2>More</h2>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Intellectual Property </a></li>
+        <li><a href="#">Cookie policy</a></li>
+      </ul>
+    </div>
+
+      <div class="content" id="contactContainer">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Google+</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Linkedin</a></li>
+      </ul>
+    </div>
+
+    <div class="content" id="LogoContainer">
+      <img src="images/FooterLogo.png"  alt="logo" height="52" width="200">
+    </div>
+    <div id="footerBot">
+      <p>Lufthansa Copyright 2017</p>
+      <p id="terms"><a href="#"> Terms and Conditions</a></p>
+    </div>
+  </div>
+</body>
+</html>

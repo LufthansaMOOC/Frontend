@@ -1,0 +1,173 @@
+.mb-filters {
+  background: #fff;
+}
+
+.mb-filters .nav {
+  margin-bottom: 0;
+}
+.mb-filters .nav-pills li label {
+  padding-right: 2.75em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+}
+.mb-filters .nav-pills a {
+  line-height: 2em;
+  padding-right: 2em;
+  white-space: nowrap;
+}
+.mb-filters .nav li {
+  position: relative;
+}
+.mb-filters ul .pull-right {
+  position: absolute;
+  float: none;
+  right: 0;
+  padding-right:12px;
+  padding-left:4px;
+  top: 50%;
+  margin-top: -1em;
+  line-height: 2em;
+  background: #fff;
+}
+
+.mb-filters input.ui-autocomplete-input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.mb-filters {
+  background: #fff;
+}
+
+.mb-filters .nav {
+  margin-bottom: 0;
+}
+.mb-filters .nav-pills li label {
+  padding-right: 2.75em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+}
+.mb-filters .nav li {
+  position: relative;
+}
+
+.mb-filters input.ui-autocomplete-input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media (max-width: 568px) {
+
+  .mb-mobile-viewport .mb-filter .checkbox input[type=checkbox] {
+    background: transparent;
+    -webkit-appearance: none;
+    margin-left: 0;
+    border: 0;
+    display: inline-block;
+    width: 22px;
+  }
+
+  .mb-mobile-viewport .mb-filter h3 + div ul,
+  .mb-mobile-viewport .mb-filter h3 + div h5 {
+    border-top: 1px solid #eee;
+  }
+
+  .mb-mobile-viewport .mb-filter {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mb-mobile-viewport .mb-filter ul,
+  .mb-mobile-viewport .mb-filter h5 {
+    font-weight: normal;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    padding: 8px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 50%;
+  }
+
+  .mb-mobile-viewport .mb-filter ul,
+  .mb-mobile-viewport .mb-filters h4 {
+    padding-right: 10px;
+    display: inherit;
+  }
+
+  .mb-mobile-viewport .mb-filter ul .pull-right,
+  .mb-mobile-viewport .mb-filter .checkbox input,
+  .mb-mobile-viewport .mb-filter .mb-progress-indicator,
+  .mb-mobile-viewport .mb-filter input.ui-autocomplete-input {
+    display: none;
+  }
+
+  .mb-mobile-viewport .mb-filter ul {
+    display: block;
+    position: absolute;
+    background: #fff;
+    right: 0;
+    top: 0;
+    left: 50%;
+    width: auto;
+    bottom: 0;
+    text-align: right;
+    font-style: italic;
+    color: #777;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: -14px; /* hide last separator */
+  }
+
+  .mb-mobile-viewport .mb-filter .nav-pills li label {
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+
+  .mb-mobile-viewport .mb-filter li,
+  .mb-mobile-viewport .mb-filters li div {
+    display: inline;
+  }
+
+  .mb-mobile-viewport .mb-filter li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .mb-mobile-viewport .mb-filter input + *,
+  .mb-mobile-viewport .mb-filter .mb-phone-action-button {
+    display: none;
+  }
+
+  .mb-mobile-viewport .mb-filter input:checked + * {
+    display: inline;
+  }
+
+  .mb-mobile-viewport .mb-filter input:checked + *:after {
+    content: ", ";
+    margin-left: -3px;
+  }
+
+  .mb-mobile-viewport .mb-filter input.ui-autocomplete-input {
+    display: none;
+  }
+
+  .mb-mobile-viewport .mb-filter ul .pull-right,
+  .mb-mobile-viewport .mb-filter input,
+  .mb-mobile-viewport .mb-filter .mb-progress-indicator,
+  .mb-mobile-viewport .mb-filter input.ui-autocomplete-input {
+    display: none;
+  }
+
+  .mb-mobile-viewport .mb-action-sheet .mb-filter ul::after {
+    content: none
+  }
+}

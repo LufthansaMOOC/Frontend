@@ -1,0 +1,237 @@
+
+.mb-action-sheet {
+  transition: all 0.15s ease-in-out;
+  background: rgba(0,0,0,0);
+}
+
+body.mb-action-sheet-open .mb-action-sheet {
+  background: rgba(0,0,0,0.6);
+}
+
+.mb-action-sheet .mb-actions {
+  border: 0;
+}
+
+.mb-action-sheet {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+
+.mb-action-sheet > div {
+  transition: all 0.35s ease-out;
+  position: absolute;
+  bottom: -100%;
+}
+
+body.mb-action-sheet-open .mb-action-sheet > div {
+  bottom: 0px;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.mb-action-sheet-open .mb-action-sheet-visible {
+  display: inherit !important;
+}
+
+@media (max-width: 568px) {
+  .mb-action-sheet input.ui-autocomplete-input {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    border-width: 1px 0;
+    padding: 12px 10px 8px 10px;
+    -webkit-appearance: none;
+    display: block;
+    border-top: 1px solid #eee;
+  }
+
+  body.mb-action-sheet-open .ui-autocomplete {
+    margin: -10px 10px 4px 10px;
+    bottom: auto;
+  }
+
+  .mb-action-sheet-actions {
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+  }
+
+  .mb-action-sheet input + * {
+    display: block;
+  }
+  
+  .mb-action-sheet ul, .mb-action-sheet h5 {
+  width: auto;
+  }
+
+  .mb-action-sheet h5 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    font-weight: normal;
+    text-align: center;
+    color: #eee;
+    border: 0;
+    font-size: 1.25em;
+    text-shadow: 0 0 10px #000;
+  }
+
+  .mb-action-sheet ul {
+    position: static;
+    text-align: left;
+    font-style: normal;
+    background: transparent;
+    margin-right: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .mb-action-sheet input:checked + *:after {
+    content: "";
+    margin-left: 0;
+  }
+
+  .mb-action-sheet li div, .mb-action-sheet ul .pull-right, .mb-action-sheet input {
+    display: block;
+  }
+
+  .mb-action-sheet li {
+    display: list-item;
+  }
+
+  .mb-action-sheet .nav-pills li label, .mb-action-sheet a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top: 1px solid #eee;
+    padding: 10px;
+    display: block;
+  }
+
+  .mb-action-sheet .nav-pills li:first-of-type label,
+  .mb-action-sheet *:first-of-type a {
+    border-top-width: 0;
+  }
+
+  .mb-action-sheet .nav-pills li li:first-of-type label,
+  .mb-action-sheet *:first-of-type a a {
+    border-top-width: 1px;
+  }
+  
+  .mb-action-sheet .nav-pills li label {
+     border-color: #eee;
+  }
+  
+  .mb-action-sheet ul {
+    margin: 0;
+  }
+  
+  .mb-action-sheet label {
+    position: relative;
+  }
+  
+  .mb-action-sheet label span {
+    width: auto;
+    display: block;
+    margin-right: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .mb-action-sheet ul label .pull-right {
+    position: absolute;
+    float: none;
+    right: 0;
+    padding-right:12px;
+    padding-left:4px;
+    top: 50%;
+    margin-top: -1em;
+    line-height: 2em;
+    background: #fff;
+    margin-right: 0;
+  }
+  
+  .mb-action-sheet {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .mb-action-sheet .span3 {
+    position: static;
+  }
+  
+  .mb-action-sheet h4,
+  .mb-action-sheet .span3 > div {
+    display: none;
+  }
+ 
+  .mb-action-sheet > div > div,
+  .mb-action-sheet .mb-phone-action-button {
+    display: block;
+    background: #fff;
+    color: #222;
+    padding: 0;
+    margin: 0;
+    border-radius:4px;
+    padding-bottom: 4px;
+    border: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .mb-action-sheet .span3 > div.mb-open {
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .mb-action-sheet div.mb-progress-indicator {
+    display: none;
+  }
+
+  .mb-action-sheet .mb-phone-action-button {
+    margin-top: 10px;
+    padding: 12px 10px;
+    font-size: 1.25em;
+    color: #0071bc;
+    font-weight: bold;
+  }
+  
+  .mb-action-sheet ul .pull-right {
+    background: transparent;
+  }
+
+  .mb-action-sheet .checkbox input[type=checkbox] {
+    background: transparent;
+    -webkit-appearance: none;
+    margin-left: 0;
+    border: 0;
+    display: inline-block;
+    width: 22px;
+  }
+
+  .mb-action-sheet input[type=checkbox]:before {
+    content: "✓";
+    color: transparent;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-top: -0.45em;
+  }
+
+  .mb-action-sheet input[type=checkbox]:checked:before {
+    color: #777;
+  }
+}

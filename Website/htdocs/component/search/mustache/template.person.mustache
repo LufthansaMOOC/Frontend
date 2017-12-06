@@ -1,0 +1,32 @@
+<h3>
+  <span>{{templateoptions.title}}</span>
+  <script type="text/x-mustache-template" data-attr-role="status" data-attr-class="estimated_count_container{{^estimated_count?}}hide{{/estimated_count?}}" data-attr-tabindex="-1">
+  {{^status_messages.no_results?}}
+    <span class="estimated_count">
+      {{#estimated_count?}}
+        ({{estimated_count}} 
+        {{^singular}}{{i18n.editor_result_title}}){{/singular}}
+        {{#singular}}{{i18n.editor_singular_result_title}}){{/singular}}
+      {{/estimated_count?}}
+    </span>
+  {{/status_messages.no_results?}}
+</script>
+<div data-template="searchinfo"></div>
+</h3>
+<div data-template="results" class="person-results-container">
+  <script type="text/x-mustache-template" data-tag-name="div" data-class-name="personResultElement sb-result">
+    <div>
+      {{#mes:thumbnail?}}
+      <a href="{{actions.data[0].value.href}}" class="personResultImage">
+        <img class="pull-left mb-thumbnail mb-default-thumbnail" src="{{mes:thumbnail.data.value.href}}">
+      </a>
+      {{/mes:thumbnail?}}
+      <div class="ResultEl">
+        <a href="{{actions.data[0].value.href}}"><span class="personDefaultOutput personTitle">{{{title}}}</span></a>
+        <span class="personMail personDefaultOutput"><i class="icon-envelope-alt"></i> <a title="{{{mail}}}" href="mailto:{{{mail}}}">{{i18n.client_send_email}}</a></span>
+        <span class="personTelNr personDefaultOutput"><i class="icon-phone"></i> {{{telephonenumber}}}</span>
+        <span class="personJobtitle personDefaultOutput"><i class="icon-suitcase"></i> {{{jobtitle}}}</span>
+      </div>
+    </div>
+  </script>
+</div>

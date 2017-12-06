@@ -1,0 +1,184 @@
+.searchboxElement {
+  box-shadow: 1px 2px 2px #d8d8d8;
+  border-left: 10px solid #ffc02d;
+  margin: 10px 0px;
+  padding-left: 10px;
+  /*clear: both;*/
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 5px;
+  min-height: 155px;
+}
+.searchboxElement h3{
+  font-weight: normal;
+  line-height: 27px;
+  font-size: 20.5px;
+  margin-top: 7px;
+}
+.searchboxElement .tabArrow {
+  position: absolute;
+  float: right;
+  width: 70px;
+  height: 100%;
+  background-color: #fff;
+  right: 0px;
+  z-index: 999;
+  top: 0px;
+  background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 73%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+.searchboxElement .tabArrowInner {
+  border-right:5px solid #003b9c;
+  border-bottom:5px solid #003b9c;
+  width:15px;
+  height:15px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  top: 50%;
+  position: absolute;
+  margin-top: -11px;
+  margin-left: 35px;
+  opacity: 0.7;
+}
+.searchboxElement .tabArrowInner:hover {
+  opacity: 0.8;
+}
+.boxWidth50 {
+  width: 50%;
+  clear: none;
+  float: left;
+  box-sizing: border-box;
+}
+.boxWidth33 {
+  width: 33.33%;
+  float: left;
+}
+.boxWidth66 {
+  width: 66.66%;
+  float: left;
+}
+@media(max-width:767px) {
+  .boxWidth50,
+  .boxWidth66,
+  .boxWidth33 {
+    width: 100%;
+  }
+}
+.boxWidth100 {
+  width: 100%;
+  float: left;
+}
+.boxGradientArrow {
+  background-color: transparent !important;
+  background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+.searchboxElement .sb-result {
+  vertical-align: top;
+}
+
+
+.default-results .defaultResultElement {
+  display: inline-block;
+  margin-right: 15px;
+}
+.default-results a.defaultResultImage {
+  display: block;
+  max-width: 150px;
+  text-align: center;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+}
+.default-results .mb-default-thumbnail {
+  height: 80px;
+  max-width: none;
+  width: auto;
+}
+.default-results .default-results-container {
+  white-space: nowrap;
+}
+.default-results .default-results-container .ResultEl{
+  float:left;
+  padding-top:0px; 
+  font-size:13px;
+}
+
+
+.gallery-results .galleryTemplateResult {
+  display: inline-block;
+  margin-left: 5px;
+}
+.gallery-results.normal .galleryTemplateResult {
+  margin-bottom: 5px;
+}
+.gallery-results .galleryTemplateResult:first-child {
+  margin-left: 0px;
+}
+.gallery-results .gallery-results-container {
+  white-space: nowrap;
+}
+.gallery-results .gallery-results-container a {
+  display: block;
+  max-width: 150px;
+  height: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+.gallery-results .gallery-results-container img {
+  height: 100px;
+  max-width: none;
+  width: auto;
+}
+
+
+.person-results .person-results-container {
+    white-space: nowrap;
+}
+.person-results .person-results-container .ResultEl{
+  float:left;
+  padding-top:0px; 
+  font-size:13px;
+}
+.person-results .personResultElement {
+    display: inline-block;
+    margin-right: 15px;
+}
+.person-results a.personResultImage {
+    display: block;
+    max-width: 150px;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+}
+.person-results .personResultImage .mb-default-thumbnail {
+  height: 80px;
+  max-width: none;
+  width: auto;
+}
+.person-results .personResultElement .personDefaultOutput {
+  display: block;
+  color: black;
+  font-size: 11px;
+}
+.person-results .personResultElement .personTitle {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.searchboxElement.vertical .sb-result{
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex
+  display: flex;
+  margin-bottom: 10px;
+}
+.searchboxElement.normal [data-template="results"] {
+  white-space: normal;
+}

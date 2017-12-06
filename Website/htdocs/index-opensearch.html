@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html data-request-lang>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mindbreeze</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="generator" content="Mindbreeze - Web Client Version: 17.2.6.714" />
+    <meta name="mes:user" content="$$USERNAME$$">
+    <meta name="mes:emailaddress" content="$$EMAILADDRESS$$">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link href="../css/adapted.css?17.2.6.714" rel="stylesheet">
+  </head>
+  <body class="mb-body" data-template="search">
+    <div class="mb-header navbar navbar-inverse">
+      <span class="pull-right mb-top-menu">
+        <ul class="nav mb-scroll-horizontal mb-hidden-embedded mb-no-print">
+          <script type="text/x-mustache-template" data-tag-Name="li"><a href="#" class="action" data-action-object="{&quot;modal&quot;:{ &quot;id&quot;: &quot;preferences&quot;}}">{{{i18n.client_settings}}}</a></script>
+          <script type="text/x-mustache-template" data-tag-Name="li"><a href="#" class="action" data-action-object="{&quot;logout&quot;:{}}">{{{i18n.logout}}}</a></script>
+          <script type="text/x-mustache-template" data-model="profile" data-tag-Name="li" data-attr-style="{{^help_url}}display: none{{/help_url}}"><a href="{{help_url}}">{{{i18n.client_toolbar_help_label}}}</a></script>
+          <script type="text/x-mustache-template" data-tag-Name="li"><a class="mb-popover-trigger" data-action-object="{&quot;showAbout&quot;: {}}">{{{i18n.About}}}</a></script>
+        </ul>
+      </span>
+      <h1>
+        <img class="mb-pulse" src="../img/logo-bg.png" alt="Mindbreeze InSite" style="position: absolute;">
+        <img src="../img/logo.png" alt="Mindbreeze">
+      </h1>
+      <div class="container">
+        <form class="center search-field mb-print-left" data-template="searchform">
+          <input data-template="suggest"        
+          data-placeholder="search"
+          class="mb-query" name="query" type="search" 
+          data-aria-label="search"
+          autofocus
+          >
+          <button class="btn btn-link mb-no-print" type="submit" tabindex="-1"><i class="icon-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div data-template="view" data-id="main" class="main" data-count="5">
+        <!-- Suchreiter -->
+        <div class="navbar">
+          <div class="navbar-inner nowrap" style="position: relative">
+            <div class="container">
+              <ul class="nav" data-template="tabs" data-model="tabs" data-datasourcetabs="true">
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="container">
+        <div data-template="alert"></div>
+
+        <div class="mb-stack" data-template="stack" data-model="stack">
+          <div class="mb-stack-title" aria-live="assertive">
+            <script type="text/x-mustache-template">
+              {{^status_messages.no_results?}}
+                <h2>{{#estimated_count?}}{{estimated_count}} {{i18n.editor_result_title}}{{/estimated_count?}}</h2>
+              {{/status_messages.no_results?}}
+              {{#status_messages.no_results?}}
+                <span class="mb-acc">
+                  {{status_messages.no_results.error}}
+                  {{status_messages.no_results.warning}}
+                  {{status_messages.no_results.info}}
+                </span>
+              {{/status_messages.no_results?}}
+            </script>
+          </div>
+
+          <div class="mb-stack-content">
+            <div data-template="searchinfo"></div>
+            <div class="mb-progress-indicator mb-absolute mb-center"><i class="icon-spinner icon-large"></i></div>
+            <div class="row-fluid">
+              <div class="span9">
+                <div data-template="sortswitch" class="pull-right">
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div data-template="map"></div>
+
+                <div data-template="results" data-appendonscroll="true">
+                </div>
+
+                <div data-template="pagination" class="visible-phone mb-no-print mb-top-separated-phone"></div>
+              </div>
+
+              <div class="span3">
+                <hr class="visible-phone">
+                <div class="mb-filters mb-no-print" role="tree">
+                  <div data-template="collect"></div>
+                  <!-- ul data-template="breadcrumb" class="nav nav-stacked nav-pills"></ul -->
+                  <div data-template="datasources" data-model="userSourceInfo" data-path="sources.data_sources"></div>
+                  <div data-template="constraints" data-model="userSourceInfo" data-path="sources.constraints"></div>
+                  <div data-template="filteredfacet" data-name="mes:date" data-suggest="false"></div>
+                  <div data-template="filteredfacets" data-name="mes:configuredfacets"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- preview -->
+    <div data-template="preview" id="mb_preview"></div>
+    <!-- preferences -->
+    <div class="modal hide" id="preferences">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h2 class="modal-title"><img src="../img/zahnrad.png" alt="" align="left" style="margin-right: 20px;"/><script type="text/x-mustache-template">{{{i18n.client_settings}}}</script></h2>
+          </div>
+          <div class="modal-body" data-template="applists">
+          </div>
+        </div>
+     </div>
+    </div>
+
+    <span data-template="feedbackbutton" data-check-if-enabled-in-profile="true"></span>
+
+  <script src="../scripts/client.js"></script>
+  <script>
+      Mindbreeze.require(["client/application", "client/resourceinfo", "client/sourceinfo", "service/open_search_channel", "service/ajax_channel"], function(Application, ResInfo, SourceInfo, OpenSearchChannel, AjaxChannel) {
+      
+      new Application({
+        startSearch: false,
+        enableProfile: true,
+        sources: SourceInfo.builtinSources.concat([
+        new OpenSearchChannel({
+            parentChannel: new AjaxChannel({ url: ResInfo.scriptLocation + "../../refbase/" })
+          }, {
+            //urlTemplate: "http://beta.refbase.net/opensearch.php?query={searchTerms}&amp;startRecord={startIndex?}&amp;maximumRecords={count?}&amp;recordSchema=atom"
+            urlTemplate: "opensearch.php?query={searchTerms}&maximumRecords={count?}&recordSchema=atom"
+          })
+        ])
+      });
+    });
+  </script>
+
+  </body>
+</html>
+

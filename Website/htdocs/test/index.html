@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8">
+    <title>Client Tests</title>
+    <link rel="stylesheet" href="qunit-1.11.0.css" />
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="../../lib/qunit.js"></script>
+    <script>
+      QUnit.config.autostart = false;
+      window.onerror = function () {}
+    </script>
+    <script src="../../scripts/client.debug.js"></script>
+    <script>
+      function trace () {
+        if (typeof console !== "undefined" && console.log && console.log.apply) console.log.apply(console, arguments);
+      }
+
+      if (typeof console === "undefined") {
+        window.console = {
+          log: function () {}
+        };
+      }
+
+      define("qunit", function () {
+        return QUnit;
+      });
+      Mindbreeze.require([
+        "jquery",
+        "underscore",
+        "service/channel",
+        "service/channel_factory",
+        "utils/coverage",
+        "utils/apptest",
+        "test/basic",
+        "test/results",
+        "test/template",
+        "test/templateeditor_test",
+        "test/application_test",
+        "test/views/tree_test",
+        "test/component/constraints",
+        "test/component/filteredfacet",
+        "test/component/filteredfacets",
+        "test/component/savedsearches",
+        "test/component/searchform",
+        "test/component/tabs",
+        "test/service/open_search_channel_test",
+        "api-test/api/v2/common/core_status_message_test",
+        "api-test/api/v2/preview/core_preview_response_test",
+        "api-test/api/v2/search/core_search_model_test",
+        "api-test/api/v2/search/core_search_output_transform",
+        "api-test/api/v2/search/core_search_request_test",
+        "api-test/api/v2/search/core_search_response_mustache_cloud_test",
+        "api-test/api/v2/search/core_search_response_test",
+        "api-test/api/v2/sourceinfo/core_sourceinfo_response_test",
+        "api-test/api/v2/suggest/core_suggest_test",
+        "api-test/model/core_computed_test",
+        "api-test/model/core_filtered_collection_test",
+        "api-test/model/core_properties_test",
+        "api-test/model/core_readonlytree_test",
+        "api-test/model/core_tree_test",
+        "api-test/utils/core_events_test",
+        "api-test/utils/core_jsonpath_parser_test",
+        "api-test/utils/core_jsonpath_test",
+        "api-test/utils/core_mustache_test",
+        "api-test/utils/core_string_test"
+        ],
+        function(
+        $,
+        _,
+        Channel,
+        ChannelFactory,
+        coverage
+        ) 
+      {
+
+        var SimpleOutputChannel = Channel.extend({
+
+          call: function(path, request, responseObserver) {
+            var promise = new Channel.DeferredCallFinished();
+            var that = this;
+            var response = that.get("response");
+            try {
+                if (responseObserver && response) { responseObserver.trigger("response", response, that); }
+              } catch (e) {
+              console.error("failed to trigger observer", e, e.stack);
+            }
+            promise.triggerDone();
+            return promise;
+          }
+
+        });
+
+        ChannelFactory.prototype.createChannel = function (channel) {
+          if (!channel || (!_.isString(channel) && !channel.useFactory)) return channel;
+
+          return new SimpleOutputChannel({ url: channel });
+        };
+
+          QUnit.start();
+
+          var doneCalled = false;
+          QUnit.done(function () {
+            if (doneCalled) return;
+            doneCalled = true;
+
+            $("#qunit-testresult .failed").attr("role", "numberOfFailedTests");
+
+            coverage.calculate();
+
+            if (typeof jscoverage_report === "function") jscoverage_report();
+         });
+      });
+
+</script>
+<!--script data-main="src/js/main" src="../../scripts/require-jquery.js"></script-->
+  </body>
+</html>

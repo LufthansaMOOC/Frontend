@@ -1,0 +1,32 @@
+<script type="text/x-mustache-template">
+  {{#orderable?}}
+    <h2>{{{i18n.client_toolbar_sortingalgorithm_label}}}</h2>
+    <div class="mb-line-item">
+      <select data-bind="orderby" data-action-object="{&quot;changeOrderBy&quot;:{}}" data-event-mask="change" aria-label="{{{i18n.client_toolbar_sortingalgorithm_label}}}">
+        {{#orderable}}
+          <option {{#isSelected?}}selected{{/isSelected?}} value="{{name}}">{{localized_name}}</option>
+        {{/orderable}}
+      </select>
+
+      {{#order_direction_available?}}
+        <fieldset class="pull-right" style="margin-left: 0;">
+          <legend class="mb-acc">{{i18n.order_direction}}</legend>
+          <label class="mb-hidden-radio" title="{{i18n.sort_ascending}}">
+            <input type="radio" name="sortswitch" value="ASCENDING" class="action" data-bind="resultset.order_direction" data-name="order_direction" data-value="ASCENDING">
+            <span>
+              <i class="icon-sort-by-alphabet"></i>
+              <span class="mb-acc">{{i18n.sort_ascending}}</span>
+            </span>
+          </label>
+          <label class="mb-hidden-radio" title="{{i18n.sort_descending}}">
+            <input type="radio" name="sortswitch" value="DESCENDING" class="action" data-bind="resultset.order_direction" data-name="order_direction" data-value="DESCENDING">
+            <span>
+              <i class="icon-sort-by-alphabet-alt"></i>
+              <span class="mb-acc">{{i18n.sort_descending}}</span>
+            </span>
+          </label>
+        </fieldset>
+      {{/order_direction_available?}}
+    </div>
+  {{/orderable?}}
+</script>

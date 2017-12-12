@@ -402,6 +402,19 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			float: right;
 		}
 		
+		
+				/* Third Page Course Content*/
+		
+		#courseContent{
+			background-color:#000066;
+			color: white;
+			
+		}
+		
+		#infoContent{
+			background-color:#e7e7e7
+		}
+		
 		/* RATING */
 		.rating {
 		unicode-bidi: bidi-override;
@@ -417,3 +430,4 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		{
 		content: "\2605";
 		position: absolute;
+		

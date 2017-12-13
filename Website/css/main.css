@@ -429,7 +429,35 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		#terms{
 			float: right;
 		}
+
+		/* Third Page Course Content*/
 		
+		#courseContent{
+			background-color:#000066;
+			color: white;
+			
+		}
+		
+		#infoContent{
+			background-color:#e7e7e7
+		}
+		
+		/* RATING */
+		.rating {
+		unicode-bidi: bidi-override;
+		direction: rtl;
+		}
+		.rating > span {
+		display: inline-block;
+		position: relative;
+		width: 1.1em;
+		}
+		.rating > span:hover:before,
+		.rating > span:hover ~ span:before 
+		{
+		content: "\2605";
+		position: absolute;
+
 		/* RATING */
 		.rating {
 		unicode-bidi: bidi-override;

@@ -14,7 +14,7 @@
 					<li>
 						<nav class="dropDown" >
 							<ul>
-								<li>
+								<li id="LanguageSelectionHeader">
 									<img src="images/langIcon.png" height="20" width="20" alt="language icon"><a href="#" >Language &#9660;</a>
 									<ul>
 									    <li><a href="#">English</a></li>
@@ -25,10 +25,10 @@
 						</nav>
 					</li>
 					<li>
-						<button class="buttonlog buttonG" id="right">Log In</button>
+						<button class="buttonlog" id="right">Log In</button>
 					</li>
 					<li>
-						<button class="buttonlog buttonG" id="right2">Sign Up</button>
+						<button class="buttonlog" id="right2">Sign Up</button>
 					</li>
 				</ul>
 			</div>
@@ -36,13 +36,13 @@
 			<div id="headerMain">
 				<div class="container">
 					<ul>	
-						<li id="logocon">
-							<img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></li>
+						<div id="logocon">
+							<img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></div>
 							<li>
 								<nav class="dropDown" id="category">
 									<ul>
 										<li>
-											<img src="images/cate.png" height="20" width="20" alt="category icon"><a href="#"><span style="color: black">Categories &#9660;</span></a>
+											<img src="images/cate.png" height="20" width="20" alt="category icon"><a href="#"><span>Categories &#9660;</span></a>
 											<ul>
 												<li>
 													<a href="#">Academics</a>
@@ -90,22 +90,17 @@
 								</nav>
 							</li>
 							<li>
-
-
-							<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"><div data-template="view" data-count="5" data-constraint="ALL">
-	<div class="mb-component-container container">
-		<form role="search" data-template="searchform" class="mb-center ">
-			<input aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
-		</form>
-	</div>
-</div><script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>
-							<!--
-							<form>
-								<input type="text" name="searchbar" style="height:17px;font-size:14pt;" placeholder="Search">
-								<button id="searchButton"><a href="index2.html">Search</a></button>
-							</form>
-						-->
-						</li>
+								
+								<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet">
+								<div data-template="view" data-count="5" data-constraint="ALL">
+									<div class="mb-component-container container">
+									<form role="search" data-template="searchform" class="mb-center ">
+										<input id="mindbreezeSearchbarTop" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
+									</form>
+								</div>
+								</div>
+								<script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>						
+							</li>													
 					</ul>
 				</div>
 			</div>
@@ -117,11 +112,12 @@
 				<h1>Lela</h1>
 				<p>Get skills in business, tech, and personal development</p>
 
-				<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"><div data-template="view" data-count="5" data-constraint="ALL">
-	<div class="mb-component-container container">
+				<!-- <link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"> -->
+				<div data-template="view" data-count="5" data-constraint="ALL">
+			<div class="mb-component-container container">
 		<form role="search" data-template="searchform" class="mb-center ">
-			<input aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
-			<button><a href="index2.html">Search</button></a>
+			<input id="mindbreezeSearchbarBanner" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
+			<button id="Bannersearch"><a href="index2.html">Search</button></a>
 		</form>
 	</div>
 </div><script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>

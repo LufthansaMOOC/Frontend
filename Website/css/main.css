@@ -37,32 +37,10 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			padding-left: 1em;
 		}
 
-		.buttonlog  {
+		.buttonlog {
 		    border: none;
 		    color: white;
-		    padding: 10px 14px;
-		    text-align: center;
-		    text-decoration: none;
-		    display: inline-block;
-		    font-size: 16px;
-		    margin: 4px 2px;
-		    -webkit-transition-duration: 0.4s; /* Safari */
-		    transition-duration: 0.4s;
-		    cursor: pointer;
-			Border-radius: 3px;
-			background-color: #000066;
-		}
-
-
-		.buttonlog:hover {
-			background-color: #DCDCDC;
-			color: #000066;
-		}
-
-		.button {
-		    border: none;
-		    color: white;
-		    padding:40px 110px;
+		    padding: 2px 12px;
 		    text-align: center;
 		    text-decoration: none;
 		    display: inline-block;
@@ -73,15 +51,39 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		    cursor: pointer
 		}
 
+		.buttonG {
+		    background-color: white;
+		    color: black;
+		    border: 2px solid #e7e7e7;
+		}
+
+		.buttonG:hover {
+			background-color: #e7e7e7;
+		}
+
+		.button {
+		    border: none;
+		    color: white;
+		    padding: 30px 110px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    margin: 4px 2px;
+		    -webkit-transition-duration: 0.4s; /* Safari */
+		    transition-duration: 0.4s;
+		    cursor: pointer
+		}
 
 		.buttonB {
 			background-color: white; 
     		color: black; 
-    		border: 2px solid #DCDCDC;
+    		border: 2px solid #008CBA;
 		}
 
 		.buttonB:hover {
-		    background-color: #DCDCDC;
+		    background-color: #008CBA;
+		    color: white;
 		}
 
 		#firstButton{
@@ -107,13 +109,12 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			padding-bottom: 8%;
 			padding-top: 8%;
 			position: relative;
-			margin-top: -3%;
+			margin-top: -2.8%;
 			background-attachment: fixed;
 			background-image: url("../images/iStock-531401122_bearbeitet_2.jpg");
 			background-position: center top;
 			background-size: cover;
 			text-align: center;
-			z-index: -1;
 
 			}
 
@@ -156,24 +157,6 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			    cursor: pointer;
 
 		}
-		
-		#mindbreezeSearchbarBanner {
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			height: 35px;
-			border-radius: 3px;
-			display: inline-block;
-			top: 27px;
-			position: relative;
-			
-		}
-		
-		#Bannersearch {
-			position: relative;
-			left: 10px;
-			border-radius: 3px;
-			height: 35px;
-		}
 
 		#BannerText p {
 			margin-left: 18%;
@@ -188,55 +171,148 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 
 		}
 		
-		/*Card Section */
-		/*padding needs to be smaller*/
-		.courses{
-		    text-align: left;
-		    text-decoration: none;
-		    display: inline-block;
-		    font-size: 16px;
-		    margin: 4px 2px;
-		    -webkit-transition-duration: 0.4s; /* Safari */
-		    transition-duration: 0.4s;
-		    
-		}
-
-		#content h1 {
-			margin-bottom: 3%;
-			margin-left: 3%;
-			font-size: 25px;
-			font-weight: bold;
-			color: #000066;
-		}
-
-		#firstCard{
-			margin-left: 8%;
-		}
-
-		#firstCard2{
-			margin-left: 8%;
-		}
 		
-		.courseCard{
-			margin-left: 15px;
-			margin-bottom: 7%;
-			padding:0;
-			width: 20%;
-			height:100%;
-			background-color: white; 
-    		color: black; 
-    		border: 2px solid gray;
-			cursor: pointer
+/*card*/
+.checked {
+    color: orange;
+}
+
+.courseContain {
+	box-shadow: 2px 2px 4px #000000;
+	margin-right: 10%;
+}
+
+.courseImg{
+	width: 100%;
+	height: auto;
+}
+
+.moocLogo {
+	width: 10%;
+}
+
+.courseCard{
+	background-color: gray;
+	width: 50%;
+}
+
+.courseCard {
+	text-decoration: none;
+	color: black;
+}
+
+.courseCard a{
+	text-decoration: none;
+	color:black;
+}
+
+.courseCard a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.courseCard h5 {
+	 margin-left: 4%;
+	 margin-right: 4%;
+	 margin-top: 5%;
+	 margin-bottom: 15%;
+}
+
+.linkContain {
+	width: 10%;
+}
+
+.courses li {
+	width: 20%;
+	display: inline-block;
+}
+
+.top {
+	margin-top: 3%;
+}
+
+.top img{
+	width: 30px;
+	float:right;
+	margin-right: 5%;
+}
+
+.top p{
+	display: inline-block;
+	margin-left: 4%;
+}
+
+.bot{
+	padding-bottom: 5%;
+	padding-top: 4%;
+}
+
+.bot p{
+	float: right;
+	margin-right: 5%;
+}
+
+.bot > div {
+	display: inline-block;
+	margin-left: 4%;
+}
+
+#content {
+	align-items: center;
+} 
+
+#content h1 {
+	margin-bottom: 3%;
+	margin-left: 3%;
+	font-size: 25px;
+	font-weight: bold;
+	color: #000066;
+}
+
+/* Scrollable card */
+
+		.menu-wrapper {
+		  position: relative;
+		  width: 480%;
+		  height: 55%;
+		  margin-left: 3%;
+		  overflow-x: hidden; /*hides bottom scroll*/
+		  overflow-y: hidden;
 		}
-		
-		.courseImg{
-			display: block;
-			height: 100%; 
-			width: 100%;
+
+		.menu {
+		  white-space: nowrap;
+		  overflow-x: hidden;
+		  overflow-y: hidden;
+
 		}
+
+		.item {
+		  margin-top: 2%;
+		  padding-bottom: 2%;
+		}
+
+		.paddle {
+		  position: absolute;
+		  top: 50%;		  
+		  color: #008CBA;
+		  display: inline-block;
+		  cursor:pointer;
+		  padding: 1.5%
+		}
+
+		.left-paddle {
+		  left: 0;
+		}
+
+		.right-paddle {
+		  right: 0;
+		}
+
+
 
 		/* Header */
-		
+
 		#header {
 				background-color: #DCDCDC;
 				color: white;
@@ -244,18 +320,17 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 
 			#topHeader {
 				background-color: #000066;
-				Height: 50px;
 			}
 
 			#right{
 				right: 110px;
-				top: 0px;
+				top: 0.001px;
 				position: absolute;
 			}
 
 			#right2 {
 				right: 15px;
-				top: 0px;
+				top: 0.001px;
 				position: absolute;
 			}
 			
@@ -267,11 +342,10 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 
 			.dropDown
 			{
-				color: white;
+				margin-top:15px
 				background-color: #000066;
 				z-index:1;
 				position: relative;
-				border-radius: 3px;
 
 			}
 
@@ -344,37 +418,28 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 
 			#headerMain {
 				margin-left: 1%;
-				margin: 20px;
+				line-height:60px;
 				position: relative;
-				margin-top: 0px;
+				margin-top: -20px;
 			}
 
-			#logocon img{
-				padding-right: 300px;
-				padding: 20px;
+			#logocon{
+				margin-right: 20%;
 			}
-			
-			#category {
-				left: 275px;
-				position: relative;
+
+			#searchButton {
+				background-color: #000066;
+			    border: none;
+			    color: white;
+			    padding: 3px 10px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 14px;
+			    margin-left: -5px;
+			    margin-bottom: 2px;
+			    cursor: pointer;
 			}
-			
-			
-			#category  img{
-				vertical-align: middle;
-			}
-			
-			#mindbreezeSearchbarTop {
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-				height: 34px;
-				border-radius: 3px;
-				display: inline-block;
-				bottom: 33px;
-				position: relative;
-			}
-			
-		
 
 		/* Footer */
 
@@ -429,47 +494,4 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		#terms{
 			float: right;
 		}
-
-		/* Third Page Course Content*/
 		
-		#courseContent{
-			background-color:#000066;
-			color: white;
-			
-		}
-		
-		#infoContent{
-			background-color:#e7e7e7
-		}
-		
-		/* RATING */
-		.rating {
-		unicode-bidi: bidi-override;
-		direction: rtl;
-		}
-		.rating > span {
-		display: inline-block;
-		position: relative;
-		width: 1.1em;
-		}
-		.rating > span:hover:before,
-		.rating > span:hover ~ span:before 
-		{
-		content: "\2605";
-		position: absolute;
-
-		/* RATING */
-		.rating {
-		unicode-bidi: bidi-override;
-		direction: rtl;
-		}
-		.rating > span {
-		display: inline-block;
-		position: relative;
-		width: 1.1em;
-		}
-		.rating > span:hover:before,
-		.rating > span:hover ~ span:before 
-		{
-		content: "\2605";
-		position: absolute;

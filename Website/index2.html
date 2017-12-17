@@ -8,6 +8,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <script type="text/javascript">
+        function getData() {
+            //var queryString = decodeURIComponent(window.location.search);
+            //queryString = queryString.substring(1);
+
+            var queryString = window.location.hash.substr(1);
+            document.getElementById("searchBar").value = queryString;
+
+            document.getElementById("searchForm").submit();
+
+
+        }
+        window.onload = getData;
+  </script>
+
 
   <title>LELA</title>
 
@@ -31,8 +46,8 @@
             </nav>
           </li>
           
-          <button class="buttonlog buttonG">Log In</button>
-          <button class="buttonlog buttonG">Sign Up</button>
+          <button class="buttonlog buttonG"><a href="index3.html">Log In</button></a>
+          <button class="buttonlog buttonG" onClick = "getData()">Sign Up</button>
         
         </ul>
       </div>
@@ -41,7 +56,7 @@
         <div class="container">
           <ul>  
             <li id="logocon">
-              <a href="index.html"><img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></li></a>
+              <button id="Bannersearch"><a href="#index1.html"><img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></li></button></a>
               <li>
                 <nav class="dropDown" id="category">
                   <ul>
@@ -98,54 +113,91 @@
       </div>
     </div>
 
+
 <!--MindBreeze -->
-<link href="https://try.inspire.mindbreeze.com/apps/css/adapted.css"     rel="stylesheet">
-    <link href="https://try.inspire.mindbreeze.com/resource/theme/custom.css" rel="stylesheet">
-
-  <style> 
-    body {font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;font-size: 13px !important;}
-    h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;font-weight: normal !important;}
-    .mb-stack {padding: 0px !important;margin-bottom: 0px !important;}
-    h2 {font-size: 1.46em !important;}
-    img {max-width: none !important;}
-  </style>
-
-    <div data-template="view" data-count="5" data-queryspelling-upto-results="50">
-      <div class="container mb-role" role="main" id="main" data-shortcut="alt+2" data-aria-describedby="results-description" data-track-activedescendant>
-        <script type="text/x-mustache-template" data-tag-name="span" data-id="results-description" data-class-name="mb-role" data-attr-role="tooltip" data-attr-aria-hidden="true">
-          {{i18n.editor_result_title}} (Alt+2)
-        </script>
-        <div data-template="alert"></div>
-        <div class="mb-stack" data-template="stack" data-model="stack">
-          <div class="mb-stack-title" aria-live="assertive">
-            <script type="text/x-mustache-template" data-attr-role="status" data-attr-class="{{^estimated_count?}}hide{{/estimated_count?}}" data-attr-tabindex="-1">
-              {{^status_messages.no_results?}}
-                <h2>{{#estimated_count?}}{{estimated_count}} {{i18n.editor_result_title}}{{/estimated_count?}}
-                  <button class="btn hidden-when-mb-stack-has-child btn-export" 
-                    name="export" 
-                    data-action-name="exportResults" 
-                  >{{i18n.export}}
-                  </button>
-                </h2>
-              {{/status_messages.no_results?}}
+<!--<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"> -->
+<link rel="stylesheet" type="text/css" href="css/adapted.css">
+<div data-template="view" data-count="5" data-constraint="ALL">
+  <div class="mb-component-container container">
+    <form id="searchForm" role="search" data-template="searchform" class="mb-center">
+      <input id ="searchBar" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
+    </form>
+    <div class="row-fluid">
+      <div class="span3">
+        <div data-template="filteredfacet" data-name="cost" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+          <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+          </script>
+        </div>
+        <div data-template="filteredfacet" data-name="instructorname" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+            <div class="mb-edit-bar">
+              <button class="btn edit" tabindex="-1"><em class="icon-pencil"></em></button> <button class="btn delete" tabindex="-1"><em class="icon-trash"></em></button> <span class="btn mb-drag-handle"><em class="icon-move"></em></span>
+            </div>
+            <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
             </script>
           </div>
-
-          <div class="mb-stack-content">
-            <div data-template="searchinfo"></div>
-            <div id="snippet-target"></div>
-          </div>
-        </div>
+        <div data-template="filteredfacet" data-name="language" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+              <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+              </script>
+            </div>
+        <div data-template="filteredfacet" data-name="mooctype" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+                <div class="mb-edit-bar">
+                  <button class="btn edit"><em class="icon-pencil"></em></button> <button class="btn delete"><em class="icon-trash"></em></button> <span class="btn mb-drag-handle"><em class="icon-move"></em></span>
+                </div>
+                <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+                </script>
+              </div>
+        <div data-template="filteredfacet" data-name="topic" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+                  <div class="mb-edit-bar">
+                    <button class="btn edit"><em class="icon-pencil"></em></button> <button class="btn delete"><em class="icon-trash"></em></button> <span class="btn mb-drag-handle"><em class="icon-move"></em></span>
+                  </div>
+                  <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+                  </script>
+                </div>
+        <div data-template="filteredfacet" data-name="requiredtime" class="mb-role" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true" style="display: block;" data-title="Required Time">
+                    <div class="mb-edit-bar">
+                      <button class="btn edit" tabindex="-1"><em class="icon-pencil"></em></button> <button class="btn delete" tabindex="-1"><em class="icon-trash"></em></button> <span class="btn mb-drag-handle"><em class="icon-move"></em></span>
+                    </div>
+                    <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+                    </script>
+                  </div>
       </div>
+      <div class="span9">
+                    <div data-template="results">
+                      <script type="text/x-mustache-template" data-attr-role="group" data-attr-aria-labelledby="result_{{id}}" data-class-name="media mb-clickable-phone" data-attr-data-action-object="{ &quot;toggleOpen&quot;: { &quot;enabledSelector&quot;: &quot;.visible-phone&quot; }}"><span class="pull-left media-object" aria-hidden="true">
+    {{#actions.data[0].value.href?}}<a href="{{actions.data[0].value.href}}" data-disabled-selector=".visible-phone" tabindex="-1" target="_blank">{{/actions.data[0].value.href?}}
+      {{{icon}}}
+    {{#actions.data[0].value.href?}}</a>{{/actions.data[0].value.href?}}
+  </span>
+  <div class="media-body">
+    <h3 class="media-heading" id="result_{{id}}">
+      {{#actions.data[0].value.href?}}<a href="{{actions.data[0].value.href}}" data-disabled-selector=".visible-phone" target="_blank">{{/actions.data[0].value.href?}}
+      {{{title}}}
+      {{#actions.data[0].value.href?}}</a>{{/actions.data[0].value.href?}}
+    </h3>
+    <ul class="mb-actions mb-separated hidden-phone mb-visible-open mb-no-print">
+      {{#actions.data}} <li class="nowrap">{{{html}}}</li>{{/actions.data}}
+      <li class="nowrap"><a role="button" class="action collect" tabindex="0" data-action-object="{&quot;collectResult&quot;:{}}">{{{i18n.Collect}}}</a></li>
+    </ul>
+    <dl class="mb-metadata mb-comma-separated-values mb-horizontal mb-separated hidden-phone mb-visible-open mb-small">
+      <dt class="mb-acc">{{i18n.date}}</dt><dd>{{{mes:date}}}</dd>
+      {{#mes:summary}}
+        <dt>{{name}}</dt>{{#data}}<dd>{{#actions?}}<span class="mb-dropdown-toggle"><a data-action-object="{&quot;openMenu&quot;: {&quot;propertyId&quot;: &quot;{{property:id}}&quot;, &quot;position&quot;: {{data:position}} }}" class="nowrap">{{/actions?}}{{{html}}}{{#actions?}} <span class="caret"></span></a></span> {{/actions?}}</span></dd>{{/data}}
+      {{/mes:summary}}
+    </dl>
+    {{#content}}
+      <p class="mb-content">{{{.}}}</p>
+    {{/content}}
+    <span class="clearfix"></span>
+  </div>
+                      </script>
+                    </div>
+                    <ul data-template="pagination" class="pager">
+                        <a href="#" class="mb-next mb-center mb-block action" data-action="this.nextPage({ append: true })" data-i18n="mobileclient_load_more_results">Load more results</a>
+                      </ul>
+                  </div>
     </div>
-
-    <script src="https://try.inspire.mindbreeze.com/apps/scripts/client.js" data-global-export="false"></script>
-    <script>
-     Mindbreeze.require(["client/loader", "utils/browser"],
-     function(Loader, browser ) {
-        Loader.loadAppFromResource({sourceURL: "https://try.inspire.mindbreeze.com", appid: "CC8836C91E2C421285B2BCE1E51F30AB", target: "#snippet-target"});
-     });
-    </script>
+  </div>
+</div><script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>
    
 
 
@@ -153,8 +205,8 @@
 
   <!-- Footer -->
   <div id="footer">
-    <div class="content" id="browseContainer">
-      <h2>Browse</h2>
+    <div class ="content" id="browseContainer">
+      <h2 id ="SoftwARE">Browse</h2>
       <ul>
         <li><a href="#">Providers</a></li>
         <li><a href="#">Universities</a></li>

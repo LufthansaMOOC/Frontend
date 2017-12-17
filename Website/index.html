@@ -8,6 +8,8 @@
 		<title>LELA</title>
 	</head>
 	<body>
+	
+
 		<!-- Navigation  -->
 		<div id="header">
 			<div id="topHeader">
@@ -90,40 +92,47 @@
 									</ul>
 								</nav>
 							</li>
-							<li>
-								
-								<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet">
-								<div data-template="view" data-count="5" data-constraint="ALL">
-									<div class="mb-component-container container">
-									<form role="search" data-template="searchform" class="mb-center ">
-										<input id="mindbreezeSearchbarTop" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
-									</form>
-								</div>
-								</div>
-								<script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>						
-							</li>													
+						</ul>				
 					</ul>
+				</div>
+			
 				</div>
 			</div>
 		</div>
 
+
+
+
 		<!--Banner-->
 		<div id ="Banner">
 			<div id="BannerText">
-				<h1>Lela</h1>
+				<h1 id="Lela">Lela</h1>
 				<p>Get skills in business, tech, and personal development</p>
 
-				<!-- <link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"> -->
-				<div data-template="view" data-count="5" data-constraint="ALL">
-			<div class="mb-component-container container">
+
+		<!--Mindbreeze -->
+		<!--<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"> -->
+		<link rel="stylesheet" type="text/css" href="css/adapted.css">
+		<div data-template="view" data-count="5" data-constraint="ALL">
+	<div class="mb-component-container container">
 		<form role="search" data-template="searchform" class="mb-center ">
-			<input id="mindbreezeSearchbarBanner" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
-			<button id="Bannersearch"><a href="index2.html">Search</button></a>
+			<input id="searchBar" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
+			<button id="Bannersearch" onClick="searchFunction()"><!--<a href="index2.html"> -->Search</button>
 		</form>
 	</div>
-</div><script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>
+</div>
 
-				<!--
+
+
+
+<script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>
+	
+	
+
+	
+
+	<!--
+				
 				<form>
 					<input type="text" name="searchbar2"  placeholder="Search">
 					
@@ -529,5 +538,18 @@
 		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 
     	<script  src="js/scroll.js"></script>
+    	
+
+    	<script type="text/javascript">
+		function searchFunction() {
+			var searchBar = document.getElementById("searchBar");
+			var searchQuery = searchBar.value;
+			var Lela = document.getElementById("Lela");
+			Lela.innerHTML = searchQuery;
+
+			window.location.href = "index2.html" + '#' +searchQuery;
+		
+		}
+	</script>
 	</body>
 </html>

@@ -37,6 +37,7 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			padding-left: 1em;
 		}
 
+
 		.buttonlog {
 		    border: none;
 		    color: white;
@@ -115,14 +116,18 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			background-position: center top;
 			background-size: cover;
 			text-align: center;
+			z-index: +5;
+
 
 			}
 
-			#Banner img {
-				width: 24%;
-				height: auto;
-				filter: brightness(10%);
-			}
+
+
+		#Banner img {
+			width: 24%;
+			height: auto;
+			filter: brightness(10%);
+		}
 
 		#BannerText {
    			background: rgba(255, 250, 255, 0.7);

@@ -8,6 +8,23 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script type="text/javascript">
+			function getData() {
+
+				var courseTitle = window.location.hash.substr(1);
+
+				fetch('https://try.inspire.mindbreeze.com/api/v2/search', {
+    method: 'post',
+    body: JSON.stringify({"query": {"unparsed": "mindbreeze"}, "count":5, "properties": [{ "name": "title", "formats": ["HTML"]  },{ "name": "content", "formats": ["HTML"] }] })
+  })
+  .then(response => {
+    if (response.ok) $div.textContent = 'Ok';
+    else alert(response.statusText);
+    
+    $div.te
+			}
+		</script>
 		<title>LELA</title>
 	</head>
 	<body>

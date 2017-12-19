@@ -3,8 +3,17 @@
 
 <head>
 
-    <link rel="shortcut icon" href="/logo1.ico" type="image/x-icon">
-    <link rel="icon" href="images/logo1.ico" type="image/x-icon">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!--
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+-->
 
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -59,7 +68,7 @@
         <div class="container">
           <ul>  
             <li id="logocon">
-              <button id="Bannersearch"><a href="#index1.html"><img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></li></button></a>
+              <a class ="logocon" href="/index.html"><img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></li></a>
               <li>
                 <nav class="dropDown" id="category">
                   <ul>
@@ -117,7 +126,75 @@
     </div>
 
 
+<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"><div data-template="view" data-count="5" data-constraint="ALL">
+  <div class="mb-component-container container">
+    <form id="formSearch" role="search" data-template="searchform" class="mb-center ">
+      <input id="searchBar" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
+    </form>
+    <div class="row-fluid">
+      <div class="span3">
+        <div data-template="filteredfacet" data-name="cost" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+          <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+          </script>
+        </div>
+        <div data-template="filteredfacet" data-name="instructorname" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+            <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+            </script>
+          </div>
+        <div data-template="filteredfacet" data-name="language" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+              <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+              </script>
+            </div>
+        <div data-template="filteredfacet" data-name="requiredtime" class="mb-role" style="display: block;" data-title="Required Time" data-collapsible="true" role="tablist" tabindex="0" aria-multiselectable="true">
+                <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+                </script>
+              </div>
+        <div data-template="filteredfacet" data-name="topic" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+                  <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+                  </script>
+                </div>
+      </div>
+      <div class="span9">
+                  <div data-template="results">
+                    <script type="text/x-mustache-template" data-attr-role="group" data-attr-aria-labelledby="result_{{id}}" data-class-name="media mb-clickable-phone" data-attr-data-action-object="{ &quot;toggleOpen&quot;: { &quot;enabledSelector&quot;: &quot;.visible-phone&quot; }}"><span class="pull-left media-object" aria-hidden="true">
+    {{#actions.data[0].value.href?}}<a href="{{actions.data[0].value.href}}" data-disabled-selector=".visible-phone" tabindex="-1" target="_blank">{{/actions.data[0].value.href?}}
+      {{{icon}}}
+    {{#actions.data[0].value.href?}}</a>{{/actions.data[0].value.href?}}
+  </span>
+  <div class="media-body">
+    <h3 class="media-heading" id="result_{{id}}">
+      {{#actions.data[0].value.href?}}<a href="{{actions.data[0].value.href}}" data-disabled-selector=".visible-phone" target="_blank">{{/actions.data[0].value.href?}}
+      {{{title}}}
+      {{#actions.data[0].value.href?}}</a>{{/actions.data[0].value.href?}}
+    </h3>
+    <ul class="mb-actions mb-separated hidden-phone mb-visible-open mb-no-print">
+      {{#actions.data}} <li class="nowrap">{{{html}}}</li>{{/actions.data}}
+      <li class="nowrap"><a role="button" class="action collect" tabindex="0" data-action-object="{&quot;collectResult&quot;:{}}">{{{i18n.Collect}}}</a></li>
+    </ul>
+    <dl class="mb-metadata mb-comma-separated-values mb-horizontal mb-separated hidden-phone mb-visible-open mb-small">
+      <dt class="mb-acc">{{i18n.date}}</dt><dd>{{{mes:date}}}</dd>
+      {{#mes:summary}}
+        <dt>{{name}}</dt>{{#data}}<dd>{{#actions?}}<span class="mb-dropdown-toggle"><a data-action-object="{&quot;openMenu&quot;: {&quot;propertyId&quot;: &quot;{{property:id}}&quot;, &quot;position&quot;: {{data:position}} }}" class="nowrap">{{/actions?}}{{{html}}}{{#actions?}} <span class="caret"></span></a></span> {{/actions?}}</span></dd>{{/data}}
+      {{/mes:summary}}
+    </dl>
+    {{#content}}
+      <p class="mb-content">{{{.}}}</p>
+    {{/content}}
+    <span class="clearfix"></span>
+  </div>
+                    </script>
+                  </div>
+                  <ul data-template="pagination" class="pager">
+                      <a href="#" class="mb-next mb-center mb-block action" data-action="this.nextPage({ append: true })" data-i18n="mobileclient_load_more_results">Load more results</a>
+                    </ul>
+                </div>
+    </div>
+  </div>
+</div><script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>
+
+
 <!--MindBreeze -->
+<!--
 <link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"> 
 
 <div data-template="view" data-count="5" data-constraint="ALL">
@@ -204,7 +281,7 @@
    
 
 
-   
+   -->
 
   <!-- Footer -->
   <div id="footer">

@@ -69,3 +69,19 @@ $(rightPaddle).on('click', function() {
 $(leftPaddle).on('click', function() {
 	$('.menu').animate( { scrollLeft: '0' }, scrollDuration);
 });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btnScroll").style.display = "block";
+    } else {
+        document.getElementById("btnScroll").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

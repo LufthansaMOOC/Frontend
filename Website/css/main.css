@@ -519,3 +519,21 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		#btnScroll:hover {
 		    background-color: #9B9B9B; /* Add a dark-grey background on hover */
 		}
+		
+		/* What Will I Learn Css*/
+		.what-will-i-learn{
+			background-color:#f9f9f9;
+			border:1px solid #dedfe0;
+			padding:10px 15px
+			}
+			
+		.what-will-i-learn ul
+			{
+				list-style:none;
+			}
+			
+		.what-will-i-learn ul li:before 
+		{
+			content: '✓';
+			}
+			

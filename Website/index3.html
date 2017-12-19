@@ -12,18 +12,38 @@
 		<script type="text/javascript">
 			function getData() {
 
-				var courseTitle = window.location.hash.substr(1);
+	var courseTitle = window.location.hash.substr(1);
 
-				fetch('https://try.inspire.mindbreeze.com/api/v2/search', {
-    method: 'post',
-    body: JSON.stringify({"query": {"unparsed": "mindbreeze"}, "count":5, "properties": [{ "name": "title", "formats": ["HTML"]  },{ "name": "content", "formats": ["HTML"] }] })
+  fetch('https://try.inspire.mindbreeze.com/api/v2/search', {
+      method: 'post',
+      credentials: 'same-origin',
+      headers: {
+
+       // This is missing from request
+    },
+      body: JSON.stringify({
+    "query": {
+      "unparsed": courseTitle
+    },
+    "count": 1,
+    "properties":[{
+      "name": "title",
+      "formats":["VALUE","HTML"]
+    },{
+      "name": "content",
+      "formats":["VALUE","HTML"]
+    }]
   })
-  .then(response => {
-    if (response.ok) $div.textContent = 'Ok';
-    else alert(response.statusText);
-    
-    $div.te
-			}
+    })
+    .then(parseJSON)
+    .then(function(data) {
+
+    docuement.getElementById("Title").innerHTML = data.resultset.results[0].properties[0].data[0].html;
+});
+}
+ window.onload = getData;
+		
+			
 		</script>
 		<title>LELA</title>
 	</head>
@@ -139,7 +159,7 @@
 
 		<!--Course Overview-->
 		<div id ="courseContent">
-			<h1> Course Title Here </h1>
+			<h1 id="Title"> Course Title Here </h1>
 			<p>&nbsp;</p>
 		  <p> Course description goes underneath the title </br> 
 				To introduce the course to the user.</p> </br>

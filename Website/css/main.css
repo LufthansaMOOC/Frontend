@@ -181,7 +181,6 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 {
 			padding-bottom: 3%;
 			padding-top: 3%;
-	
 			margin-top: -2.8%;
 			background-color: #2a303b;
 			background-size: cover;
@@ -199,7 +198,7 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 }
 
 #bannertextcontain {
-	margin-left: 5%;
+	margin-left: 7%;
 	font-size: 120%;
 }
 		
@@ -553,48 +552,57 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			margin-right: 20%;
 			font-weight: bold;
 			margin-top: 50px;
-
-
-			
+			margin-bottom: 5%;
 		}
 
 		#bodyCon {
-	
-			width: 70%;
-			margin-left: -80px;
-			margin-top: -70px;
+			width: 55%;
+			margin-left: 5%;
+			margin-top: -390px;
+			margin-bottom: 80px;
+			
 		}
 
 		#enrollcon {
-			margin-top:-300px;
-			width: 20%;
+			margin-top:-100px;
+			width: 25%;
 			border: 1px solid #000066;
 			box-shadow: 2px 2px 4px #000000;
 			background-color: white;
-			margin-left: 63%;
-			margin-top: -150px;
+			margin-left: 65%;
+		}
 
+		#enrollcon h1 {
+			margin-left: 10%;
+			margin-top: 5%;
+		}
+
+		#enrollcon img {
+			padding: 2%;
+			width: 96%;
 		}
 
 	
 		#enrollcon button{
-			width: 100%;
+			width: 80%;
 			padding: 5%;
-			color: #000066;
+			background-color: #000066;
 			border: 1px solid #000066;
 			border-radius: 2px;
+			color: white;
+			font-weight: bold;
+			margin-left: 10%;
 		}
 
 		#enrollcon button:hover{
 			color: white;
 			background-color: #000066;
 		}
-		
-		#infoContent{
-			margin-left: 20%;
-			margin-right: 20%;
-			margin-top: 40px;
+
+		#enrollcon ul {
+			margin-bottom: 8%;
 		}
+
 		
 		#instructorContent{
 			margin-left: 20%;
@@ -611,9 +619,9 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		
 		/* What Will I Learn Css*/
 		.what-will-i-learn{
-			margin-left: 20%;
-			margin-right: 20%;
-			margin-top: 40px;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 5%;
 			background-color:#f9f9f9;
 			border:1px solid #dedfe0;
 			padding:10px 15px

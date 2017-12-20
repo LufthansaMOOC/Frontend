@@ -560,8 +560,11 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 			margin-left: 5%;
 			margin-top: -390px;
 			margin-bottom: 80px;
+	box-shadow: 2px 2px 4px #000000;
 			
 		}
+
+		/*Enroll Container */
 
 		#enrollcon {
 			margin-top:-100px;
@@ -605,17 +608,25 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 
 		
 		#instructorContent{
-			margin-left: 20%;
-			margin-right: 20%;
+			margin-left: 5%;
+			margin-right: 5%;
 			margin-top: 40px;
 		}
 		
 		#infoContent{
-			margin-left: 20%;
-			margin-right: 20%;
+			margin-left: 5%;
+			margin-right: 5%;
 			margin-top: 40px;
 			
 		}
+
+		#reviewContent {
+				margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 40px;
+			margin-bottom: 5%;
+		}
+
 		
 		/* What Will I Learn Css*/
 		.what-will-i-learn{

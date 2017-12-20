@@ -520,8 +520,86 @@ body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 		    background-color: #9B9B9B; /* Add a dark-grey background on hover */
 		}
 		
+		/* Course Content */
+		#courseContent{
+			margin-left: 20%;
+			margin-right: 20%;
+			font-weight: bold;
+			margin-top: 40px;
+			
+		}
+		
+		#courseContentLeft{
+			width: 70%;
+		}
+		
+		#courseContentBackground{
+			position: absolute;
+			background-color:#f9f9f9;
+			border:1px solid #dedfe0;
+			z-index: -2;
+			width: 100%;
+			left: -10px;
+			height: 50%
+		}
+		
+		#courseContentRight{
+			position: relative;
+			width: 30%;
+			padding: 2%;
+			box-shadow: 2px 2px 4px #000000;
+			border: 1px solid #000066;
+			border-radius: 2px;
+			z-index: 1;
+		}
+		
+		#courseContentRight img{
+			width: 100%;
+			height: auto;
+		}
+		
+		#courseContentRight h1{
+			font-weight: bold;
+			padding: 5%;
+		}
+		
+		#courseContentRight button{
+			width: 100%;
+			padding: 5%;
+			color: #000066;
+			border: 1px solid #000066;
+			border-radius: 2px;
+		}
+
+		#courseContentRight button:hover{
+			color: white;
+			background-color: #000066;
+		}
+		
+		#infoContent{
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 40px;
+		}
+		
+		#instructorContent{
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 40px;
+		}
+		
+		#infoContent{
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 40px;
+			
+		}
+		
 		/* What Will I Learn Css*/
 		.what-will-i-learn{
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 40px;
 			background-color:#f9f9f9;
 			border:1px solid #dedfe0;
 			padding:10px 15px

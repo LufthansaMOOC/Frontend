@@ -114,7 +114,7 @@
 		<div data-template="view" data-count="5" data-constraint="ALL">
 	<div class="mb-component-container container">
 		<form id="searchForm" role="search" data-template="searchform" class="mb-center ">
-			<input id="searchBar" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
+			<input id="searchBar" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search">
 			<button style="vertical-align:   top; margin-top  :18px; font-size:1.9vw;" id="Bannersearch" onClick="searchFunction()"><!--<a href="index2.html"> -->Search</button>
 		</form>
 		
@@ -527,7 +527,7 @@
     	<script  src="js/scroll.js"></script>
     	
 
-    	<script type="text/javascript">
+    	<script>
 		function searchFunction() {
 			var searchBar = document.getElementById("searchBar");
 			var searchQuery = searchBar.value;

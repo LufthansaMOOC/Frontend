@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+ 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" type="text/css" href="css/coursePageStylesheet.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script type="text/javascript">
+			function getData() {
+
+	var courseTitle = window.location.hash.substr(1);
+
+  fetch('https://try.inspire.mindbreeze.com/api/v2/search', {
+      method: 'post',
+      credentials: 'same-origin',
+      headers: {
+
+       // This is missing from request
+    },
+      body: JSON.stringify({
+    "query": {
+      "unparsed": courseTitle
+    },
+    "count": 1,
+    "properties":[{
+      "name": "title",
+      "formats":["VALUE","HTML"]
+    },{
+      "name": "content",
+      "formats":["VALUE","HTML"]
+    }]
+  })
+    })
+    .then(parseJSON)
+    .then(function(data) {
+
+    docuement.getElementById("Title").innerHTML = data.resultset.results[0].properties[0].data[0].html;
+});
+}
+ window.onload = getData;
+		
+			
+		</script>
+		<title>LELA</title>
+	</head>
+	<body>
+
+		<!-- Button up -->
+		<button onclick="topFunction()" id="btnScroll" title="Go to top">Top</button>
+	
+		<!-- Navigation  -->
+		<div id="header">
+			<div id="topHeader">
+				<ul>
+					<li>
+						<nav class="dropDown" >
+							<ul>
+								<li>
+									<img src="images/langIcon.png" height="20" width="20" alt="language icon"><a href="#" >Language &#9660;</a>
+									<ul>
+									    <li><a href="#">English</a></li>
+									    <li><a href="#">German</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</li>
+					<li>
+						<button class="buttonlog buttonG" id="right">Log In</button>
+					</li>
+					<li>
+						<button class="buttonlog buttonG" id="right2">Sign Up</button>
+					</li>
+				</ul>
+			</div>
+
+			<div id="headerMain">
+				<div class="container">
+					<ul>	
+						<li id="logocon">
+							<a href="index.html"><img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></a></li>
+							<li>
+								<nav class="dropDown" id="category">
+									<ul>
+										<li>
+											<img src="images/cate.png" height="20" width="20" alt="category icon"><a href="#"><span style="color: black">Categories &#9660;</span></a>
+											<ul>
+												<li>
+													<a href="#">Academics</a>
+												    <ul>
+												    	<li><a href="#">Subcategory1</a></li>
+												    	<li><a href="#">Subcategory2</a></li>
+												   		<li><a href="#">Subcategory3</a></li>
+												   	</ul>
+										        </li>
+												<li>
+													<a href="#">Business</a>
+												    <ul>
+												    	<li><a href="#">Subcategory4</a></li>
+												    	<li><a href="#">Subcategory5</a></li>
+												   		<li><a href="#">Subcategory6</a></li>
+												   	</ul>
+												</li>
+												<li>
+													<a href="#">Design</a>
+												    <ul>
+												    	<li><a href="#">Subcategory7</a></li>
+												    	<li><a href="#">Subcategory8</a></li>
+												    	<li><a href="#">Subcategory9</a></li>
+												    </ul>
+												</li>
+											    <li>
+											    	<a href="#">Health &amp; Fitness</a>
+											        <ul>
+												    	<li><a href="#">Subcategory10</a></li>
+												    	<li><a href="#">Subcategory11</a></li>
+												    	<li><a href="#">Subcategory12</a></li>
+												    </ul>
+											    </li>
+											    <li>
+											    	<a href="#">IT &amp; Software</a>
+											        <ul>
+												    	<li><a href="#">Subcategory13</a></li>
+												    	<li><a href="#">Subcategory14</a></li>
+												    	<li><a href="#">Subcategory15</a></li>
+												    </ul>
+											    </li>
+											</ul>
+								   		</li>
+									</ul>
+								</nav>
+							</li>
+							<li>
+
+
+							<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"><div data-template="view" data-count="5" data-constraint="ALL">
+	<div class="mb-component-container container">
+		<form role="search" data-template="searchform" class="mb-center ">
+			<input aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
+		</form>
+	</div>
+</div><script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>
+							<!--
+							<form>
+								<input type="text" name="searchbar" style="height:17px;font-size:14pt;" placeholder="Search">
+								<button id="searchButton"><a href="index2.html">Search</a></button>
+							</form>
+						-->
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+					<!--Banner-->
+		<div id ="Banner3">
+			<div id="bannertextcontain">
+				<h1>Decoding AP Computer Science A</h1>
+				<h4> Ace AP Computer Science A and get an Introduction to Java</h4>
+				<ul>
+					<li>
+						<div class="rating">
+			     		   <span class="fa fa-star checked"></span>
+			     		   <span class="fa fa-star checked"></span>
+			     		   <span class="fa fa-star checked"></span>
+			      		  <span class="fa fa-star"></span>
+			        		<span class="fa fa-star"></span>
+
+4.5 (1,140 ratings)
+
+			   			 </div>
+					</li>
+					<li>
+						<p>14,026 students enrolled</p>
+					</li>
+				</ul>
+				<ul>
+					<li><p>
+						Created by Moksh Jawa</p>
+					</li>
+					<li>
+						<p>
+						Last updated 6/2017
+						</p>
+					</li>
+				</ul>
+				<ul>
+
+					<li> English
+</li>
+<li>
+	<p>English [Auto-generated]</p>
+</li>
+				</ul>
+			
+			</div>
+		</div>
+
+
+
+	<div id="enrollcon">
+
+		<img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg"></br>
+				<h1>Free</h1></br>
+				<Button> Enroll Now</Button></br>
+				<ul>
+					<li><h5>Includes:</h5></li>
+					<li>10.5 hours on-demand video</li>
+					<li>23 Articles</li>
+					<li>Full lifetime access</li>
+					<li>Access on mobile and TV</li>
+					<li></li>
+				</ul>
+		
+	</div>
+		<!-- Course "What will I learn" -->
+
+	<div id="bodyCon">
+
+
+	<div class="what-will-i-learn">
+			<h2> What will I learn? </h2>
+        <ul>
+			<li>Gain a solid understanding of Computer Forensics</li>
+			<li>Improve coding skills</li>
+			<li>Develop your knowledge on Computing</li>
+			</ul>
+			</li>
+        
+            </div>
+		
+	<!-- Course Description -->
+		<div id ="infoContent">
+			<h2>&nbsp; </h2>
+			<h2>Description </h2>
+		  <p> This video based Computer Forensics training course from Infinite Skills will teach you
+				how to get started in this industry. Computer Forensics is a broad topic that touches on many
+				different skills, all specific to answering legal or investigative questions in relation to a computer.
+				This course will give you an overview of the skills you will need in order to work in this highly technical field.
+				Because Computer Forensics is a broad field, this course covers a lot of topics, from preparing for an investigation,
+				to ethics, to evidence acquisition, being an expert witness and legal vs. corporate investigations.
+				You will learn about forensic tools and how they are used, such as ProDiscover, FTK, and EnCase.
+				This video tutorial covers wireless network investigations, malware and collecting network evidence.
+				You will also learn about UNIX, Windows, Linux and Mac OS, in order to understand where to look for and recover evidence from.
+				By the conclusion of this computer based tutorial for Computer Forensics, you will have a clear understanding
+				of what it takes to be a computer forensics investigator, and the tools and techniques available to you
+				to find the evidence you will be looking for.<p/>
+		</div>
+          
+          <!-- About the Instructor -->
+	<div id ="instructorContent">
+			<h2>&nbsp; </h2>
+			<h2>About the Instructor </h2>
+	  <p>Karoly Nyisztor
+				Senior Software Engineer, iOS / Swift Instructor
+	  <p/>
+	</div>
+		
+		<!-- Student Feedback -->
+		<div id ="infoContent">
+			<h2>&nbsp; </h2>
+			<h2>Student Feedback </h2>
+			<p> <img src="images/rating.png" height="450" width="600"><p/>
+		</div>
+		
+		<!-- Student Comments -->
+		<div id ="reviewContent">
+			<h2> Reviews </h2>
+			<p> <img src="images/reviews.PNG" height="950" width="600"> <p/>
+		</div>
+		
+		<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"><div data-template="view" data-count="5" data-constraint="ALL">
+	<div class="mb-component-container container">
+		<div data-template="suggestlist">
+		</div>
+	</div>
+</div>
+</div><script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="content" id="browseContainer">
+				<h2>Browse</h2>
+				<ul>
+					<li><a href="#">Providers</a></li>
+					<li><a href="#">Universities</a></li>
+					<li><a href="#">Institution</a></li>
+					<li><a href="#">Subject</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Languages</a></li>
+				</ul>
+			</div>
+
+			<div class="content" id="moreContainer">
+				<h2>More</h2>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Privacy policy</a></li>
+					<li><a href="#">Site Map</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Intellectual Property </a></li>
+					<li><a href="#">Cookie policy</a></li>
+				</ul>
+			</div>
+
+				<div class="content" id="contactContainer">
+				<h2>Contact</h2>
+				<ul>
+					<li><a href="#">Email</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Google+</a></li>
+					<li><a href="#">Youtube</a></li>
+					<li><a href="#">Linkedin</a></li>
+				</ul>
+			</div>
+
+			<div class="content" id="LogoContainer">
+				<img src="images/Logo.png"  alt="logo" height="52" width="200">
+			</div>
+			<div id="footerBot">
+				<p>Lufthansa Copyright 2017</p>
+				<p id="terms"><a href="#"> Terms and Conditions</a></p>
+			</div>
+		</div>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+		<script  src="js/scroll.js"></script>
+	</body>
+</html>

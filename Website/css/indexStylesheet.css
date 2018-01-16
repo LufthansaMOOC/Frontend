@@ -211,11 +211,6 @@ ul {
 	width: 100%;
 	height: auto;
 }
-
-.moocLogo {
-	width: 10%;
-}
-
 .courseCard{
 	background-color: gray;
 	width: 50%;
@@ -231,10 +226,6 @@ ul {
 	color:black;
 }
 
-.courseCard a:hover{
-	color: #FFFFFF;
-	text-decoration: none;
-}
 
 .courseCard h5 {
 	margin-left: 4%;
@@ -243,9 +234,6 @@ ul {
 	margin-bottom: 15%;
 }
 
-.linkContain {
-	width: 10%;
-}
 
 .courses li {
 	width: 20%;
@@ -282,9 +270,6 @@ ul {
 	margin-left: 4%;
 }
 
-#content {
-	align-items: center;
-} 
 
 #content h1 {
 	margin-bottom: 3%;
@@ -299,7 +284,7 @@ ul {
 .menu-wrapper {
   position: relative;
   width: 480%;
-  height: 55%;
+  height: auto;
   margin-left: 3%;
   overflow-x: hidden; /*hides bottom scroll*/
   overflow-y: hidden;
@@ -309,12 +294,22 @@ ul {
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+.menu h5 {
+	 white-space: normal;
+	   font-size: 1.2vw;
 
 }
 
+.menu a:hover {
+	color:  #0A64AD;
+	transition: .3s ease all;	
+	text-decoration: none
+}
 .item {
   margin-top: 2%;
-  padding-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .paddle {
@@ -370,8 +365,7 @@ ul {
 	margin-top:15px
 	background-color: #000066;
 	z-index:1;
-	position: relative;
-
+	position: relative;	
 }
 
 .dropDown ul
@@ -464,6 +458,12 @@ ul {
     margin-left: -5px;
     margin-bottom: 2px;
     cursor: pointer;
+}
+
+#category {
+		width: 30%;
+		top: -43px;
+		margin-left: 35%;
 }
 
 /* Footer */

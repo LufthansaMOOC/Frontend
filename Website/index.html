@@ -3,9 +3,9 @@
 	<head>
 
 		 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/indexStylesheet.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +14,7 @@
 	<body>
 	
 	<!-- Button up -->
-		<button onclick="topFunction()" id="btnScroll" title="Go to top">Top</button>
+		<button onclick="topFunction()" id="btnScroll" title="Go to top" >&#8593;</button>
 	
 
 		<!-- Navigation  -->
@@ -35,24 +35,22 @@
 						</nav>
 					</li>
 					<li>
-						<button class="buttonlog" id="right">Log In</button>
+						<button class="buttonlog buttonG" id="right">Log In</button>
 					</li>
 					<li>
-						<button class="buttonlog" id="right2">Sign Up</button>
+						<button class="buttonlog buttonG" id="right2">Sign Up</button>
 					</li>
 				</ul>
 			</div>
 
 			<div id="headerMain">
 				<div class="container">
-					<ul>	
 						<div id="logocon">
 							<img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></div>
-							<li>
 								<nav class="dropDown" id="category">
 									<ul>
 										<li>
-											<img src="images/cate.png" height="20" width="20" alt="category icon"><a href="#"><span>Categories &#9660;</span></a>
+											<img src="images/cate.png" height="20" width="20" alt="category icon"><a href="#"><span style="color: black">Categories &#9660;</span></a>
 											<ul>
 												<li>
 													<a href="#">Academics</a>
@@ -97,18 +95,11 @@
 											</ul>
 								   		</li>
 									</ul>
-								</nav>
-							</li>
-						</ul>				
-					</ul>
+								</nav>		
 				</div>
 			
 				</div>
 			</div>
-		</div>
-
-
-
 
 		<!--Banner-->
 		<div id ="Banner">
@@ -123,8 +114,8 @@
 		<div data-template="view" data-count="5" data-constraint="ALL">
 	<div class="mb-component-container container">
 		<form id="searchForm" role="search" data-template="searchform" class="mb-center ">
-			<input id="searchBar" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
-			<button style="vertical-align:   top; margin-top  :18px; font-size:1.9vw;" align="center" id="Bannersearch" onClick="searchFunction()"><!--<a href="index2.html"> -->Search</button>
+			<input id="searchBar" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search">
+			<button style="vertical-align:   top; margin-top  :18px; font-size:1.9vw;" id="Bannersearch" onClick="searchFunction()"><!--<a href="index2.html"> -->Search</button>
 		</form>
 		
 
@@ -139,22 +130,21 @@
 		</div>
 
 		<!--Trending Buttons-->
-		<div id="trendingButtons">
+		<div id="trendingButtonsContainer">
 			<h1>Discover Our Popular Courses</h1>
 			<div class="button" id="buttonContainer">
 				<button id="firstButton" class="button buttonB">Top 10 Rated</button>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<button class="button buttonB">Trending</button>
+				<button id="firstButton"class="button buttonB">Trending</button>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<button class="button buttonB">New Courses</button>
-			</div>
+				<button id="firstButton" class="button buttonB">New Courses</button>
 		</div>
 
 
 
         <!--Courses-->
-        <div id="content">
-            <div class="courses" id="coursesContainer">
+        <div class="courseContent">
+            <div class="courses">
                 <h1>Because you searched for "Business"</h1>
                 <ul>
                     <li>
@@ -166,11 +156,11 @@
 			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
 			                                <div class="courseInfo">
 			                                        <h5>
-			                                            Leadership: Foundational 
+			                                            Leadership: Foundational Training for First Time Managers 
 			                                        </h5>
 			                                    <div class="top">
 			                                        <p>-Google</p>
-			                                        <img class="moocLogo" src="images/udemy.png">
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
 			                                    </div>
 			                        
 			                                    <!--Star Rating goes here-->
@@ -197,11 +187,11 @@
 			                                <div class="courseInfo">
 			                                    
 			                                        <h5>
-			                                            Leadership: Foundational 
+			                                            Leadership: Foundational Training for First Time Managers 
 			                                        </h5>
 			                                    <div class="top">
 			                                        <p>-Google</p>
-			                                        <img class="moocLogo" src="images/udemy.png">
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
 			                                    </div>
 			                        
 			                                    <!--Star Rating goes here-->
@@ -227,11 +217,11 @@
 			                                <div class="courseInfo">
 			                                    
 			                                        <h5>
-			                                            Leadership: Foundational 
+			                                            Leadership: Foundational Training for First Time Managers 
 			                                        </h5>
 			                                    <div class="top">
 			                                        <p>-Google</p>
-			                                        <img class="moocLogo" src="images/udemy.png">
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
 			                                    </div>
 			                        
 			                                    <!--Star Rating goes here-->
@@ -258,11 +248,11 @@
 			                                <div class="courseInfo">
 			                                    
 			                                        <h5>
-			                                            Leadership: Foundational 
+			                                           Leadership: Foundational Training for First Time Managers 
 			                                        </h5>
 			                                    <div class="top">
 			                                        <p>-Google</p>
-			                                        <img class="moocLogo" src="images/udemy.png">
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
 			                                    </div>
 			                        
 			                                    <!--Star Rating goes here-->
@@ -289,11 +279,11 @@
 			                                <div class="courseInfo">
 			                                    
 			                                        <h5>
-			                                            Leadership: Foundational 
+			                                           Leadership: Foundational Training for First Time Managers
 			                                        </h5>
 			                                    <div class="top">
 			                                        <p>-Google</p>
-			                                        <img class="moocLogo" src="images/udemy.png">
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
 			                                    </div>
 			                        
 			                                    <!--Star Rating goes here-->
@@ -320,11 +310,43 @@
 			                                <div class="courseInfo">
 			                                    
 			                                        <h5>
-			                                            Leadership: Foundational 
+			                                            Leadership: Foundational Training for First Time Managers
 			                                        </h5>
 			                                    <div class="top">
 			                                        <p>-Google</p>
-			                                        <img class="moocLogo" src="images/udemy.png">
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                        
+
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+
+			                      <li class="item">
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                    
+			                                        <h5>
+			                                            Leadership: Foundational Training for First Time Managers
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
 			                                    </div>
 			                        
 			                                    <!--Star Rating goes here-->
@@ -351,11 +373,11 @@
 			                                <div class="courseInfo">
 			                                    
 			                                        <h5>
-			                                            Leadership: Foundational 
+			                                           Leadership: Foundational Training for First Time Managers 
 			                                        </h5>
 			                                    <div class="top">
 			                                        <p>-Google</p>
-			                                        <img class="moocLogo" src="images/udemy.png">
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
 			                                    </div>
 			                        
 			                                    <!--Star Rating goes here-->
@@ -382,11 +404,11 @@
 			                                <div class="courseInfo">
 			                                    
 			                                        <h5>
-			                                            Leadership: Foundational 
+			                                           Leadership: Foundational Training for First Time Managers 
 			                                        </h5>
 			                                    <div class="top">
 			                                        <p>-Google</p>
-			                                        <img class="moocLogo" src="images/udemy.png">
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
 			                                    </div>
 			                        
 			                                    <!--Star Rating goes here-->
@@ -413,42 +435,11 @@
 			                                <div class="courseInfo">
 			                                    
 			                                        <h5>
-			                                            Leadership: Foundational 
+			                                            Leadership: Foundational Training for First Time Managers 
 			                                        </h5>
 			                                    <div class="top">
 			                                        <p>-Google</p>
-			                                        <img class="moocLogo" src="images/udemy.png">
-			                                    </div>
-			                        
-			                                    <!--Star Rating goes here-->
-			                                    <div class="bot">
-			                                        
-
-			                                        <div class="rating">
-			                                            <span class="fa fa-star checked"></span>
-			                                            <span class="fa fa-star checked"></span>
-			                                            <span class="fa fa-star checked"></span>
-			                                            <span class="fa fa-star"></span>
-			                                            <span class="fa fa-star"></span>
-			                                        </div>
-			                                        <p>€15</p>
-			                                    </div>
-			                                </div>
-			                            </div>
-			                        </a>
-			                    </li>
-			                      <li class="item">
-			                        <a href="#" class = "courseCard">
-			                            <div class="courseContain">
-			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
-			                                <div class="courseInfo">
-			                                    
-			                                        <h5>
-			                                            Leadership: Foundational 
-			                                        </h5>
-			                                    <div class="top">
-			                                        <p>-Google</p>
-			                                        <img class="moocLogo" src="images/udemy.png">
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
 			                                    </div>
 			                        
 			                                    <!--Star Rating goes here-->
@@ -472,7 +463,7 @@
 			                </ul>
 			                <div class="paddles">
 								<button class="left-paddle paddle hidden">
-									<
+									&lt;
 								</button>
 								<button class="right-paddle paddle">
 									>
@@ -485,9 +476,345 @@
             </div>
         </div>
 
+               <!--Courses-->
+        <div class="courseContent">
+            <div class="courses">
+                <h1>Because you searched for "Software Engineering"</h1>
+                <ul>
+                    <li>
+                    	<div class="menu-wrapper">
+							<ul class="menu">
+								<li class="item">
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                        <h5>
+			                                            Leadership: Foundational Training for First Time Managers 
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                        
+
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+			                    <li class="item">
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                    
+			                                        <h5>
+			                                            Leadership: Foundational Training for First Time Managers 
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                      
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+			                    <li class="item">
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                    
+			                                        <h5>
+			                                            Leadership: Foundational Training for First Time Managers 
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                        
+
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+			                    <li class="item">
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                    
+			                                        <h5>
+			                                           Leadership: Foundational Training for First Time Managers 
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                        
+
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+			                    <li class="item">
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                    
+			                                        <h5>
+			                                           Leadership: Foundational Training for First Time Managers
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                        
+
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+			                    <li class="item" >
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                    
+			                                        <h5>
+			                                            Leadership: Foundational Training for First Time Managers
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                        
+
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+
+			                      <li class="item">
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                    
+			                                        <h5>
+			                                            Leadership: Foundational Training for First Time Managers
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                        
+
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+			                      <li class="item">
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                    
+			                                        <h5>
+			                                           Leadership: Foundational Training for First Time Managers 
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                        
+
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+			                      <li class="item">
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                    
+			                                        <h5>
+			                                           Leadership: Foundational Training for First Time Managers 
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                        
+
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+			                      <li class="item">
+			                        <a href="#" class = "courseCard">
+			                            <div class="courseContain">
+			                                <img class = "courseImg" alt="cardimg" src="images/iStock-531401122_bearbeitet_2.jpg">
+			                                <div class="courseInfo">
+			                                    
+			                                        <h5>
+			                                            Leadership: Foundational Training for First Time Managers 
+			                                        </h5>
+			                                    <div class="top">
+			                                        <p>-Google</p>
+			                                        <img class="moocLogo" src="images/udemy.png" alt="moocLogo">
+			                                    </div>
+			                        
+			                                    <!--Star Rating goes here-->
+			                                    <div class="bot">
+			                                        
+
+			                                        <div class="rating">
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star checked"></span>
+			                                            <span class="fa fa-star"></span>
+			                                            <span class="fa fa-star"></span>
+			                                        </div>
+			                                        <p>€15</p>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+
+			                </ul>
+			                <div class="paddles">
+								<button class="left-paddle paddle hidden">
+									&lt;
+								</button>
+								<button class="right-paddle paddle">
+									>
+								</button>
+							</div>
+			            </div>
+                    </li>
+                    
+                </ul>    
+            </div>
+        </div>
+
+
+
 		<!-- Footer -->
 		<div id="footer">
-			<div class="content" id="browseContainer">
+			<div class="footContent" id="browseContainer">
 				<h2>Browse</h2>
 				<ul>
 					<li><a href="#">Providers</a></li>
@@ -499,7 +826,7 @@
 				</ul>
 			</div>
 
-			<div class="content" id="moreContainer">
+			<div class="footContent" id="moreContainer">
 				<h2>More</h2>
 				<ul>
 					<li><a href="#">FAQ</a></li>
@@ -511,7 +838,7 @@
 				</ul>
 			</div>
 
-				<div class="content" id="contactContainer">
+				<div class="footContent" id="contactContainer">
 				<h2>Contact</h2>
 				<ul>
 					<li><a href="#">Email</a></li>
@@ -523,7 +850,7 @@
 				</ul>
 			</div>
 
-			<div class="content" id="LogoContainer">
+			<div class="footContent" id="LogoContainer">
 				<img src="images/Logo.png"  alt="logo" height="52" width="200">
 			</div>
 			<div id="footerBot">
@@ -536,7 +863,7 @@
     	<script  src="js/scroll.js"></script>
     	
 
-    	<script type="text/javascript">
+    	<script>
 		function searchFunction() {
 			var searchBar = document.getElementById("searchBar");
 			var searchQuery = searchBar.value;

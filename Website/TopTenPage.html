@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" type="text/css" href="css/coursePageStylesheet.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>LELA</title>
+	</head>
+	<body>
+	
+	<!-- Button up -->
+		<button onclick="topFunction()" id="btnScroll" title="Go to top">Top</button>
+	
+
+		<!-- Navigation  -->
+		<div id="header">
+			<div id="topHeader">
+				<ul>
+					<li>
+						<nav class="dropDown" >
+							<ul>
+								<li id="LanguageSelectionHeader">
+									<img src="images/langIcon.png" height="20" width="20" alt="language icon"><a href="#" >Language &#9660;</a>
+									<ul>
+									    <li><a href="#">English</a></li>
+									    <li><a href="#">German</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</li>
+					<li>
+						<button class="buttonlog" id="right">Log In</button>
+					</li>
+					<li>
+						<button class="buttonlog" id="right2">Sign Up</button>
+					</li>
+				</ul>
+			</div>
+
+			<div id="headerMain">
+				<div class="container">
+					<ul>	
+						<div id="logocon">
+							<img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></div>
+							<li>
+								<nav class="dropDown" id="category">
+									<ul>
+										<li>
+											<img src="images/cate.png" height="20" width="20" alt="category icon"><a href="#"><span>Categories &#9660;</span></a>
+											<ul>
+												<li>
+													<a href="#">Academics</a>
+												    <ul>
+												    	<li><a href="#">Subcategory1</a></li>
+												    	<li><a href="#">Subcategory2</a></li>
+												   		<li><a href="#">Subcategory3</a></li>
+												   	</ul>
+										        </li>
+												<li>
+													<a href="#">Business</a>
+												    <ul>
+												    	<li><a href="#">Subcategory4</a></li>
+												    	<li><a href="#">Subcategory5</a></li>
+												   		<li><a href="#">Subcategory6</a></li>
+												   	</ul>
+												</li>
+												<li>
+													<a href="#">Design</a>
+												    <ul>
+												    	<li><a href="#">Subcategory7</a></li>
+												    	<li><a href="#">Subcategory8</a></li>
+												    	<li><a href="#">Subcategory9</a></li>
+												    </ul>
+												</li>
+											    <li>
+											    	<a href="#">Health &amp; Fitness</a>
+											        <ul>
+												    	<li><a href="#">Subcategory10</a></li>
+												    	<li><a href="#">Subcategory11</a></li>
+												    	<li><a href="#">Subcategory12</a></li>
+												    </ul>
+											    </li>
+											    <li>
+											    	<a href="#">IT &amp; Software</a>
+											        <ul>
+												    	<li><a href="#">Subcategory13</a></li>
+												    	<li><a href="#">Subcategory14</a></li>
+												    	<li><a href="#">Subcategory15</a></li>
+												    </ul>
+											    </li>
+											</ul>
+								   		</li>
+									</ul>
+								</nav>
+							</li>
+						</div>				
+					</ul>
+				</div>
+			
+				
+			</div>
+		</div>
+		
+		<h1> Top Rated Courses </h1>
+		
+		
+		<!-- Footer -->
+		<div id="footer">
+			<div class="content" id="browseContainer">
+				<h2>Browse</h2>
+				<ul>
+					<li><a href="#">Providers</a></li>
+					<li><a href="#">Universities</a></li>
+					<li><a href="#">Institution</a></li>
+					<li><a href="#">Subject</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Languages</a></li>
+				</ul>
+			</div>
+
+			<div class="content" id="moreContainer">
+				<h2>More</h2>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Privacy policy</a></li>
+					<li><a href="#">Site Map</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Intellectual Property </a></li>
+					<li><a href="#">Cookie policy</a></li>
+				</ul>
+			</div>
+
+				<div class="content" id="contactContainer">
+				<h2>Contact</h2>
+				<ul>
+					<li><a href="#">Email</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Google+</a></li>
+					<li><a href="#">Youtube</a></li>
+					<li><a href="#">Linkedin</a></li>
+				</ul>
+			</div>
+
+			<div class="content" id="LogoContainer">
+				<img src="images/Logo.png"  alt="logo" height="52" width="200">
+			</div>
+			<div id="footerBot">
+				<p>Lufthansa Copyright 2017</p>
+				<p id="terms"><a href="#"> Terms and Conditions</a></p>
+			</div>
+		</div>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+    	<script  src="js/scroll.js"></script>
+    	
+
+    	<script type="text/javascript">
+		function searchFunction() {
+			var searchBar = document.getElementById("searchBar");
+			var searchQuery = searchBar.value;
+			var Lela = document.getElementById("Lela");
+			Lela.innerHTML = searchQuery;
+
+			window.location.href = "index2.html" + '#' +searchQuery;
+		
+		}
+	</script>
+	</body>
+</html>

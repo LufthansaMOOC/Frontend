@@ -115,8 +115,6 @@ ul {
 	background-image: url("../images/iStock-531401122_bearbeitet_2.jpg");
 	background-position: center top;
 	background-size: cover;
-	text-align: center;
-	z-index: +5;
 }
 
 #Banner img {
@@ -126,30 +124,27 @@ ul {
 }
 
 #BannerText {
-		background: rgba(255, 250, 255, 0.7);
+	background: rgba(255, 250, 255, 0.7);
 	width: 70%;
 	margin-left: 15%;
 	color: #000066;
-	text-align: left;
+	align-items: left;
 }
+
 #BannerText form > input{
-	width: 50%;
+	width: 40%;
 	line-height: 2em;
 	font-size: 100%;
 	margin-top:2%; 
 	margin-bottom: 7%;
-	margin-left: 18%;
-
 }
 
 #BannerText form > button{
 	background-color: #000066;
     border: none;
     color: white;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
+
     margin-left: -5px;
    padding-bottom: 10px;
    padding-top: 10px;
@@ -470,6 +465,7 @@ ul {
 
 #footer {
 	background-color: #DCDCDC;
+	margin-top: 5%;
 }
 
 #footer ul li a {

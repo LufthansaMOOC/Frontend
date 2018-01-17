@@ -271,7 +271,7 @@ ul {
 }
 
 
-#content h1 {
+.courseContent h1 {
 	margin-bottom: 3%;
 	margin-left: 3%;
 	font-size: 25px;
@@ -484,7 +484,7 @@ ul {
 	transition: .3s ease all;	
 }
 
-.content {
+.footContent {
 	display: inline-block;
 	margin-right: 10%;	
 	margin-top: 2%;

@@ -390,6 +390,7 @@ ul {
 	display:none;
 	position:absolute;
 	background: #000066;
+
 }
 
 .dropDown ul li:hover > ul
@@ -397,7 +398,16 @@ ul {
 	display:block;
 	opacity: 1;
 	visibility: visible;
+	width: 50%;
 }
+
+.dropDown ul li > ul li > ul > li{
+	width: 150%;
+	padding-right: 10%;
+		background: #000066;
+}
+
+
 
 .dropDown ul li ul li:hover
 {
@@ -409,16 +419,13 @@ ul {
 	display:none;
 }
 
-.dropDown ul ul li:hover li
-{
-	display: block;
-}
-
 .dropDown ul ul ul
 {
 	left:100%;
 	top:0;
 }
+
+
 
 
 #headerMain li{

@@ -40,14 +40,13 @@ ul {
 
 .buttonlog {
     border: none;
-    color: white;
-    padding: 2px 12px;
+    color: black;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    margin: 4px 4px;
+    margin-bottom: 5px;
     transition-duration: 0.4s;
     cursor: pointer
 }
@@ -110,7 +109,7 @@ ul {
 	padding-bottom: 8%;
 	padding-top: 8%;
 	position: relative;
-	margin-top: -2.8%;
+	margin-top: -4.2%;
 	background-attachment: fixed;
 	background-image: url("../images/iStock-531401122_bearbeitet_2.jpg");
 	background-position: center top;
@@ -391,6 +390,7 @@ ul {
 	display:none;
 	position:absolute;
 	background: #000066;
+
 }
 
 .dropDown ul li:hover > ul
@@ -399,6 +399,23 @@ ul {
 	opacity: 1;
 	visibility: visible;
 }
+
+#category ul li:hover > ul
+{
+	display:block;
+	opacity: 1;
+	visibility: visible;
+	width: 50%;
+}
+
+
+.dropDown ul li > ul li > ul > li{
+	width: 150%;
+	padding-right: 10%;
+		background: #000066;
+}
+
+
 
 .dropDown ul li ul li:hover
 {
@@ -410,16 +427,13 @@ ul {
 	display:none;
 }
 
-.dropDown ul ul li:hover li
-{
-	display: block;
-}
-
 .dropDown ul ul ul
 {
 	left:100%;
 	top:0;
 }
+
+
 
 
 #headerMain li{
@@ -439,7 +453,7 @@ ul {
 }
 
 #logocon{
-	margin-right: 20%;
+	margin-top: 1%;
 }
 
 #searchButton {
@@ -458,8 +472,8 @@ ul {
 
 #category {
 		width: 30%;
-		top: -43px;
-		margin-left: 35%;
+		top: -56px;
+		margin-left: 40%;
 }
 
 /* Footer */

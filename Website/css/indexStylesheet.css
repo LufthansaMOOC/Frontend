@@ -1,3 +1,7 @@
+/*Desktops*/
+
+@media only screen and (min-width: 800px) 
+{
 body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 	margin:0;
 	padding:0;
@@ -416,6 +420,559 @@ ul {
 }
 
 
+.dropDown ul li ul li:hover
+{
+	background: #000066;
+}
+
+.dropDown ul ul ul li
+{
+	display:none;
+}
+
+.dropDown ul ul ul
+{
+	left:100%;
+	top:0;
+}
+
+
+
+
+#headerMain li{
+	display: inline-block;
+}
+
+
+#headerMain li{
+	display: inline-block;
+}
+
+#headerMain {
+	margin-left: 1%;
+	line-height:60px;
+	position: relative;
+	margin-top: -20px;
+}
+
+#logocon{
+	margin-top: 1%;
+}
+
+#searchButton {
+	background-color: #000066;
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: -5px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+#category {
+		width: 30%;
+		top: -56px;
+		margin-left: 40%;
+}
+
+/* Footer */
+
+#footer {
+	background-color: #DCDCDC;
+	margin-top: 5%;
+	font-size: 20px;
+}
+
+#footer ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	padding-bottom: 15px;
+}
+
+#footer a:hover {
+	color:  #0A64AD;
+	transition: .3s ease all;	
+}
+
+.footContent {
+	display: inline-block;
+	margin-right: 10%;	
+	margin-top: 2%;
+	margin-left: 3.5%;
+	padding-bottom: 10px;
+}
+
+#LogoContainer{
+	margin-right: 0px;	
+
+}
+
+#footerBot {
+	background-color: #000066;
+	color: white; 
+}
+
+#footerBot a{
+	color: white;
+	text-decoration: none;
+}
+
+#footerBot p{
+	display: inline-block;
+	margin-top: 1%;
+				margin-right: 1%;
+	margin-left: 1%
+}
+
+#terms{
+	float: right;
+}
+
+/*Scroll back to top button*/
+#btnScroll {
+    display: block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 15px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #000066; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+}
+
+#btnScroll:hover {
+    background-color: #9B9B9B; /* Add a dark-grey background on hover */
+}
+
+}
+
+@media only screen and (max-width: 800px)   {
+
+body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+
+body {
+	color: black;
+	font-family:  Helvetica,Arial,sans-serif;
+	font-size: 1.4vw;
+	line-height: 2em;
+	line-height:1;
+}
+	
+p {
+	margin: 0 0 1em 0;
+}
+
+h2 {
+	color: #000066;
+	font-weight: 600;
+	line-height: 1em;
+	margin: 0 0 1em 0;
+	text-transform: uppercase;
+	font-size: 1.6vw;
+	line-height: 1.5em;
+}
+
+
+/* List */
+ul {
+	list-style:none;
+	margin: 0 0 2em 0;
+	padding-left: 1em;
+}
+
+
+.buttonlog {
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 4px;
+    margin-bottom: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer
+}
+
+.buttonG {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.buttonG:hover {
+	background-color: #e7e7e7;
+}
+
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer
+}
+
+.buttonB {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #008CBA;
+}
+
+.buttonB:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+#firstButton{
+	margin-left: 20px;
+	font-size: 10px;
+}
+
+#trendingButtons h1{
+	margin-top: 5%;
+	margin-left: 3%;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000066;
+
+}
+
+#trendingButtons {
+	margin-bottom: 3%;
+}
+
+/*Banner*/
+
+#Banner {
+	padding-bottom: 8%;
+	padding-top: 8%;
+	position: relative;
+	margin-top: -4.2%;
+	background-attachment: fixed;
+	background-image: url("../images/iStock-531401122_bearbeitet_2.jpg");
+	background-position: center top;
+	background-size: cover;
+}
+
+#Banner img {
+	width: 24%;
+	height: auto;
+	filter: brightness(10%);
+}
+
+#BannerText {
+	background: rgba(255, 250, 255, 0.7);
+	width: 70%;
+	margin-left: 15%;
+	color: #000066;
+	align-items: left;
+}
+
+#BannerText form > input{
+	width: 40%;
+	line-height: 2em;
+	font-size: 100%;
+	margin-top:2%; 
+	margin-bottom: 7%;
+}
+
+#BannerText form > button{
+	background-color: #000066;
+    border: none;
+    color: white;
+    text-decoration: none;
+
+    margin-left: -5px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   padding-right: 17px;
+   padding-left: 17px;
+    cursor: pointer;
+
+}
+
+#BannerText p {
+	margin-left: 18%;
+}
+
+#BannerText h1 {
+	font-size: 300%;
+	margin-bottom: 5%;
+	padding-top: 7%;
+	font-weight: bold;
+	margin-left: 18%;
+
+}
+
+
+#Banner3 
+{
+	padding-bottom: 3%;
+	padding-top: 3%;
+	margin-top: -2.8%;
+	background-color: #2a303b;
+	background-size: cover;
+	color: white;
+}
+
+#Banner3 ul li {
+	display: inline-block;
+	padding-right: 2%;
+	margin-top: -15px;
+	margin-bottom: -15px;
+
+}
+
+#bannertextcontain {
+	margin-left: 7%;
+	font-size: 120%;
+}
+		
+		
+/*card*/
+.checked {
+    color: orange;
+}
+
+.courseContain {
+	box-shadow: 2px 2px 4px #000000;
+	margin-right: 10%;
+}
+
+.courseImg{
+	width: 100%;
+	height: auto;
+}
+.courseCard{
+	background-color: gray;
+	width: 50%;
+}
+
+.courseCard {
+	text-decoration: none;
+	color: black;
+}
+
+.courseCard a{
+	text-decoration: none;
+	color:black;
+}
+
+
+.courseCard h5 {
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 5%;
+	margin-bottom: 15%;
+}
+
+
+.courses li {
+	width: 20%;
+	display: inline-block;
+}
+
+.top {
+	margin-top: 3%;
+}
+
+.top img{
+	width: 30px;
+	float:right;
+	margin-right: 5%;
+}
+
+.top p{
+	display: inline-block;
+	margin-left: 4%;
+}
+
+.bot{
+	padding-bottom: 5%;
+	padding-top: 4%;
+}
+
+.bot p{
+	float: right;
+	margin-right: 5%;
+}
+
+.bot > div {
+	display: inline-block;
+	margin-left: 4%;
+}
+
+
+.courseContent h1 {
+	margin-bottom: 3%;
+	margin-left: 3%;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000066;
+}
+
+/* Scrollable card */
+
+.menu-wrapper {
+  position: relative;
+  width: 480%;
+  height: auto;
+  margin-left: 3%;
+  overflow-x: hidden; /*hides bottom scroll*/
+  overflow-y: hidden;
+}
+
+.menu {
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.menu h5 {
+	 white-space: normal;
+	   font-size: 1.2vw;
+
+}
+
+.menu a:hover {
+	color:  #0A64AD;
+	transition: .3s ease all;	
+	text-decoration: none
+}
+.item {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.paddle {
+  position: absolute;
+  top: 50%;		  
+  color: #008CBA;
+  display: inline-block;
+  cursor:pointer;
+  padding: 1.5%
+}
+
+.left-paddle {
+  left: 0;
+}
+
+.right-paddle {
+  right: 0;
+}
+
+
+
+/* Header */
+
+#header {
+	background-color: #DCDCDC;
+	color: white;
+}
+
+#topHeader {
+	background-color: #000066;
+}
+
+#right{
+	right: 110px;
+	top: 0.001px;
+	position: absolute;
+}
+
+#right2 {
+	right: 15px;
+	top: 0.001px;
+	position: absolute;
+}
+
+
+
+#topHeader li {
+	display: inline-block;
+}
+
+.dropDown
+{
+	margin-top:15px
+	background-color: #000066;
+	z-index:1;
+	position: relative;
+
+}
+
+.dropDown ul
+{
+	list-style:none;
+	position:relative;
+	margin:0;
+	padding:0
+}
+
+.dropDown ul a
+{
+	color:white;
+	text-decoration:none;
+	font-size:15px;
+	line-height:32px;
+	padding:0 15px;
+}
+
+.dropDown ul li:hover
+{
+	transition: .3s ease all;
+}
+
+.dropDown ul ul
+{
+	display:none;
+	position:absolute;
+	background: #000066;
+
+}
+
+.dropDown ul li:hover > ul
+{
+	display:block;
+	opacity: 1;
+	visibility: visible;
+}
+
+#category ul li:hover > ul
+{
+	display:block;
+	opacity: 1;
+	visibility: visible;
+	width: 50%;
+}
+
+
+.dropDown ul li > ul li > ul > li{
+	width: 150%;
+	padding-right: 10%;
+		background: #000066;
+}
+
+
 
 .dropDown ul li ul li:hover
 {
@@ -481,13 +1038,14 @@ ul {
 #footer {
 	background-color: #DCDCDC;
 	margin-top: 5%;
+	font-size: 10px;
 }
 
 #footer ul li a {
 	display: inline-block;
 	text-decoration: none;
 	color: black;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 #footer a:hover {
@@ -500,6 +1058,8 @@ ul {
 	margin-right: 10%;	
 	margin-top: 2%;
 	margin-left: 3.5%;
+	font-size: 10px;
+
 }
 
 #LogoContainer{
@@ -520,31 +1080,12 @@ ul {
 
 #footerBot p{
 	display: inline-block;
-	margin-top: 1%;
-				margin-right: 1%;
-	margin-left: 1%
+	float: middle;
 }
 
 #terms{
-	float: right;
+	float: middle;
 }
 
-/*Scroll back to top button*/
-#btnScroll {
-    display: block; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 15px; /* Place the button at the bottom of the page */
-    right: 20px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #000066; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
-}
 
-#btnScroll:hover {
-    background-color: #9B9B9B; /* Add a dark-grey background on hover */
 }

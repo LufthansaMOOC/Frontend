@@ -1,3 +1,4 @@
+@media only screen and (min-width: 760px)  {
 body,div,h1,h2,h3,h4,h5,h6,p,a,img,strong,ul,li {
 	margin:0;
 	padding:0;
@@ -316,7 +317,6 @@ ul {
 
 
 /* Header */
-@media only screen and (min-width: 760px)  {
 .jumbotron {
 height:10px;
 }
@@ -331,10 +331,6 @@ height:10px;
 
 .navbar .navbar-collapse{
   text-align: right;
-
-}
-
-@media screen and (min-width: 670px) {
 
 }
 
@@ -410,4 +406,9 @@ height:10px;
 
 #btnScroll:hover {
     background-color: #9B9B9B; /* Add a dark-grey background on hover */
+}
+}
+
+@media screen and (min-width: 670px) {
+
 }

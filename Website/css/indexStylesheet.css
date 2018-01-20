@@ -13,6 +13,7 @@ body {
 	font-size: 1.4vw;
 	line-height: 2em;
 	line-height:1;
+	margin: 30px 0px;
 }
 	
 p {
@@ -29,9 +30,15 @@ h2 {
 	line-height: 1.5em;
 }
 
-
-
-
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
 
 /* List */
 ul {
@@ -360,3 +367,4 @@ div.scrollmenu a {
 #btnScroll:hover {
     background-color: #9B9B9B; /* Add a dark-grey background on hover */
 }
+

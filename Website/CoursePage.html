@@ -6,11 +6,14 @@
  		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 		<link rel="stylesheet" type="text/css" href="css/coursePageStylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+		<script src="js/script.js"></script>
 		<script type="text/javascript">
+		
 			function getData() {
 
 	var courseTitle = window.location.hash.substr(1);
@@ -46,7 +49,7 @@
 		
 			
 		</script>
-		<title>LELA</title>
+		<title>Lufthansa Group Learning Lounge</title>
 	</head>
 	<body>
 
@@ -251,28 +254,56 @@
 				of what it takes to be a computer forensics investigator, and the tools and techniques available to you
 				to find the evidence you will be looking for.<p/>
 		</div>
-          
-          <!-- About the Instructor -->
-	<div id ="instructorContent">
-			<h2>&nbsp; </h2>
-			<h2>About the Instructor </h2>
-	  <p>Karoly Nyisztor
-				Senior Software Engineer, iOS / Swift Instructor
-	  <p/>
-	</div>
-		
-		<!-- Student Feedback -->
-		<div id ="infoContent">
-			<h2>&nbsp; </h2>
-			<h2>Student Feedback </h2>
-			<p> <img src="images/rating.png" height="450" width="600"><p/>
-		</div>
-		
-		<!-- Student Comments -->
-		<div id ="reviewContent">
-			<h2> Reviews </h2>
-			<p> <img src="images/reviews.PNG" height="950" width="600"> <p/>
-		</div>
+
+	<!-- Student Feedback -->
+	<div class = "star-rating">
+    <h2>Student Feedback</h2>
+        <form action="index3.php" method="post">
+            <fieldset class="rating">
+                <legend>Please rate:</legend>
+                <input type="radio" id="star5" name="rating" value="5" onclick="showRating()"/><label for="star5" title="5 Stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" onclick="showRating()"/><label for="star4" title="4 Stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" onclick="showRating()"/><label for="star3" title="3 Stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" onclick="showRating()"/><label for="star2" title="2 Stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" onclick="showRating()"/><label for="star1" title="1 Star"></label>
+            </fieldset>
+            <div class="review-input">
+            Review <textarea name="comment" class ="comment" id="comment" rows="3" cols="50" placeholder="Tell us what you thought of the course"></textarea>
+            <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+
+    <div id="reviews">
+        <h1>Reviews</h1>
+        <div class="show-reviews">
+        <table class="table table-bordered table-condensed">
+            <thead>
+                <tr align="left">
+                    <th>Course Name</th>
+                    <th>Star Rating</th>
+                    <th>Review</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php while ($col = $q->fetch()): ?>
+                    <tr>
+                        <td><?php echo htmlspecialchars($col['Course_Name']);?></td>
+                            <td><?php echo htmlspecialchars($col['StarRating']); ?>
+                                <div>
+                                    <?php echo showStarRating(htmlspecialchars($col['StarRating'])); ?>
+                                </div>
+                            </td>
+                        <td><?php echo htmlspecialchars($col['review']); ?></td>
+                    </tr>
+                <?php endwhile; ?>
+            </tbody>
+        </table>
+
+        </div>
+        <div class="average-rating">
+            Average Rating: <?php echo getAvgRating(); ?>
+        </div>
 		
 		<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"><div data-template="view" data-count="5" data-constraint="ALL">
 	<div class="mb-component-container container">

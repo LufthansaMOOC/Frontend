@@ -29,6 +29,12 @@
 	  		}
 		</style>
 
+		<script type="text/javascript">
+			$('.carousel').carousel({
+		    pause: "false"
+		});
+		</script>
+
 		
 	</head>
 	<body>
@@ -95,27 +101,38 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+
+
+
+
+
+
 <!--Banner-->
-<<<<<<< HEAD
-<div id ="jumbotron">
+<div class="main-wrapper">
+<div class="carousel slide"  data-ride="carousel" id="main-carousel">
+    <!-- Slides -->
+    <div id="bannerContainer" class="carousel-inner" role="listbox">
+        <div id="bannerImg1" class="item active">
+       
+        </div>
+        <div id="bannerImg1" class="item">
+     
+        </div>
+        <div id="bannerImg1" class="item">
+       
+        </div>
+    </div>
 
-	<div id="BannerText">
-
-		<h1>LGLL</h1>
-		<p>Get skills in business, tech, and personal development</p>
-
-		<div data-template="view" data-count="5" data-constraint="ALL">
-	<div class="mb-component-container container">
-		<form id="searchForm" role="search" data-template="searchform" class="mb-center form-inline ">
-			<div class="form-group">
-				<input id="searchBar" class="form-control aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query name="query" type="search" placeholder="Search">
-				<button class="btn btn-default"  onClick="searchFunction()"><!--<a href="index2.html"> -->Search</button>
-			</div>
-		</form>
-
+    <!-- Controls -->
+    <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+        <span class="fa fa-arrow-left"></span>
+    </a>
+    <a class="right carousel-control"  href="#main-carousel" role="button" data-slide="next">
+        <span class="fa fa-arrow-right"></span>
+    </a>
 
 </div>
-</div>
+    </div>
 
 
 	<script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>

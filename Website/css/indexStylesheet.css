@@ -30,14 +30,59 @@ h2 {
 	line-height: 1.5em;
 }
 
-.navbar-default .navbar-nav > li.dropdown:hover > a, 
-.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
-.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
-    background-color: rgb(231, 231, 231);
-    color: rgb(85, 85, 85);
-}
+
 li.dropdown:hover > .dropdown-menu {
     display: block;
+}
+.container {
+    margin-top: 20px;
+}
+
+
+
+/*Banner*/
+.carousel-control span {
+        position:absolute;
+        top:45%;
+        left: 20px;
+        font-size: 40px;
+
+
+    }
+        .carousel-control.right span {
+        right:20px;
+
+
+    }
+
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}
+#bannerContainer {
+	margin-top: -20px;
+}
+
+#bannerImg1 {
+	padding-bottom: 20%;
+	padding-top: 20%;
+	background-image: url("../images/Background.jpg");
+	background-position: center top;
+	background-size: cover;
+
+}
+
+#bannerImg2 {
+
+	background-image: url("../images/Background.jpg");
+
+
+}
+
+#bannerImg3 {
+
+	background-image: url("../images/Background.jpg");
+
 }
 
 /* List */

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/resultPageStyleSheet.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <script type="text/javascript">
+        function getData() {
+            //var queryString = decodeURIComponent(window.location.search);
+            //queryString = queryString.substring(1);
+
+            var queryString = window.location.hash.substr(1);
+            document.getElementById("searchBar").value = queryString;
+
+            document.getElementById("searchForm").submit();
+
+
+        }
+        window.onload = getData;
+  </script>
+
+
+  <title>LELA</title>
+
+</head>
+<body>
+
+<!-- Button up -->
+<button onclick="topFunction()" id="btnScroll" title="Go to top">Top</button>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/Logo.png"  alt="logo" height="30" width="100"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" ><span class="glyphicon glyphicon-th-list" ></span>  Categories<b class="caret"></b></a>
+          <ul class="dropdown-menu" >
+            <li><a href="#"  >Acedemics</a></li>
+            <li><a href="#" >Business</a></li>
+            <li><a href="#" >Design</a></li>
+            <li><a href="#" >Health</a></li>
+              <li class="dropdown-submenu">
+              <a class="test" href="#" >Academics <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" >3rd level dropdown</a></li>
+                  <li><a href="#" >3rd level dropdown</a></li>
+                </ul>
+              </li>
+          <li><a href="#" >IT and Software</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button class="btn btn-default"  onClick="searchFunction()">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" ><span class="glyphicon glyphicon-globe" ></span>  Languages <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">German</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--MindBreeze-->
+<div data-template="view" data-count="5" data-constraint="ALL">
+  <div class="mb-component-container container">
+    <form id="searchForm" role="search" data-template="searchform" class="mb-center ">
+      <input id="searchBar" aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query" name="query" type="search" placeholder="Search"></input>
+    </form>
+    <div class="row-fluid">
+      <div class="span3">
+        <div data-template="filteredfacet" data-name="cost" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+          <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+          </script>
+        </div>
+        <div data-template="filteredfacet" data-name="instructorname" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+            <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+            </script>
+          </div>
+        <div data-template="filteredfacet" data-name="language" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+              <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+              </script>
+            </div>
+        <div data-template="filteredfacet" data-name="requiredtime" class="mb-role" style="display: block;" data-title="Required Time" data-collapsible="true" role="tablist" tabindex="0" aria-multiselectable="true">
+                <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+                </script>
+              </div>
+        <div data-template="filteredfacet" data-name="topic" class="mb-role" style="display: block;" data-collapsible="true" data-default-open="false" data-andavailable="false" data-intersect-values="false" data-dropdownfilter="false" role="tablist" tabindex="0" aria-multiselectable="true">
+                  <script type="text/x-mustache-template" data-tag-name="span"><span class="{{#showAddAnd?}}mb-add-and-available{{/showAddAnd?}} mb-tooltip">{{{html}}}{{#showAddAnd?}} <a class="action mb-add-and"><i class="icon-plus-sign"></i></a>{{/showAddAnd?}}</span><span class="pull-right" title="{{count}}">{{#count?}}&nbsp;{{count}}{{/count?}}{{#excluded}}&ndash;{{/excluded}}</span>
+                  </script>
+                </div>
+      </div>
+      <div class="span9">
+                  <div data-template="results">
+                    <script type="text/x-mustache-template" data-attr-role="group" data-attr-aria-labelledby="result_{{id}}" data-class-name="media mb-clickable-phone" data-attr-data-action-object="{ &quot;toggleOpen&quot;: { &quot;enabledSelector&quot;: &quot;.visible-phone&quot; }}"><span class="pull-left media-object" aria-hidden="true">
+    {{#actions.data[0].value.href?}}<a href="{{actions.data[0].value.href}}" data-disabled-selector=".visible-phone" tabindex="-1" target="_blank">{{/actions.data[0].value.href?}}
+      {{{icon}}}
+    {{#actions.data[0].value.href?}}</a>{{/actions.data[0].value.href?}}
+  </span>
+  <div class="media-body">
+    <h3 class="media-heading" id="result_{{id}}" onClick="page3Redirect(this)">
+
+      {{{title}}}
+      {{#actions.data[0].value.href?}}</a>{{/actions.data[0].value.href?}}
+    </h3>
+    <ul class="mb-actions mb-separated hidden-phone mb-visible-open mb-no-print">
+      {{#actions.data}} <li class="nowrap">{{{html}}}</li>{{/actions.data}}
+      <li class="nowrap"><a role="button" class="action collect" tabindex="0" data-action-object="{&quot;collectResult&quot;:{}}">{{{i18n.Collect}}}</a></li>
+    </ul>
+    <dl class="mb-metadata mb-comma-separated-values mb-horizontal mb-separated hidden-phone mb-visible-open mb-small">
+      <dt class="mb-acc">{{i18n.date}}</dt><dd>{{{mes:date}}}</dd>
+      {{#mes:summary}}
+        <dt>{{name}}</dt>{{#data}}<dd>{{#actions?}}<span class="mb-dropdown-toggle"><a data-action-object="{&quot;openMenu&quot;: {&quot;propertyId&quot;: &quot;{{property:id}}&quot;, &quot;position&quot;: {{data:position}} }}" class="nowrap">{{/actions?}}{{{html}}}{{#actions?}} <span class="caret"></span></a></span> {{/actions?}}</span></dd>{{/data}}
+      {{/mes:summary}}
+    </dl>
+    {{#content}}
+      <p class="mb-content">{{{.}}}</p>
+    {{/content}}
+    <span class="clearfix"></span>
+  </div>
+                    </script>
+                  </div>
+                  <ul data-template="pagination" class="pager">
+                      <a href="#" class="mb-next mb-center mb-block action" data-action="this.nextPage({ append: true })" data-i18n="mobileclient_load_more_results">Load more results</a>
+                    </ul>
+                </div>
+    </div>
+  </div>
+</div><script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>
+
+
+
+  <!-- Footer -->
+
+    <div class="container-fluid" id="footer">
+      <div class="row " >
+        <div id="firstFooterList" class="col-md-3 col-xs-4 footerContent" style="text-align: center;">
+          <p>Browse</p>
+          <ul>
+            <li><a href="#">Providers</a></li>
+            <li><a href="#">Universities</a></li>
+            <li><a href="#">Institution</a></li>
+            <li><a href="#">Subject</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Languages</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-4 footerContent" style="text-align: center;">
+          <p>More</p>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Intellectual Property </a></li>
+            <li><a href="#">Cookie policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-4 footerContent" style="text-align: center;">
+          <p>Contact</p>
+          <ul>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Google+</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-12 footerImg" style="text-align: center;">
+          <img src="images/Logo.png"  alt="logo" height="52" width="200">
+        </div>
+    
+      </div>
+    </div>
+
+      <div id="footerBot">
+        <p>Lufthansa Copyright 2017</p>
+        <p id="terms"><a href="#"> Terms and Conditions</a></p>
+      </div>  
+
+      <script  src="js/scroll.js"></script>
+      
+      <script>
+    function searchFunction() {
+      var searchBar = document.getElementById("searchBar");
+      var searchQuery = searchBar.value;
+      var Lela = document.getElementById("Lela");
+      Lela.innerHTML = searchQuery;
+      window.location.href = "index2.html" + '#' +searchQuery;
+    }
+  </script>
+
+
+
+</body>
+</html>

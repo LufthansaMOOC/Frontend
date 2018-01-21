@@ -96,6 +96,19 @@
 			</form>
 		</div>
 	</div>
+		<link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet">
+		<div data-template="view" data-count="5" data-constraint="ALL">
+	<div class="mb-component-container container">
+		<form id="searchForm" role="search" data-template="searchform" class="mb-center form-inline ">
+			<div class="form-group">
+				<input id="searchBar" class="form-control aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query name="query" type="search" placeholder="Search">
+				<button class="btn btn-default"  onClick="searchFunction()"><!--<a href="index2.html"> -->Search</button>
+			</div>
+		</form>
+
+
+</div>
+</div>
 
 
 	<script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>
@@ -652,7 +665,7 @@
 
 		<div class="container-fluid" id="footer">
 			<div class="row " >
-				<div class="col-md-3 col-xs-4 footerContent" style="text-align: center;">
+				<div id="firstFooterList" class="col-md-3 col-xs-4 footerContent" style="text-align: center;">
 					<p>Browse</p>
 					<ul>
 						<li><a href="#">Providers</a></li>

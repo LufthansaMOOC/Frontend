@@ -30,6 +30,15 @@ h2 {
 	line-height: 1.5em;
 }
 
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
 
 /* List */
 ul {
@@ -67,7 +76,6 @@ li.dropdown:hover > .dropdown-menu {
 {
 	color: #F4F4F4;
 }
-
 
 .buttonlog {
     border: none;
@@ -132,15 +140,19 @@ li.dropdown:hover > .dropdown-menu {
 	margin-top: 5%;
 }
 
-#trendingButtonsContainer{
+#firstbodyheading {
 	margin-top: 5%;
-	margin-bottom: 5%;
+}
+
+/*trending button*/
+#trendingButtonsContainer{
+	text-align: center;
 }
 
 .trendingButtons {
-	border: none;
     color: black;
-    border: 2px solid #37aae0;
+    border: 2px solid #0a64ad;
+    border-top: none;
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 20px;
@@ -149,18 +161,27 @@ li.dropdown:hover > .dropdown-menu {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin-top: 10px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer
 }
 
+.cardContainer {
+	margin-top: 1%;
+	margin-bottom: 3%;
+}
+
 .trendingButtons:hover {
 	 color: white;
-	 background-color: #37aae0;
+	 background-color: #0a64ad;
 }
 
 /*Banner*/
+#Banner img {
+	width: 24%;
+	height: auto;
+	filter: brightness(10%);
+}
 
 #BannerText {
 	background: rgba(255, 250, 255, 0.7);
@@ -334,7 +355,7 @@ div.scrollmenu a {
 }
 
 #footerBot {
-	background-color: #000066;
+	background-color: #071D49;
 	color: white; 
 }
 
@@ -376,4 +397,3 @@ div.scrollmenu a {
 #btnScroll:hover {
     background-color: #9B9B9B; /* Add a dark-grey background on hover */
 }
-

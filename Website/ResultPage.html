@@ -10,6 +10,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
   <script type="text/javascript">
         function getData() {
             //var queryString = decodeURIComponent(window.location.search);
@@ -33,91 +44,53 @@
 
 <!-- Button up -->
 <button onclick="topFunction()" id="btnScroll" title="Go to top">Top</button>
-  
-  <!-- Navigation  -->
-  <div id="header">
-    <div id="topHeader">
-      <ul>
-        <li>
-          <nav class="dropDown" >
-            <ul>
-                  <li id="LanguageSelectionHeader"><img src="images/langIcon.png" height="20" width="20"><a href="#">Language &#9660;</a>
-                    <ul>
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">German</a></li>
-                    </ul>
-                  </li>
-              </ul>
-            </nav>
-          </li>
-          
-          <button class="buttonlog buttonG" id="right"><a href="index3.html">Log In</button></a>
-          <button class="buttonlog buttonG" id="right2">Sign Up</button>
-        
-        </ul>
-      </div>
 
-      <div id="headerMain">
-        <div class="container">
-          <ul>  
-            <li id="logocon">
-              <a class ="logocon" href="/index.html"><img src="images/LogoNoslogon.png"  alt="logo" height="30" width="180"></li></a>
-              <li>
-                <nav class="dropDown" id="category">
-                  <ul>
-                    <li>
-                     <img src="images/cate.png" height="20" width="20" alt="category icon"><a href="#"><span style="color: black">Categories &#9660;</span></a>
-                      <ul>
-                        <li>
-                          <a href="#">Academics</a>
-                            <ul>
-                              <li><a href="#">Subcategory1</a></li>
-                              <li><a href="#">Subcategory2</a></li>
-                              <li><a href="#">Subcategory3</a></li>
-                            </ul>
-                            </li>
-                        <li>
-                          <a href="#">Business</a>
-                            <ul>
-                              <li><a href="#">Subcategory4</a></li>
-                              <li><a href="#">Subcategory5</a></li>
-                              <li><a href="#">Subcategory6</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                          <a href="#">Design</a>
-                            <ul>
-                              <li><a href="#">Subcategory7</a></li>
-                              <li><a href="#">Subcategory8</a></li>
-                              <li><a href="#">Subcategory9</a></li>
-                            </ul>
-                        </li>
-                          <li>
-                            <a href="#">Health &amp; Fitness</a>
-                              <ul>
-                              <li><a href="#">Subcategory10</a></li>
-                              <li><a href="#">Subcategory11</a></li>
-                              <li><a href="#">Subcategory12</a></li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#">IT &amp; Software</a>
-                              <ul>
-                              <li><a href="#">Subcategory13</a></li>
-                              <li><a href="#">Subcategory14</a></li>
-                              <li><a href="#">Subcategory15</a></li>
-                            </ul>
-                          </li>
-                      </ul>
-                      </li>
-                  </ul>
-                </nav>
-              </li>
-          </ul>
-        </div>
-      </div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/Logo.png"  alt="logo" height="52" width="100"></a>
     </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></span>  Categories<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Acedemics</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Health</a></li>
+              <li class="dropdown-submenu">
+              <a class="test" href="#">Academics <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">3rd level dropdown</a></li>
+                  <li><a href="#">3rd level dropdown</a></li>
+                </ul>
+              </li>
+          <li><a href="#">IT and Software</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-globe"></span>  Languages <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">German</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 <!--MindBreeze-->
 <link href="https://try.inspire.mindbreeze.com/apps/editor/../css/adapted.css" rel="stylesheet"><div data-template="view" data-count="5" data-constraint="ALL">

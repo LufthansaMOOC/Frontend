@@ -30,21 +30,33 @@ h2 {
 	line-height: 1.5em;
 }
 
-.navbar-default .navbar-nav > li.dropdown:hover > a, 
-.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
-.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
-    background-color: rgb(231, 231, 231);
-    color: rgb(85, 85, 85);
-}
-li.dropdown:hover > .dropdown-menu {
-    display: block;
-}
 
 /* List */
 ul {
 	list-style:none;
 	margin: 0 0 2em 0;
 	padding-left: 1em;
+}
+
+#jumbotron {
+    background-image: url("../images/Background.jpg");
+    padding-bottom: 8%;
+	padding-top: 8%;
+	position: relative;
+
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: cover;
+}
+
+#navbar-default .navbar-nav > li.dropdown:hover > a, 
+#navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+#navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
 }
 
 

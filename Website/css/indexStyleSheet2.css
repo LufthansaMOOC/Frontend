@@ -1,0 +1,16 @@
+#jumbotron {
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#navbar-default .navbar-nav > li.dropdown:hover > a, 
+#navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+#navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}

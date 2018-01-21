@@ -85,6 +85,18 @@ ul {
     cursor: pointer
 }
 
+#searchForm {
+	width: 70%;
+	margin-left: 13%;
+	margin-bottom: 5%;
+}
+
+#searchForm button {
+	margin-top: 5%;
+	margin-bottom: 5%
+}
+
+
 
 /*Trending buttons*/
 
@@ -207,20 +219,15 @@ ul {
 }
 .courseCard{
 	background-color: white;
-	width: 240px;
-}
-
-.courseCard {
+	width: 250px;
 	text-decoration: none;
 	color: black;
-	text-align: left;
 }
 
 .courseCard a{
 	text-decoration: none;
 	color:black;
 }
-
 
 .courseCard h5 {
 	margin-left: 4%;
@@ -270,7 +277,6 @@ ul {
 .courseContent h1 {
 	margin-bottom: 3%;
 	margin-left: 3%;
-
 	font-weight: bold;
 	color: #000066;
 }
@@ -284,7 +290,6 @@ div.scrollmenu {
 div.scrollmenu a {
     display: inline-block;
     color: black;
-    text-align: center;
     padding: 14px;
     text-decoration: none;
 }

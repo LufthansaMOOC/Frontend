@@ -14,11 +14,10 @@
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<meta charset="utf-8">
-		  <meta name="viewport" content="width=device-width, initial-scale=1">
-		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -38,8 +37,6 @@
 	<!-- Button up -->
 		<button onclick="topFunction()" id="btnScroll" title="Go to top" >&#8593;</button>
 	
-
-		<!-- header  -->
 
 <!-- Navigation -->
 <nav class="navbar navbar-default" role="navigation">
@@ -98,32 +95,32 @@
 </nav>
 
 <!--Banner-->
-<div id ="jumbotron">
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-	<div id="BannerText">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/Background.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
 
-		<h1>LGLL</h1>
-		<p>Get skills in business, tech, and personal development</p>
-
-
-	<!--Mindbreeze -->
-
-		<div data-template="view" data-count="5" data-constraint="ALL">
-	<div class="mb-component-container container">
-		<form id="searchForm" role="search" data-template="searchform" class="mb-center form-inline ">
-			<div class="form-group">
-				<input id="searchBar" class="form-control aria-label="search" data-template="suggest" data-property="title" data-grouped="true" data-source-id-pattern="document_property|tabs" data-initial-source-id-pattern="recent_query" class="mb-query name="query" type="search" placeholder="Search">
-				<button class="btn btn-default"  onClick="searchFunction()"><!--<a href="index2.html"> -->Search</button>
-			</div>
-		</form>
+      <div class="item">
+        <img src="images/Background.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/Background.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
 
 
-</div>
-</div>
-
-
-	<script src="https://try.inspire.mindbreeze.com/apps/editor/..//../scripts/client.js" data-global-export="false"></script><script>Mindbreeze.require(["client/application"], function(Application) {var application = new Application({});});</script>
-	</div>
+  </div>
 </div>
 
 

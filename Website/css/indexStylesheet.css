@@ -170,6 +170,43 @@ li.dropdown:hover > .dropdown-menu {
 	margin-bottom: 5%
 }
 
+/*Search form*/
+
+#searchForm {
+	position:absolute;
+  	top:40%;
+}
+
+.carousel {
+  margin-bottom: 60px;
+}
+
+.carousel-control {
+  top: 76%;
+}
+
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel .item {
+  height: 500px;
+  background-color:#bbb;
+  overflow:hidden;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+#searchForm {
+	position:absolute;
+  	top:40%;
+}
+
 
 
 /*Trending buttons*/
@@ -231,47 +268,8 @@ li.dropdown:hover > .dropdown-menu {
 #BannerText {
 	background: rgba(255, 250, 255, 0.7);
 	width: 70%;
-	margin-left: 15%;
-	color: #000066;
-	align-items: left;
+	color: green;
 }
-
-#BannerText form > input{
-	width: 40%;
-	line-height: 2em;
-	margin-top:2%; 
-	margin-bottom: 7%;
-	margin-left: -30%;
-}
-
-
-#BannerText form > button{
-	background-color: #000066;
-    border: none;
-    color: white;
-    text-decoration: none;
-    margin-left: -5px;
-   padding-bottom: 4px;
-   padding-top: 4px;
-   padding-right: 17px;
-   padding-left: 17px;
-    cursor: pointer;
-
-}
-
-
-#BannerText p {
-	margin-left: 18%;
-}
-
-#BannerText h1 {
-	font-size: 300%;
-	margin-bottom: 5%;
-	padding-top: 7%;
-	font-weight: bold;
-	margin-left: 18%;
-
-}	
 		
 /*card*/
 .checked {
@@ -441,4 +439,35 @@ div.scrollmenu a {
 
 #btnScroll:hover {
     background-color: #9B9B9B; /* Add a dark-grey background on hover */
+}
+
+
+.carousel {
+  margin-bottom: 60px;
+}
+
+.carousel-control {
+  top: 76%;
+}
+
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel .item {
+  height: 500px;
+  background-color:#bbb;
+  overflow:hidden;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+#searchForm {
+	position:absolute;
+  	top:40%;
 }

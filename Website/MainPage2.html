@@ -95,51 +95,62 @@
 </nav>
 
 <!--Banner-->
-<div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="images/Background.jpg" alt="Los Angeles" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="images/Background.jpg" alt="Chicago" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="images/Background.jpg" alt="New york" style="width:100%;">
-      </div>
+<div class="main-wrapper">
+<div class="carousel slide"  data-ride="carousel" id="main-carousel">
+    <!-- Slides -->
+    <div id="bannerContainer" class="carousel-inner" role="listbox">
+        <div id="bannerImg1" class="item active">
+       
+        </div>
+        <div id="bannerImg1" class="item">
+     
+        </div>
+        <div id="bannerImg1" class="item">
+       
+        </div>
     </div>
 
+    <!-- Controls -->
+    <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+        <span class="fa fa-arrow-left"></span>
+    </a>
+    <a class="right carousel-control"  href="#main-carousel" role="button" data-slide="next">
+        <span class="fa fa-arrow-right"></span>
+    </a>
 
-  </div>
 </div>
-
+    </div>
 
 		<!--Trending Buttons-->
 
-		<div class="container-fluid" id="trendingButtonsContainer">
-			<h1 class="bodyheading">Discover Our Popular Courses</h1>
-			<div class="row " >
-				<div class="col-sm-4" style="text-align: center;">
-					<button class="trendingButtons">Top 10 Rated</button>
-				</div>
-				<div class="col-sm-4  " style="text-align: center;">
-					<button class="trendingButtons">Trending Courses</button>
-				</div>
-				<div class="col-sm-4  " style="text-align: center;">
-					<button class="trendingButtons">New Courses</button>
-				</div>
+		<h1 class="bodyheading" id="firstbodyheading">Discover Our Popular Courses</h1>
+	<div class="container-fluid" id="trendingButtonsContainer">
+		
+		<div class="row">
+	 		<div class="col-sm-4 col-xs-12 card cardContainer" style="text-align: center">
+	    		<img class="card-img-top" src="images/Background.jpg" alt="Card image" style="width:80%; ">
+	    		<div class="card-body">
+	      			<button class="trendingButtons b">Top 10 Rated</button>
+	    		</div>
+			</div>
+
+
+			<div class="col-sm-4 col-xs-12 card cardContainer" style="text-align: center">
+	    		<img class="card-img-top" src="images/Background.jpg" alt="Card image" style="width:80%; ">
+	    		<div class="card-body">
+	      			<button class="trendingButtons b">Trending Courses</button>
+	    		</div>
+			</div>
+
+
+			<div class="col-sm-4 col-xs-12 card cardContainer" style="text-align: center">
+	    		<img class="card-img-top" src="images/Background.jpg" alt="Card image" style="width:80%; ">
+	    		<div class="card-body">
+	      			<button class="trendingButtons b">New Courses</button>
+	    		</div>
 			</div>
 		</div>
+	</div>
 
 <h1 class="bodyheading">Because you searched for "Software"</h1>
 <div class="scrollmenu">

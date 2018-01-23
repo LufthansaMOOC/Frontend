@@ -160,10 +160,19 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 #searchForm {
-	width: 70%;
-	margin-left: 13%;
+	width: 50%;
+	margin-left: 25%;
 	margin-bottom: 5%;
+	background: rgba(204, 204, 204, 0.7);
+	padding-top: 2%;
+	margin-top: -5%;
+	padding-bottom: 2%;
+
 }
+
+
+/*Banner*/
+
 
 #searchForm button {
 	margin-top: 5%;
@@ -253,6 +262,14 @@ li.dropdown:hover > .dropdown-menu {
 	margin-bottom: 3%;
 }
 
+.cardContainer img{
+		box-shadow: 2px 2px 4px #000000;
+}
+
+.cardContainer button{
+		box-shadow: 2px 2px 4px #000000;
+}
+
 .trendingButtons:hover {
 	 color: white;
 	 background-color: #0a64ad;
@@ -268,7 +285,6 @@ li.dropdown:hover > .dropdown-menu {
 #BannerText {
 	background: rgba(255, 250, 255, 0.7);
 	width: 70%;
-	color: green;
 }
 		
 /*card*/
